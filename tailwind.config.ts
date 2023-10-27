@@ -7,6 +7,13 @@ const config: Config = {
       fontFamily: {
         gabarito: ["var(--font-gabarito)"],
         sfmono: ["var(--font-sfmono)"]
+      },
+      backgroundImage: {
+        "topography-pattern": "url('/icons/topography_pattern.svg')"
+      },
+      colors: {
+        darkGrey: "#222222",
+        mediumGrey: "#444444"
       }
     }
   },

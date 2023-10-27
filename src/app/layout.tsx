@@ -36,7 +36,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html>
-      <body className={`${gabarito.variable} ${sfmono.variable} font-gabarito`}>{children}</body>
+      <body className={`${gabarito.variable} ${sfmono.variable} bg-opacity-50 font-gabarito`}>
+        <main className="relative">
+          {children}
+          <div className="absolute inset-0 h-full bg-topography-pattern bg-repeat opacity-5"></div>
+        </main>
+      </body>
     </html>
   )
 }
