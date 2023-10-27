@@ -1,9 +1,32 @@
-import "./globals.css"
+import "../../public/globals.css"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Gabarito } from "next/font/google"
+import localFont from "next/font/local"
 import { ReactNode } from "react"
 
-const inter = Inter({ subsets: ["latin"] })
+const gabarito = Gabarito({ subsets: ["latin"], display: "swap", variable: "--font-gabarito" })
+
+const sfmono = localFont({
+  src: [
+    {
+      path: "../../public/fonts/SFMono/SFMonoMedium.woff2",
+      weight: "500",
+      style: "normal"
+    },
+    {
+      path: "../../public/fonts/SFMono/SFMonoSemibold.woff2",
+      weight: "600",
+      style: "normal"
+    },
+    {
+      path: "../../public/fonts/SFMono/SFMonoSemiboldItalic.woff2",
+      weight: "600",
+      style: "italic"
+    }
+  ],
+  display: "swap",
+  variable: "--font-sfmono"
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -12,8 +35,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html>
+      <body className={`${gabarito.variable} ${sfmono.variable} font-gabarito`}>{children}</body>
     </html>
   )
 }
