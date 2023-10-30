@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Gabarito } from "next/font/google"
 import localFont from "next/font/local"
 import { ReactNode } from "react"
+import { Topography } from "@/components/server/common/Topography"
 
 const gabarito = Gabarito({ subsets: ["latin"], display: "swap", variable: "--font-gabarito" })
 
@@ -36,10 +37,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html>
-      <body className={`${gabarito.variable} ${sfmono.variable} bg-opacity-50 font-gabarito`}>
+      <body className={`${gabarito.variable} ${sfmono.variable} font-gabarito`}>
         <main className="relative">
           {children}
-          <div className="absolute inset-0 h-full bg-topography-pattern bg-repeat opacity-5"></div>
+          <div className="absolute inset-0 z-[-1] h-full opacity-5">
+            <Topography />
+          </div>
         </main>
       </body>
     </html>
