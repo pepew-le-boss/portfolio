@@ -1,7 +1,11 @@
-export default function Home() {
+import { Locale } from "@/root/i18n-config"
+import { getTranslation } from "@/utils/feature/getTranslations"
+
+export default async function Home({ params: { lang } }: { params: { lang: Locale } }) {
+  const translations = await getTranslation(lang)
   return (
     <>
-      <div>Hello</div>
+      <div>{translations.products.cart}</div>
       <div>Hello</div>
       <div>Hello</div>
       <div>Hello</div>
