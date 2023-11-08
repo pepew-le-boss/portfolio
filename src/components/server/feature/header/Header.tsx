@@ -15,7 +15,7 @@ export async function Header({ lang }: HeaderProps) {
   return (
     <header className="flex justify-between px-10 py-5">
       <Icon name="logo" className="h-9 w-9" />
-      <div className="flex gap-20">
+      <div className="flex items-center gap-20">
         <nav>
           <ul className="flex items-center gap-8">
             <li>
@@ -33,7 +33,7 @@ export async function Header({ lang }: HeaderProps) {
           </ul>
         </nav>
         <div className="flex gap-6">
-          <LocaleSwitcher />
+          <LocaleSwitcher lang={lang} />
           <ThemeSwitcher />
         </div>
       </div>
