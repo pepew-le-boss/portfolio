@@ -33,7 +33,7 @@ export async function Header({ lang }: HeaderProps) {
           </ul>
         </nav>
         <div className="flex gap-6">
-          <LocaleSwitcher lang={lang} />
+          <LocaleSwitcher lang={lang} altImage={translations.header.alt_lang} />
           <ThemeSwitcher />
         </div>
       </div>

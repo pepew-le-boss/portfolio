@@ -8,9 +8,10 @@ import { i18n, Locale } from "@/root/i18n-config"
 
 interface LocaleSwitcherProps {
   lang: Locale
+  altImage: string
 }
 
-export default function LocaleSwitcher({ lang }: LocaleSwitcherProps) {
+export default function LocaleSwitcher({ lang, altImage }: LocaleSwitcherProps) {
   const pathName = usePathname()
 
   const redirectedPathName = (locale: string) => {
@@ -23,7 +24,7 @@ export default function LocaleSwitcher({ lang }: LocaleSwitcherProps) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger className="grid h-8 w-8 place-items-center rounded-full bg-darkGrey transition-all hover:opacity-80 focus:ring-2 focus:ring-darkGrey focus:ring-offset-2">
-        <Image alt="" src={`/images/${lang}.png`} width={24} height={24} className="h-auto w-6" />
+        <Image alt={`${altImage} ${lang}`} src={`/images/${lang}.png`} width={24} height={24} className="h-auto w-6" />
       </DropdownMenuTrigger>
       <DropdownMenuContent onCloseAutoFocus={(event) => event.preventDefault()} onFocusOutside={(event) => event.preventDefault()}>
         {i18n.locales
@@ -31,7 +32,7 @@ export default function LocaleSwitcher({ lang }: LocaleSwitcherProps) {
           .map((locale: Locale) => (
             <DropdownMenuItem key={locale} className="grid h-8 w-8 place-items-center rounded-full bg-darkGrey transition-all data-[highlighted]:opacity-80">
               <Link href={redirectedPathName(locale)}>
-                <Image alt="" src={`/images/${locale}.png`} width={24} height={24} className="h-auto w-6" />
+                <Image alt={`${altImage} ${lang}`} src={`/images/${locale}.png`} width={24} height={24} className="h-auto w-6" />
               </Link>
             </DropdownMenuItem>
           ))}
