@@ -17,7 +17,7 @@ export async function Header({ lang }: HeaderProps) {
       <Icon name="logo" className="h-9 w-9" />
       <div className="flex items-center gap-20">
         <nav>
-          <ul className="flex items-center gap-8">
+          <ul className="flex items-center gap-14">
             <li>
               <HeaderLink number="01" text={translations.header.about} />
             </li>
