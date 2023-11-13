@@ -21,7 +21,7 @@ export async function generateMetadata({ params: { lang } }: { params: { lang: L
 export default function RootLayout({ children, params }: { children: ReactNode; params: { lang: string } }) {
   return (
     <html lang={params.lang} suppressHydrationWarning>
-      <body className={`${gabarito.variable} ${sfmono.variable} font-gabarito text-darkGrey`}>
+      <body className={`${gabarito.variable} ${sfmono.variable} bg-background font-gabarito`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <main className="relative">
             {children}
