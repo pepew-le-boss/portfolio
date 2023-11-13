@@ -1,7 +1,16 @@
 <svg viewBox="0 0 48 48" fill="none"
     xmlns="http://www.w3.org/2000/svg">
-    <rect width="48" height="48" rx="8" fill="#222222"/>
-    <path d="M25.2212 34L19.9815 16.7313L19.1573 14H23.2784L28.6358 31.6211L26.5458 31.5037L31.1085 14H35.4651L29.9605 34H25.2212ZM12.5046 34L7 14H11.3272L15.9193 31.5037L13.8293 31.6211L19.1573 14H23.2784L22.4836 16.7313L17.2439 34H12.5046Z" fill="white"/>
-    <path d="M31.6972 14H42V18.185H31.6972V14Z" fill="white"/>
-    <path d="M30.2254 21.2981H39.0564V25.4831H30.2254V21.2981Z" fill="white"/>
+    <!-- Define the mask -->
+    <mask id="cutout-mask">
+        <!-- White rectangle: the part that will show through -->
+        <rect width="48" height="48" rx="8" fill="white"/>
+        <!-- Black paths: the parts that will be 'cut out' -->
+        <path d="M25.2212 34L19.9815 16.7313L19.1573 14H23.2784L28.6358 31.6211L26.5458 31.5037L31.1085 14H35.4651L29.9605 34H25.2212Z" fill="black"/>
+        <path d="M12.5046 34L7 14H11.3272L15.9193 31.5037L13.8293 31.6211L19.1573 14H23.2784L22.4836 16.7313L17.2439 34H12.5046Z" fill="black"/>
+        <path d="M31.6972 14H42V18.185H31.6972V14Z" fill="black"/>
+        <path d="M30.2254 21.2981H39.0564V25.4831H30.2254V21.2981Z" fill="black"/>
+    </mask>
+
+    <!-- Rectangle with mask applied -->
+    <rect width="48" height="48" rx="8" fill="currentColor" mask="url(#cutout-mask)"/>
 </svg>
