@@ -22,15 +22,15 @@ export default function LocaleSwitcher({ lang, altImage }: LocaleSwitcherProps) 
   }
 
   return (
-    <DropdownMenu>
-      <DropdownMenuTrigger className="bg-primary focus:ring-ring grid h-8 w-8 place-items-center rounded-full transition-all hover:opacity-80 focus:ring-2 focus:ring-offset-2">
+    <DropdownMenu modal={false}>
+      <DropdownMenuTrigger className="grid h-8 w-8 place-items-center rounded-full bg-primary transition-all hover:opacity-80 focus:ring-2 focus:ring-ring focus:ring-offset-2">
         <Image alt={`${altImage} ${lang}`} src={`/images/${lang}.png`} width={24} height={24} className="h-auto w-6" />
       </DropdownMenuTrigger>
       <DropdownMenuContent onCloseAutoFocus={(event) => event.preventDefault()} onFocusOutside={(event) => event.preventDefault()}>
         {i18n.locales
           .filter((locale) => locale !== lang)
           .map((locale: Locale) => (
-            <DropdownMenuItem key={locale} className="bg-primary grid h-8 w-8 place-items-center rounded-full transition-all data-[highlighted]:opacity-80">
+            <DropdownMenuItem key={locale} className="grid h-8 w-8 place-items-center rounded-full bg-primary transition-all data-[highlighted]:opacity-80">
               <Link href={redirectedPathName(locale)}>
                 <Image alt={`${altImage} ${lang}`} src={`/images/${locale}.png`} width={24} height={24} className="h-auto w-6" />
               </Link>

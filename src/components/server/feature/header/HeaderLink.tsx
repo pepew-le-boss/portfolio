@@ -5,7 +5,7 @@ interface HeaderLinkProps {
   text: string
 }
 
-export async function HeaderLink({ number, text }: HeaderLinkProps) {
+export function HeaderLink({ number, text }: HeaderLinkProps) {
   return (
     <Link href={`#${text}`} className="group flex flex-col items-end">
       <span className="font-sfmono text-xs font-semibold leading-none transition-all ease-out group-hover:-translate-y-1">{number}</span>

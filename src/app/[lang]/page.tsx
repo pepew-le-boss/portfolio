@@ -6,8 +6,8 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
   const translations = await getTranslation(lang)
   return (
     <>
-      <Header lang={lang} />
-      <div>{translations.products.cart}</div>
+      <Header lang={lang} headerTranslations={translations.header} />
+      <div className="pt-20">{translations.products.cart}</div>
       <div>Hello</div>
       <div>Hello</div>
       <div>Hello</div>

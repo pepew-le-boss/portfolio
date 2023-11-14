@@ -8,10 +8,10 @@ export default function ThemeSwitcher() {
   const { setTheme } = useTheme()
 
   return (
-    <DropdownMenu>
-      <DropdownMenuTrigger className="bg-primary focus:ring-ring grid h-8 w-8 place-items-center rounded-full transition-all hover:opacity-80 focus:ring-2 focus:ring-offset-2">
-        <Icon name="sun" className="text-primary-foreground block h-auto w-6 dark:hidden" />
-        <Icon name="moon" className="text-primary-foreground hidden h-auto w-6 dark:block" />
+    <DropdownMenu modal={false}>
+      <DropdownMenuTrigger className="grid h-8 w-8 place-items-center rounded-full bg-primary transition-all hover:opacity-80 focus:ring-2 focus:ring-ring focus:ring-offset-2">
+        <Icon name="sun" className="block h-auto w-6 text-primary-foreground dark:hidden" />
+        <Icon name="moon" className="hidden h-auto w-6 text-primary-foreground dark:block" />
       </DropdownMenuTrigger>
       <DropdownMenuContent
         className="flex flex-col gap-1"
@@ -19,22 +19,22 @@ export default function ThemeSwitcher() {
         onFocusOutside={(event) => event.preventDefault()}
       >
         <DropdownMenuItem
-          className="bg-primary hidden h-8 w-8 place-items-center rounded-full transition-all data-[highlighted]:opacity-80 dark:grid"
+          className="hidden h-8 w-8 place-items-center rounded-full bg-primary transition-all data-[highlighted]:opacity-80 dark:grid"
           onClick={() => setTheme("light")}
         >
-          <Icon name="sun" className="text-primary-foreground h-auto w-6" />
+          <Icon name="sun" className="h-auto w-6 text-primary-foreground" />
         </DropdownMenuItem>
         <DropdownMenuItem
-          className="bg-primary grid h-8 w-8 place-items-center rounded-full transition-all data-[highlighted]:opacity-80 dark:hidden"
+          className="grid h-8 w-8 place-items-center rounded-full bg-primary transition-all data-[highlighted]:opacity-80 dark:hidden"
           onClick={() => setTheme("dark")}
         >
-          <Icon name="moon" className="text-primary-foreground h-auto w-6" />
+          <Icon name="moon" className="h-auto w-6 text-primary-foreground" />
         </DropdownMenuItem>
         <DropdownMenuItem
-          className="bg-primary grid h-8 w-8 place-items-center rounded-full transition-all data-[highlighted]:opacity-80"
+          className="grid h-8 w-8 place-items-center rounded-full bg-primary transition-all data-[highlighted]:opacity-80"
           onClick={() => setTheme("system")}
         >
-          <Icon name="system" className="text-primary-foreground h-auto w-5" />
+          <Icon name="system" className="h-auto w-5 text-primary-foreground" />
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
