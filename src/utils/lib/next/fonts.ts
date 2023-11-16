@@ -1,7 +1,4 @@
-import { Gabarito } from "next/font/google"
 import localFont from "next/font/local"
-
-export const gabarito = Gabarito({ subsets: ["latin"], display: "swap", variable: "--font-gabarito" })
 
 export const sfmono = localFont({
   src: [
@@ -23,4 +20,10 @@ export const sfmono = localFont({
   ],
   display: "swap",
   variable: "--font-sfmono"
+})
+
+export const gabarito = localFont({
+  src: "../../../../public/fonts/Gabarito/GabaritoVariable.woff2",
+  display: "swap",
+  variable: "--font-gabarito"
 })

@@ -1,5 +1,15 @@
 {
     "products": {
         "cart": "Add to Cart"
+    },
+    "metadata": {
+        "description": "William Fargues is a software engineer."
+    },
+    "header": {
+        "about": "about",
+        "work": "work",
+        "projects": "projects",
+        "contact": "contact",
+        "alt_lang": "Choose the language"
     }
 }

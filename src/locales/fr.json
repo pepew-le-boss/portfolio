@@ -1,5 +1,15 @@
 {
     "products": {
         "cart": "Ajouter au panier"
+    },
+    "metadata": {
+        "description": "William Fargues est un ingénieur et dévelopeur web."
+    },
+    "header": {
+        "about": "à propos",
+        "work": "carrière",
+        "projects": "projets",
+        "contact": "contact",
+        "alt_lang": "Choisir la langue"
     }
 }
