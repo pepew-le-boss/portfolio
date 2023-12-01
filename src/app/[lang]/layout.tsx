@@ -21,13 +21,11 @@ export async function generateMetadata({ params: { lang } }: { params: { lang: L
 export default function RootLayout({ children, params }: { children: ReactNode; params: { lang: string } }) {
   return (
     <html lang={params.lang} suppressHydrationWarning>
-      <body className={`${gabarito.variable} ${sfmono.variable} bg-background font-gabarito`}>
+      <body className={`${gabarito.variable} ${sfmono.variable} bg-foreground/5 font-gabarito`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <main className="relative">
+            <Topography />
             {children}
-            <div className="absolute inset-0 z-[-1] h-full opacity-5">
-              <Topography />
-            </div>
           </main>
         </ThemeProvider>
       </body>

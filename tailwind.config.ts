@@ -10,7 +10,7 @@ const config: Config = {
         sfmono: ["var(--font-sfmono)"]
       },
       backgroundImage: {
-        "topography-pattern": "url('/icons/topography_pattern.svg')"
+        "topography-pattern": "url('./icons/topography_pattern.svg')"
       },
       colors: {
         border: "hsl(var(--border))",
