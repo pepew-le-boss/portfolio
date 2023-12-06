@@ -9,6 +9,7 @@ import { getTranslation } from "@/utils/common/getTranslations"
 import { cn } from "@/utils/lib/tailwind/cn"
 import { Icon } from "../../common/Icon"
 import { HeaderLink } from "./HeaderLink"
+import { HeaderMenuSheet } from "./HeaderMenuSheet"
 
 interface HeaderProps {
   lang: Locale
@@ -35,13 +36,13 @@ export function Header({ lang, headerTranslations }: HeaderProps) {
 
   return (
     <header
-      className={cn("fixed left-0 right-0 flex justify-between border-b border-b-transparent px-10 py-5 transition-all duration-300", {
+      className={cn("fixed left-0 right-0 flex justify-between border-b border-b-transparent px-5 py-5 transition-all duration-300 sm:px-10", {
         "border-b-border bg-background py-4": hasPageScrolled
       })}
     >
       <Icon name="logo" className="h-9 w-9 text-primary" />
-      <div className="flex items-center gap-20">
-        <nav>
+      <div className="flex items-center gap-6 lg:gap-20">
+        <nav className="hidden lg:block">
           <ul className="flex items-center gap-8">
             <li>
               <HeaderLink number="01" text={headerTranslations.about} />
@@ -61,6 +62,7 @@ export function Header({ lang, headerTranslations }: HeaderProps) {
           <LocaleSwitcher lang={lang} altImage={headerTranslations.alt_lang} />
           <ThemeSwitcher />
         </div>
+        <HeaderMenuSheet headerTranslations={headerTranslations} />
       </div>
     </header>
   )

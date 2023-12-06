@@ -7,3 +7,5 @@ const locales = {
 }
 
 export const getTranslation = async (locale: Locale) => locales[locale]()
+
+export type Translations = Awaited<ReturnType<typeof getTranslation>>
