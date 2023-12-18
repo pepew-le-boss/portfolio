@@ -1,4 +1,4 @@
-import { Sheet, SheetContent, SheetDescription, SheetTitle, SheetTrigger } from "@/components/client/common/Sheet"
+import { Sheet, SheetContent, SheetTrigger } from "@/components/client/common/Sheet"
 import { Translations } from "@/utils/common/getTranslations"
 import { HeaderLink } from "./HeaderLink"
 

@@ -11,5 +11,12 @@
         "projects": "projects",
         "contact": "contact",
         "alt_lang": "Choose the language"
+    },
+    "main": {
+        "hello": "Hello, I am",
+        "william": "William Fargues",
+        "developer": "Engineer and web developer",
+        "work_1": "In my work, I place great importance on rigor and quality. Currently working at",
+        "work_2": "in Colomiers"
     }
 }

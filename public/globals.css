@@ -52,3 +52,7 @@
     }
 }
 
+::selection {
+  @apply bg-foreground;
+  @apply text-background;
+}

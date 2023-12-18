@@ -46,6 +46,15 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))"
         }
+      },
+      keyframes: {
+        appearance: {
+          "0%": { opacity: "0", transform: "translateY(100px)" },
+          "100%": { opacity: "1", transform: "translateY(0px)" }
+        }
+      },
+      animation: {
+        appearance: "appearance 1s"
       }
     }
   },
