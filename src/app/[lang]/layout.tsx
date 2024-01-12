@@ -1,7 +1,7 @@
 import "@/public/globals.css"
 import { ReactNode } from "react"
 import { ThemeProvider } from "@/components/client/common/ThemeProvider"
-import { Topography } from "@/components/server/common/Topography"
+import { Topography } from "@/components/client/common/Topography"
 import { i18n, Locale } from "@/root/i18n-config"
 import { getTranslation } from "@/utils/common/getTranslations"
 import { gabarito, sfmono } from "@/utils/lib/next/fonts"
@@ -23,10 +23,10 @@ export default function RootLayout({ children, params }: { children: ReactNode; 
     <html lang={params.lang} suppressHydrationWarning>
       <body className={`${gabarito.variable} ${sfmono.variable} bg-foreground/5 font-gabarito`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <main className="relative">
+          <div className="relative">
             <Topography />
             {children}
-          </main>
+          </div>
         </ThemeProvider>
       </body>
     </html>

@@ -1,7 +1,4 @@
 {
-    "products": {
-        "cart": "Add to Cart"
-    },
     "metadata": {
         "description": "William Fargues is a software engineer."
     },
@@ -18,5 +15,16 @@
         "developer": "Engineer and web developer",
         "work_1": "In my work, I place great importance on rigor and quality. Currently working at",
         "work_2": "in Colomiers"
+    },
+    "about_me": {
+        "paragraph1": "Bonjour ! Je m’appelle William et j’aime créer des expériences sur internet. Depuis que j’ai commencé à travaillé sur des projets en école d’ingénieurs, mon intérêt pour le code n’a pas arrêté de grandir et aujourd’hui plus que jamais j’adore m’améliorer, progresser et proposer un travail de plus en plus qualitatif.",
+        "paragraph2": "Depuis que je code, j’ai pu découvrir un certain nombre de technologies. Après avoir touché à de la programmation embarquée, du mobile natif et du web, j’oriente aujourd’hui ma carrière et mes projets autour de la technologie que me tient le plus à cœur, le développement web (surtout le frontend).",
+        "paragraph3": "Après avoir été salarié dans des Grandes entreprises et des PME, je propose aujourd’hui mes services en tant que freelance.",
+        "listTitle": "D’autres informations à propos de moi:",
+        "listElements": [
+            "J’ai 27 ans",
+            "J’ai 4 ans d’expérience dans le monde professionnel",
+            "J’habite à Colomiers en France"
+        ]
     }
 }

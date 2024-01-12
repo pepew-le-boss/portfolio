@@ -7,9 +7,9 @@ import { Locale } from "@/root/i18n-config"
 import { debounce } from "@/utils/common/debounce"
 import { getTranslation } from "@/utils/common/getTranslations"
 import { cn } from "@/utils/lib/tailwind/cn"
-import { Icon } from "../../common/Icon"
-import { HeaderLink } from "./HeaderLink"
-import { HeaderMenuSheet } from "./HeaderMenuSheet"
+import { Icon } from "../../../server/common/Icon"
+import { HeaderLink } from "../../../server/feature/header/HeaderLink"
+import { HeaderMenuSheet } from "../../../server/feature/header/HeaderMenuSheet"
 
 interface HeaderProps {
   lang: Locale
