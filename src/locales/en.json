@@ -9,7 +9,7 @@
         "contact": "contact",
         "alt_lang": "Choose the language"
     },
-    "main": {
+    "cover_page": {
         "hello": "Hello, I am",
         "william": "William Fargues",
         "developer": "Engineer and web developer",
