@@ -1,4 +1,3 @@
-import Link from "next/link"
 import { Header } from "@/components/client/feature/header/Header"
 import { Section } from "@/components/server/common/Section"
 import { AboutMe } from "@/components/server/feature/about-me/AboutMe"

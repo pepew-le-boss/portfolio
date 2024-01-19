@@ -36,33 +36,49 @@ export function Header({ lang, headerTranslations }: HeaderProps) {
 
   return (
     <header
-      className={cn("fixed left-0 right-0 flex justify-between border-b border-b-transparent px-5 py-5 transition-all duration-300 sm:px-10", {
+      className={cn("fixed left-0 right-0 z-10 flex justify-between border-b border-b-transparent px-5 py-5 transition-all duration-300 sm:px-10", {
         "border-b-border bg-background py-4": hasPageScrolled
       })}
     >
-      <Icon name="logo" className="h-9 w-9 text-primary" />
+      <Icon name="logo" className="animate-appearance-left h-9 w-9 text-primary opacity-0 fill-mode-forwards [animation-delay:0.1s] " />
       <div className="flex items-center gap-6 lg:gap-20">
         <nav className="hidden lg:block">
           <ul className="flex items-center gap-8">
             <li>
-              <HeaderLink number="01" text={headerTranslations.about} />
+              <HeaderLink
+                number="01"
+                text={headerTranslations.about}
+                className="animate-appearance-right opacity-0 fill-mode-forwards [animation-delay:0.1s]"
+              />
             </li>
             <li>
-              <HeaderLink number="02" text={headerTranslations.work} />
+              <HeaderLink number="02" text={headerTranslations.work} className="animate-appearance-right opacity-0 fill-mode-forwards [animation-delay:0.2s]" />
             </li>
             <li>
-              <HeaderLink number="03" text={headerTranslations.projects} />
+              <HeaderLink
+                number="03"
+                text={headerTranslations.projects}
+                className="animate-appearance-right opacity-0 fill-mode-forwards [animation-delay:0.3s]"
+              />
             </li>
             <li>
-              <HeaderLink number="04" text={headerTranslations.contact} />
+              <HeaderLink
+                number="04"
+                text={headerTranslations.contact}
+                className="animate-appearance-right opacity-0 fill-mode-forwards [animation-delay:0.4s]"
+              />
             </li>
           </ul>
         </nav>
         <div className="flex gap-6">
-          <LocaleSwitcher lang={lang} altImage={headerTranslations.alt_lang} />
-          <ThemeSwitcher />
+          <LocaleSwitcher
+            lang={lang}
+            altImage={headerTranslations.alt_lang}
+            className="animate-appearance-right opacity-0 fill-mode-forwards [animation-delay:0.1s] lg:[animation-delay:0.5s]"
+          />
+          <ThemeSwitcher className="animate-appearance-right opacity-0 fill-mode-forwards [animation-delay:0.2s] lg:[animation-delay:0.6s]" />
         </div>
-        <HeaderMenuSheet headerTranslations={headerTranslations} />
+        <HeaderMenuSheet headerTranslations={headerTranslations} className="animate-appearance-right opacity-0 fill-mode-forwards [animation-delay:0.3s]" />
       </div>
     </header>
   )

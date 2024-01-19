@@ -1,15 +1,17 @@
 import { Sheet, SheetContent, SheetTrigger } from "@/components/client/common/Sheet"
 import { Translations } from "@/utils/common/getTranslations"
+import { cn } from "@/utils/lib/tailwind/cn"
 import { HeaderLink } from "./HeaderLink"
 
 interface HeaderMenuSheetProps {
   headerTranslations: Translations["header"]
+  className?: string
 }
 
-export function HeaderMenuSheet({ headerTranslations }: HeaderMenuSheetProps) {
+export function HeaderMenuSheet({ headerTranslations, className }: HeaderMenuSheetProps) {
   return (
     <Sheet>
-      <SheetTrigger className="group flex flex-col gap-2 p-2 transition-all hover:-rotate-45 lg:hidden">
+      <SheetTrigger className={cn("group flex flex-col gap-2 p-2 transition-all hover:-rotate-45 lg:hidden", className)}>
         <span className="h-[2px] w-6 bg-foreground transition-all group-hover:translate-x-1"></span>
         <span className="h-[2px] w-6 bg-foreground transition-all group-hover:-translate-x-1"></span>
       </SheetTrigger>

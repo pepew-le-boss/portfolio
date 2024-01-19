@@ -9,9 +9,6 @@ const config: Config = {
         gabarito: ["var(--font-gabarito)"],
         sfmono: ["var(--font-sfmono)"]
       },
-      backgroundImage: {
-        "topography-pattern": "url('./icons/topography_pattern.svg')"
-      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -48,13 +45,23 @@ const config: Config = {
         }
       },
       keyframes: {
-        appearance: {
+        "appearance-bottom": {
           "0%": { opacity: "0", transform: "translateY(100px)" },
           "100%": { opacity: "1", transform: "translateY(0px)" }
+        },
+        "appearance-left": {
+          "0%": { opacity: "0", transform: "translateX(-100px)" },
+          "100%": { opacity: "1", transform: "translateX(0px)" }
+        },
+        "appearance-right": {
+          "0%": { opacity: "0", transform: "translateX(100px)" },
+          "100%": { opacity: "1", transform: "translateX(0px)" }
         }
       },
       animation: {
-        appearance: "appearance 1s"
+        "appearance-bottom": "appearance-bottom 1s",
+        "appearance-left": "appearance-left 1s",
+        "appearance-right": "appearance-right 1s"
       }
     }
   },
