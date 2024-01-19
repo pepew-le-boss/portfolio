@@ -18,12 +18,12 @@ export const sfmono = localFont({
       style: "italic"
     }
   ],
-  display: "swap",
+  display: "block",
   variable: "--font-sfmono"
 })
 
 export const gabarito = localFont({
   src: "../../../../public/fonts/Gabarito/GabaritoVariable.woff2",
-  display: "swap",
+  display: "block",
   variable: "--font-gabarito"
 })
