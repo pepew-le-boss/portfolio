@@ -19,7 +19,7 @@ export function CoverPage({ coverPageTranslations }: CoverPageProps) {
           {coverPageTranslations.developer}.
         </span>
       </h1>
-      <h2 className="animate-appearance-bottom max-w-prose text-[clamp(1rem,5vw,1.25rem)] font-normal leading-tight text-muted-foreground opacity-0 fill-mode-forwards [animation-delay:0.4s]">
+      <h2 className="max-w-prose animate-appearance-bottom text-[clamp(1rem,5vw,1.25rem)] font-normal leading-tight text-muted-foreground opacity-0 fill-mode-forwards [animation-delay:0.4s]">
         {coverPageTranslations.work_1}{" "}
         <Link
           href="https://www.linkedin.com/company/bébé-boutik/"

@@ -4,16 +4,16 @@ import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/client/common/DropDownMenu"
+import { Icon } from "@/components/server/common/Icon"
 import { i18n, Locale } from "@/root/i18n-config"
 import { cn } from "@/utils/lib/tailwind/cn"
 
 interface LocaleSwitcherProps {
   lang: Locale
-  altImage: string
   className?: string
 }
 
-export default function LocaleSwitcher({ lang, altImage, className }: LocaleSwitcherProps) {
+export default function LocaleSwitcher({ lang, className }: LocaleSwitcherProps) {
   const pathName = usePathname()
 
   const redirectedPathName = (locale: string) => {
@@ -31,7 +31,7 @@ export default function LocaleSwitcher({ lang, altImage, className }: LocaleSwit
           className
         )}
       >
-        <Image alt={`${altImage} ${lang}`} src={`/images/${lang}.png`} width={24} height={24} className="h-auto w-6 transition-all" />
+        <Icon name={`lang_${lang}`} className="h-auto w-6 text-primary-foreground" />
       </DropdownMenuTrigger>
       <DropdownMenuContent className="p-1" onCloseAutoFocus={(event) => event.preventDefault()} onFocusOutside={(event) => event.preventDefault()}>
         {i18n.locales
@@ -43,7 +43,7 @@ export default function LocaleSwitcher({ lang, altImage, className }: LocaleSwit
               asChild
             >
               <Link href={redirectedPathName(locale)}>
-                <Image alt={`${altImage} ${lang}`} src={`/images/${locale}.png`} width={24} height={24} className="h-auto w-6" />
+                <Icon name={`lang_${locale}`} className="h-auto w-6 text-primary-foreground" />
               </Link>
             </DropdownMenuItem>
           ))}
