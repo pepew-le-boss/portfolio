@@ -1,10 +1,8 @@
 "use client"
 
-import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/client/common/DropDownMenu"
-import { Icon } from "@/components/server/common/Icon"
 import { i18n, Locale } from "@/root/i18n-config"
 import { cn } from "@/utils/lib/tailwind/cn"
 
@@ -27,11 +25,11 @@ export default function LocaleSwitcher({ lang, className }: LocaleSwitcherProps)
     <DropdownMenu modal={false}>
       <DropdownMenuTrigger
         className={cn(
-          "group grid h-8 w-8 place-items-center rounded-full bg-primary transition-all hover:scale-110 focus:ring-2 focus:ring-ring focus:ring-offset-2",
+          "group grid h-8 w-8 place-items-center rounded-full bg-primary transition-all hover:ring-2 hover:ring-ring hover:ring-offset-2 hover:ring-offset-background focus:ring-2 focus:ring-ring focus:ring-offset-2",
           className
         )}
       >
-        <Icon name={`lang_${lang}`} className="h-auto w-6 text-primary-foreground" />
+        <span className="text-base text-primary-foreground">{lang}</span>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="p-1" onCloseAutoFocus={(event) => event.preventDefault()} onFocusOutside={(event) => event.preventDefault()}>
         {i18n.locales
@@ -39,11 +37,11 @@ export default function LocaleSwitcher({ lang, className }: LocaleSwitcherProps)
           .map((locale: Locale) => (
             <DropdownMenuItem
               key={locale}
-              className="grid h-8 w-8 place-items-center rounded-full bg-primary transition-all data-[highlighted]:scale-110"
+              className="grid h-8 w-8 place-items-center rounded-full bg-primary transition-all hover:ring-2 hover:ring-ring hover:ring-offset-2 hover:ring-offset-background"
               asChild
             >
               <Link href={redirectedPathName(locale)}>
-                <Icon name={`lang_${locale}`} className="h-auto w-6 text-primary-foreground" />
+                <span className="mb-0.5 text-base text-primary-foreground">{locale}</span>
               </Link>
             </DropdownMenuItem>
           ))}
