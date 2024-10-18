@@ -40,7 +40,7 @@ export function Header({ lang, headerTranslations }: HeaderProps) {
         "border-b-border bg-background py-4": hasPageScrolled
       })}
     >
-      <Icon name="logo" className="h-9 w-9 animate-appearance-left text-primary opacity-0 fill-mode-forwards [animation-delay:0.3s] " />
+      <Icon name="logo" className="h-9 w-9 animate-appearance-left text-foreground opacity-0 fill-mode-forwards [animation-delay:0.3s] " />
       <div className="flex items-center gap-6 lg:gap-20">
         <nav className="hidden lg:block">
           <ul className="flex items-center gap-8">

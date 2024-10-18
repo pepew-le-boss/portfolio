@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { Icon } from "@/components/server/common/Icon"
 import { Translations } from "@/utils/common/getTranslations"
 
 interface CoverPageProps {
@@ -7,7 +8,7 @@ interface CoverPageProps {
 
 export function CoverPage({ coverPageTranslations }: CoverPageProps) {
   return (
-    <div className="grid h-[calc(100vh_-_10rem)] content-center justify-center gap-5">
+    <div className="relative grid h-[calc(100vh_-_10rem)] content-center justify-center gap-5">
       <span className="animate-appearance-bottom font-sfmono text-[clamp(1rem,5vw,1.25rem)] font-semibold text-muted-foreground opacity-0 fill-mode-forwards [animation-delay:0.1s]">
         {coverPageTranslations.hello}
       </span>
@@ -30,6 +31,10 @@ export function CoverPage({ coverPageTranslations }: CoverPageProps) {
         </Link>{" "}
         {coverPageTranslations.work_2}.
       </h2>
+      <Icon
+        name="scroll_down"
+        className="absolute bottom-0 left-1/2 h-8 w-auto -translate-x-1/2 animate-appearance-bottom text-muted-foreground opacity-0 fill-mode-forwards [animation-delay:3s]"
+      />
     </div>
   )
 }

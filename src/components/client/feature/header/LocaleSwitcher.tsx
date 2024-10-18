@@ -25,11 +25,11 @@ export default function LocaleSwitcher({ lang, className }: LocaleSwitcherProps)
     <DropdownMenu modal={false}>
       <DropdownMenuTrigger
         className={cn(
-          "group grid h-8 w-8 place-items-center rounded-full bg-primary transition-all hover:ring-2 hover:ring-ring hover:ring-offset-2 hover:ring-offset-background focus:ring-2 focus:ring-ring focus:ring-offset-2",
+          "group grid h-8 w-8 place-items-center rounded-full bg-foreground transition-all hover:ring-2 hover:ring-ring hover:ring-offset-2 hover:ring-offset-background focus:ring-2 focus:ring-ring focus:ring-offset-2",
           className
         )}
       >
-        <span className="text-base text-primary-foreground">{lang}</span>
+        <span className="text-base text-background">{lang}</span>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="p-1" onCloseAutoFocus={(event) => event.preventDefault()} onFocusOutside={(event) => event.preventDefault()}>
         {i18n.locales
@@ -37,11 +37,11 @@ export default function LocaleSwitcher({ lang, className }: LocaleSwitcherProps)
           .map((locale: Locale) => (
             <DropdownMenuItem
               key={locale}
-              className="grid h-8 w-8 place-items-center rounded-full bg-primary transition-all hover:ring-2 hover:ring-ring hover:ring-offset-2 hover:ring-offset-background"
+              className="grid h-8 w-8 place-items-center rounded-full bg-foreground transition-all hover:ring-2 hover:ring-ring hover:ring-offset-2 hover:ring-offset-background"
               asChild
             >
               <Link href={redirectedPathName(locale)}>
-                <span className="mb-0.5 text-base text-primary-foreground">{locale}</span>
+                <span className="mb-0.5 text-base text-background">{locale}</span>
               </Link>
             </DropdownMenuItem>
           ))}
