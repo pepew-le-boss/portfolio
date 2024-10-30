@@ -42,7 +42,7 @@ const SheetContent = React.forwardRef<React.ElementRef<typeof SheetPrimitive.Con
     >
       {children}
       <SheetPrimitive.Close className="absolute right-4 top-4 rounded-sm opacity-70 transition-opacity hover:opacity-100 disabled:pointer-events-none data-[state=open]:bg-secondary">
-        <Icon name="close" className="h-auto w-6 text-foreground" />
+        <Icon.Close className="h-auto w-6 text-foreground" />
       </SheetPrimitive.Close>
     </SheetPrimitive.Content>
   </SheetPortal>

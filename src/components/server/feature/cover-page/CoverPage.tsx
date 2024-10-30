@@ -31,10 +31,7 @@ export function CoverPage({ coverPageTranslations }: CoverPageProps) {
         </Link>{" "}
         {coverPageTranslations.work_2}.
       </h2>
-      <Icon
-        name="scroll_down"
-        className="absolute bottom-0 left-1/2 h-8 w-auto -translate-x-1/2 animate-appearance-bottom text-muted-foreground opacity-0 fill-mode-forwards [animation-delay:3s]"
-      />
+      <Icon.ScrollDown className="absolute bottom-0 left-1/2 h-8 w-auto -translate-x-1/2 animate-appearance-bottom text-muted-foreground opacity-0 fill-mode-forwards [animation-delay:3s]" />
     </div>
   )
 }
