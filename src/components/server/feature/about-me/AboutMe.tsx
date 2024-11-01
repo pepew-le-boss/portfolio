@@ -1,5 +1,6 @@
 import Image from "next/image"
 import profilePic from "/public/images/me.webp"
+import { SectionTitle } from "@/components/server/common/SectionTitle"
 import { StatCard } from "@/components/server/feature/about-me/StatCard"
 import { Translations } from "@/utils/common/getTranslations"
 
@@ -12,11 +13,7 @@ export function AboutMe({ content }: AboutMeProps) {
     <section className="flex flex-col gap-10 self-center 2xl:flex-row">
       <div className="flex flex-col overflow-hidden rounded-2xl border-2 border-muted-foreground bg-background lg:grid lg:grid-cols-[2fr,1fr]">
         <div className="flex flex-col gap-10 p-10">
-          <h3 className="flex items-end">
-            <span className="mb-[2px] font-sfmono text-xl font-semibold text-muted-foreground">01.</span>
-            <span className="whitespace-nowrap text-3xl font-semibold text-foreground">À propos de moi</span>
-            <span className="ml-5 h-[1px] w-full self-center bg-muted-foreground"></span>
-          </h3>
+          <SectionTitle number="01" title="À propos de moi" />
           <div className="max-w-prose text-base text-foreground md:text-lg">
             <p>
               {content.paragraph1}

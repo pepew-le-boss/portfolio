@@ -1,5 +1,6 @@
 import { Header } from "@/components/client/feature/header/Header"
 import { AboutMe } from "@/components/server/feature/about-me/AboutMe"
+import { Career } from "@/components/server/feature/career/Career"
 import { CoverPage } from "@/components/server/feature/cover-page/CoverPage"
 import { Locale } from "@/root/i18n-config"
 import { getTranslation } from "@/utils/common/getTranslations"
@@ -13,9 +14,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
       <main className="flex flex-col gap-40 px-5 py-20 sm:px-10 lg:px-20">
         <CoverPage coverPageTranslations={translations.cover_page} />
         <AboutMe content={translations.about_me} />
-        <div>Section 1</div>
-        <div>Section 2</div>
-        <div>Section 3</div>
+        <Career />
       </main>
     </div>
   )
