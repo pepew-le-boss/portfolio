@@ -27,5 +27,33 @@
             "J’ai 4 ans d’expérience dans le monde professionnel",
             "J’habite à Colomiers en France"
         ]
+    },
+    "career": {
+        "experiences": [
+            {
+                "range": "2022 - present",
+                "title": "Bébéboutik",
+                "company": "Ingénieur développeur sénior frontend web",
+                "description": "Bébéboutik est un site de ventes privées dans la petite enfance. Ma mission est constituée de principalement deux objectifs: Créer une marketplace Bébéboutik et faire une migration du site de ventes privées de Prestashop à NextJS Nous sommes deux développeurs sur le frontend."
+            },
+            {
+                "range": "2020 - 2022",
+                "title": "Sopra Steria",
+                "company": "Ingénieur développeur web",
+                "description": "Il s'agit du projet Ecomode visant à faciliter et améliorer l'écomobilté au sein de la région Occitanie (vous pouvez retrouver l'application sur les stores Android et iOS, plus d'informations ici https://www.ecomode.fr/). Il s'agit d'une application mobile grand public construite en React Native et de deux applications web de gestion et d'administration réalisées en ReactJS. Le backend est une architecture micro services utilisant différentes technologies comme NodeJS, ExpressJS, TypeORM, Kafka et PostgreSQL (pour citer les plus importantes. En tant que développeur sur ce projet je travaille en majorité sur la partie frontend (environ 70% contre 30% de mon temps sur du backend). Concernant la gestion de projet, nous utilisons la méthodologie Agile Scrum ainsi que JIRA. Nos services et applications sont stockés sur GitLab."
+            },
+            {
+                "range": "2019 - 2020",
+                "title": "Sopra Steria",
+                "company": "Ingénieur développeur web",
+                "description": "Différents projets réalisés au sein d'un service appelé la \"Factory\". La majeure partie de ces projets sont des POCs (Proof Of Concept) réalisés pour différents clients dans une durée allant de plusieurs semaines à environ 3 mois pour les plus longs. Dans l'ordre:- Application mobile native iOS: Utilisation de Swift - Application web permettant de gérer et visualiser des beacons Bluetooth: Utilisation d'Angular et d'AWS - Application mobile native Android permettant de scanner des couleurs LEDs pour en comprendre des codes d'erreur serveur: Utilisation de Kotlin - Application web 3D permettant de visualiser en temps réels les avions dans une zone géographique donnée: Utilisation de ThreeJS - Application web permettant d'enregistrer les entrées et venues dans des bâtiments (dans le cadre du Covid 19): Utilisation de ReactJS et Azure"
+            },
+            {
+                "range": "2019 - 2019",
+                "title": "Expleo Group",
+                "company": "Ingénieur Stagiaire Développement Web",
+                "description": "La mission principale de l'entreprise concernant ce projet, est la refonte d'une application web en interne. Celle-ci sert de plateforme de gestion de projets pour les collaborateurs et les clients de l'entreprise. Dans le cadre de mon stage, je dois : - Mettre à jour les librairies et corriger les erreurs qui vont être engendrées par cela - Faire une refonte graphique complète de l'interface en me basant sur une maquette d'un web designer Les technologies que j'utilise sont : Front-End: HTML, CSS, Bootstrap 4, jQuery Back-End: PHP(ZendFramework), PostgreSQL Environnement de travail: SVN (équivalent de Git), Figma (outil de maquettage), PHPStorm (IDE), Outlook"
+            }
+        ]
     }
 }
