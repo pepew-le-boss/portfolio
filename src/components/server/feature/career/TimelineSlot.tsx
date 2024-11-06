@@ -27,7 +27,22 @@ export function TimelineSlot({ experience, index }: TimelineSlotProps) {
           <div className="text-2xl font-semibold">{experience.title}</div>
           <div className="text-lg text-muted-foreground">{experience.company}</div>
         </div>
-        <div>{experience.description}</div>
+        <div>
+          {experience.description.map((block, index) => {
+            if (typeof block === "string") {
+              return <p key={index}>{block}</p>
+            }
+            if (typeof block === "object") {
+              return (
+                <ul key={index} className="list-disc pl-5">
+                  {block.map((item, itemIdx) => (
+                    <li key={itemIdx}>{item}</li>
+                  ))}
+                </ul>
+              )
+            }
+          })}
+        </div>
         <div className="mt-2 flex gap-2">
           <div className="rounded-full bg-foreground px-2 py-0.5 font-sfmono text-xs text-background">NextJS</div>
           <div className="rounded-full bg-foreground px-2 py-0.5 font-sfmono text-xs text-background">ReactJS</div>
