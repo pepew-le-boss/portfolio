@@ -41,6 +41,16 @@
                         "Faire une migration du site de ventes privées de Prestashop à NextJS"
                     ],
                     "Nous sommes deux développeurs sur le frontend."
+                ],
+                "technologies": [
+                    "NextJS",
+                    "ReactJS",
+                    "TailwindCSS",
+                    "React Native",
+                    "GraphQL",
+                    "NodeJS",
+                    "ExpressJS",
+                    "Redis"
                 ]
             },
             {
@@ -54,6 +64,14 @@
                         "ReactJS pour les applications web de gestion et administration",
                         "NodeJS, ExpressJS, TypeORM, Kafka et PostgreSQL pour le backend"
                     ]
+                ],
+                "technologies": [
+                    "ReactJS",
+                    "React Native",
+                    "PostgreSQL",
+                    "NodeJS",
+                    "ExpressJS",
+                    "Kafka"
                 ]
             },
             {
@@ -69,6 +87,15 @@
                         "Application web 3D: Utilisation de ThreeJS pour visualiser des avions en temps réel",
                         "Application web de gestion d'entrées et sorties: Utilisation de ReactJS et Azure"
                     ]
+                ],
+                "technologies": [
+                    "Angular",
+                    "AWS",
+                    "Kotlin",
+                    "Swift",
+                    "ThreeJS",
+                    "ReactJS",
+                    "Azure"
                 ]
             },
             {
@@ -82,6 +109,14 @@
                         "Faire une refonte graphique complète de l'interface selon une maquette"
                     ],
                     "Technologies utilisées: HTML, CSS, Bootstrap 4, jQuery, PHP(ZendFramework), PostgreSQL"
+                ],
+                "technologies": [
+                    "HTML",
+                    "CSS",
+                    "Bootstrap",
+                    "jQuery",
+                    "PHP(ZendFramework)",
+                    "PostgreSQL"
                 ]
             }
         ]

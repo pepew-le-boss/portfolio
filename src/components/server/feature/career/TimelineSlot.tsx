@@ -28,26 +28,27 @@ export function TimelineSlot({ experience, index }: TimelineSlotProps) {
           <div className="text-lg text-muted-foreground">{experience.company}</div>
         </div>
         <div>
-          {experience.description.map((block, index) => {
+          {experience.description.map((block) => {
             if (typeof block === "string") {
-              return <p key={index}>{block}</p>
+              return <p key={block}>{block}</p>
             }
             if (typeof block === "object") {
               return (
                 <ul key={index} className="list-disc pl-5">
-                  {block.map((item, itemIdx) => (
-                    <li key={itemIdx}>{item}</li>
+                  {block.map((item) => (
+                    <li key={item}>{item}</li>
                   ))}
                 </ul>
               )
             }
           })}
         </div>
-        <div className="mt-2 flex gap-2">
-          <div className="rounded-full bg-foreground px-2 py-0.5 font-sfmono text-xs text-background">NextJS</div>
-          <div className="rounded-full bg-foreground px-2 py-0.5 font-sfmono text-xs text-background">ReactJS</div>
-          <div className="rounded-full bg-foreground px-2 py-0.5 font-sfmono text-xs text-background">Typescript</div>
-          <div className="rounded-full bg-foreground px-2 py-0.5 font-sfmono text-xs text-background">GraphQL</div>
+        <div className="mt-2 flex flex-wrap gap-2">
+          {experience.technologies.map((technologie) => (
+            <div key={technologie} className="whitespace-nowrap rounded-full bg-foreground px-2 py-0.5 font-sfmono text-xs text-background">
+              {technologie}
+            </div>
+          ))}
         </div>
       </div>
     </div>
