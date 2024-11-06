@@ -24,7 +24,7 @@ export function TimelineSlot({ experience, index }: TimelineSlotProps) {
       <div className="flex flex-1 flex-col gap-4 rounded-2xl border-2 border-muted-foreground bg-background px-5 py-2.5 lg:px-10 lg:py-5">
         <div className="text-sm uppercase text-muted-foreground">{experience.range}</div>
         <div className="flex flex-col">
-          <div className="text-2xl font-semibold">{experience.title}</div>
+          <div className="text-2xl font-semibold leading-tight">{experience.title}</div>
           <div className="text-lg text-muted-foreground">{experience.company}</div>
         </div>
         <div>

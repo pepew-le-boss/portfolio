@@ -32,8 +32,8 @@
         "experiences": [
             {
                 "range": "2022 - present",
-                "title": "Bébéboutik",
-                "company": "Ingénieur développeur sénior frontend web",
+                "title": "Ingénieur développeur sénior frontend web",
+                "company": "Bébéboutik",
                 "description": [
                     "Bébéboutik est un site de ventes privées dans la petite enfance. Ma mission est constituée de principalement deux objectifs:",
                     [
@@ -55,8 +55,8 @@
             },
             {
                 "range": "2020 - 2022",
-                "title": "Sopra Steria",
-                "company": "Ingénieur développeur web",
+                "title": "Ingénieur développeur web",
+                "company": "Sopra Steria",
                 "description": [
                     "Il s'agit du projet Ecomode visant à faciliter et améliorer l'écomobilté au sein de la région Occitanie.",
                     [
@@ -76,8 +76,8 @@
             },
             {
                 "range": "2019 - 2020",
-                "title": "Sopra Steria",
-                "company": "Ingénieur développeur web",
+                "title": "Ingénieur développeur web",
+                "company": "Sopra Steria",
                 "description": [
                     "Différents projets réalisés au sein d'un service appelé la \"Factory\".",
                     [
@@ -100,8 +100,8 @@
             },
             {
                 "range": "2019 - 2019",
-                "title": "Expleo Group",
-                "company": "Ingénieur Stagiaire Développement Web",
+                "title": "Ingénieur Stagiaire Développement Web",
+                "company": "Expleo Group",
                 "description": [
                     "Refonte d'une application web interne servant de plateforme de gestion de projets.",
                     [
