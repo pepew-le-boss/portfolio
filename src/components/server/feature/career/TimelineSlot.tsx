@@ -1,3 +1,4 @@
+import { TechnologyChips } from "@/components/server/common/TechnologyChips"
 import type { Translations } from "@/utils/common/getTranslations"
 import { cn } from "@/utils/lib/tailwind/cn"
 
@@ -44,10 +45,8 @@ export function TimelineSlot({ experience, index }: TimelineSlotProps) {
           })}
         </div>
         <div className="mt-2 flex flex-wrap gap-2">
-          {experience.technologies.map((technologie) => (
-            <div key={technologie} className="whitespace-nowrap rounded-full bg-foreground px-2 py-0.5 font-sfmono text-xs text-background">
-              {technologie}
-            </div>
+          {experience.technologies.map((technology) => (
+            <TechnologyChips key={technology} technology={technology} />
           ))}
         </div>
       </div>
