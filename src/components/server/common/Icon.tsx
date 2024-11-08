@@ -3,6 +3,11 @@
 type IconProps = React.HTMLAttributes<SVGElement>
 
 export const Icon = {
+  Arrow: (props: IconProps) => (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" {...props}>
+      <path fill="none" stroke="currentColor" d="M7.979 12.979v-10m3.5 3.25l-3.5-3.5l-3.5 3.5" />
+    </svg>
+  ),
   Close: (props: IconProps) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
       <path
