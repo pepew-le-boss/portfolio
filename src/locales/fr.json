@@ -120,5 +120,8 @@
                 ]
             }
         ]
+    },
+    "projects": {
+        "title": "Projets sur lesquels j'ai travaillé"
     }
 }
