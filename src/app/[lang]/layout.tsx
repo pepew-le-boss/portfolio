@@ -32,3 +32,8 @@ export default function RootLayout({ children, params }: { children: ReactNode; 
     </html>
   )
 }
+
+// refacto about me en cards: le texte dans une card au dessus des deux stats cards chiffres et ma photo à droite de ça et au dessus de la stat card à l'écoute du besoin
+// refaire les titres des sections avec des chips (pourquoi pas sous titre aussi) cf: Knives Producer Website et Cal.com
+// Créer une section mes technologies phares, cf: Maquette Brooks
+// refaire le header ? cd: Knives Producer Website et Architecture Agency

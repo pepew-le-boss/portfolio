@@ -8,12 +8,16 @@ interface SectionProps {
 
 export function Section({ number, title, children }: SectionProps) {
   return (
-    <section className="flex flex-col gap-10">
-      <h3 className="flex items-end">
-        <span className="mb-[2px] font-sfmono text-xl font-semibold text-muted-foreground">{number}.</span>
-        <span className="whitespace-nowrap text-3xl font-semibold text-foreground">{title}</span>
-        <span className="ml-5 h-[1px] w-full self-center bg-muted-foreground"></span>
-      </h3>
+    <section className="flex max-w-7xl flex-col items-center gap-10">
+      <div className="flex flex-col items-center gap-5">
+        <h3 className="inline-flex items-center justify-start gap-2 rounded-full border border-foreground bg-background px-3.5 py-1 font-sfmono text-sm">
+          <span className="text-muted-foreground">{number}</span>
+          <span className="text-muted-foreground">{`//`}</span>
+          <span>{title}</span>
+        </h3>
+        <h4 className="text-4xl font-semibold text-foreground lg:text-5xl">En apprendre plus sur moi</h4>
+        <p className="max-w-md text-base text-muted-foreground lg:max-w-2xl lg:text-lg">dfksl fsdk klfjksdfk jsdkf lksdlkj</p>
+      </div>
       {children}
     </section>
   )
