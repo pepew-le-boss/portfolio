@@ -1,4 +1,4 @@
-import { SectionTitle } from "@/components/server/common/SectionTitle"
+import { Section } from "@/components/server/common/Section"
 import { Timeline } from "@/components/server/feature/career/Timeline"
 import type { Translations } from "@/utils/common/getTranslations"
 
@@ -8,9 +8,8 @@ interface CareerProps {
 
 export function Career({ translationsCareer }: CareerProps) {
   return (
-    <div className="flex flex-col gap-10">
-      <SectionTitle number="02" title="Ma carrière" isCentered={true} />
+    <Section number="02" sectionName="Ma carrière" title="En apprendre plus sur ma carrière" subtitle="Gouzi gouzi gouzi la marsupilami ehehe">
       <Timeline translationsCareer={translationsCareer} />
-    </div>
+    </Section>
   )
 }

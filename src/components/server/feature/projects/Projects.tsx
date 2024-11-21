@@ -1,4 +1,4 @@
-import { SectionTitle } from "@/components/server/common/SectionTitle"
+import { Section } from "@/components/server/common/Section"
 import type { Translations } from "@/utils/common/getTranslations"
 
 interface ProjectsProps {
@@ -7,8 +7,8 @@ interface ProjectsProps {
 
 export function Projects({ translationsProjects }: ProjectsProps) {
   return (
-    <div className="flex flex-col gap-10 px-5 py-20 sm:px-10 lg:px-20">
-      <SectionTitle number="03" title={translationsProjects.title} />
-    </div>
+    <Section number="03" sectionName="Mes projets" title="En apprendre plus sur mes projets" subtitle="Gouzi gouzi gouzi la marsupilami ehehe">
+      <p>lol</p>
+    </Section>
   )
 }
