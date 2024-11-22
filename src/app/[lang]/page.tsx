@@ -14,7 +14,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
       <Header lang={lang} headerTranslations={translations.header} />
       <main className="flex flex-col items-center gap-60 px-5 py-20 sm:px-10 lg:px-20">
         <CoverPage coverPageTranslations={translations.cover_page} />
-        <AboutMe content={translations.about_me} />
+        <AboutMe TranslationsAboutMe={translations.about_me} />
         <Career translationsCareer={translations.career} />
         <Projects translationsProjects={translations.projects} />
       </main>

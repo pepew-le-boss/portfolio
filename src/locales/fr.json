@@ -37,6 +37,7 @@
                     "Nous sommes deux développeurs sur le frontend."
                 ],
                 "technologies": [
+                    "Turborepo",
                     "NextJS",
                     "ReactJS",
                     "TailwindCSS",
@@ -116,6 +117,114 @@
         ]
     },
     "projects": {
-        "title": "Projets sur lesquels j'ai travaillé"
+        "title": "Projets sur lesquels j'ai travaillé",
+        "works": [
+            {
+                "title": "Bébéboutik | Dashboard",
+                "description": [
+                    "Il s'agit d'un dashboard destiné aux fournisseurs du site de ventes privées. Il peuvent y exécuter plusieurs actions comme:",
+                    [
+                        "Voir les ventes en cours sur le site",
+                        "Modififier les ventes en cours",
+                        "Voir les chiffres réalisés sur le site"
+                    ],
+                    "Cette platforme est réalisée en full NextJS, c'est à dire que le backend aussi est en NextJS.",
+                    "Seulement moi sur le projet."
+                ],
+                "technologies": [
+                    "Typescript",
+                    "NextJS",
+                    "ReactJS",
+                    "TailwindCSS",
+                    "MySQL",
+                    "DrizzleORM"
+                ]
+            },
+            {
+                "title": "Bébéboutik | Site web",
+                "description": [
+                    "Il s'agit de deux sites web avec une grande partie du code partagée grâce à un monorepo:",
+                    [
+                        "Le site de ventes privées",
+                        "Le site marketplace"
+                    ],
+                    "J'ai travaillé que sur la partie frontend (NextJS et GraphQL) des sites, le backend (PHP) étant géré par deux autres développeurs.",
+                    "En moyenne deux développeurs sur ce projet."
+                ],
+                "technologies": [
+                    "Turborepo",
+                    "Typescript",
+                    "NextJS",
+                    "ReactJS",
+                    "TailwindCSS",
+                    "GraphQL",
+                    "NodeJS",
+                    "ExpressJS",
+                    "Redis"
+                ]
+            },
+            {
+                "title": "Bébéboutik | Application mobile",
+                "description": [
+                    "Il s'agit de la version mobile du site de ventes privées. L'application ne partage pas le code avec le site web en revanche elle utilise le même GraphQL.",
+                    "C'est l'application mobile qui génère le plus de chiffre avec plusieurs millions de téléchargements entre l'AppStore et le PlayStore.",
+                    "L'application est réalisée exclusivement en React Native",
+                    "En moyenne deux à trois développeurs sur ce projet."
+                ],
+                "technologies": [
+                    "Typescript",
+                    "Expo",
+                    "React Native",
+                    "GraphQL",
+                    "NodeJS",
+                    "ExpressJS"
+                ]
+            },
+            {
+                "title": "Sopra Steria | Ecomode",
+                "description": [
+                    "Il s'agit de deux applications, une mobile et une web, la mobile étant la version destinée au grand public et la web étant une interface administrateur.",
+                    [
+                        "L'application mobile est réalisée en React Native",
+                        "L'application web est réalisée en ReactJS",
+                        "J'ai aussi travaillé sur le backend qui lui est une architecture en microservices en NodeJS"
+                    ],
+                    "En moyenne 4 à 8 développeurs répartis sur ces projets."
+                ],
+                "technologies": [
+                    "Typescript",
+                    "ReactJS",
+                    "Expo",
+                    "React Native",
+                    "PostgreSQL",
+                    "TypeORM",
+                    "Kafka",
+                    "NodeJS",
+                    "ExpressJS"
+                ]
+            },
+            {
+                "title": "Personel | Planidays",
+                "description": [
+                    "Planidays est une application web réalisée avec un ami sur notre temps libre. Il s'agit d'une application de planification de voyages assistée par IA.",
+                    "Nous avons tous les deux travaillé sur toutes les parties du projet:",
+                    [
+                        "L'application web en NextJS",
+                        "La partie IA avec l'API d'OpenAI et le AI SDK de Vercel",
+                        "Le backend en NextJS aussi"
+                    ],
+                    "Deux développeurs sur ce projet."
+                ],
+                "technologies": [
+                    "Typescript",
+                    "NextJS",
+                    "ReactJS",
+                    "TailwindCSS",
+                    "OpenAI",
+                    "PostgreSQL",
+                    "DrizzleORM"
+                ]
+            }
+        ]
     }
 }
