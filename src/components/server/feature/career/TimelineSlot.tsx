@@ -42,7 +42,7 @@ export function TimelineSlot({ experience, index, nbOfExperiences }: TimelineSlo
             }
             if (typeof block === "object") {
               return (
-                <ul key={index} className="list-disc pl-5">
+                <ul key={block[0]} className="list-disc pl-5">
                   {block.map((item) => (
                     <li key={item}>{item}</li>
                   ))}

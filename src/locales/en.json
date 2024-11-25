@@ -120,6 +120,8 @@
         "works": [
             {
                 "title": "Bébéboutik | Dashboard",
+                "company": "Bébéboutik",
+                "name": "Dashboard",
                 "description": [
                     "Il s'agit d'un dashboard destiné aux fournisseurs du site de ventes privées. Il peuvent y exécuter plusieurs actions comme:",
                     [
@@ -141,6 +143,8 @@
             },
             {
                 "title": "Bébéboutik | Site web",
+                "company": "Bébéboutik",
+                "name": "Site web",
                 "description": [
                     "Il s'agit de deux sites web avec une grande partie du code partagée grâce à un monorepo:",
                     [
@@ -164,6 +168,8 @@
             },
             {
                 "title": "Bébéboutik | Application mobile",
+                "company": "Bébéboutik",
+                "name": "Application mobile",
                 "description": [
                     "Il s'agit de la version mobile du site de ventes privées. L'application ne partage pas le code avec le site web en revanche elle utilise le même GraphQL.",
                     "C'est l'application mobile qui génère le plus de chiffre avec plusieurs millions de téléchargements entre l'AppStore et le PlayStore.",
@@ -181,6 +187,8 @@
             },
             {
                 "title": "Sopra Steria | Ecomode",
+                "company": "Sopra Steria",
+                "name": "Ecomode",
                 "description": [
                     "Il s'agit de deux applications, une mobile et une web, la mobile étant la version destinée au grand public et la web étant une interface administrateur.",
                     [
@@ -204,6 +212,8 @@
             },
             {
                 "title": "Personel | Planidays",
+                "company": "Personel",
+                "name": "Planidays",
                 "description": [
                     "Planidays est une application web réalisée avec un ami sur notre temps libre. Il s'agit d'une application de planification de voyages assistée par IA.",
                     "Nous avons tous les deux travaillé sur toutes les parties du projet:",
