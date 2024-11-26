@@ -236,5 +236,17 @@
                 ]
             }
         ]
+    },
+    "my_stack": {
+        "technologies": [
+            "Typescript",
+            "NextJS",
+            "ReactJS",
+            "TailwindCSS",
+            "NodeJS",
+            "DrizzleORM",
+            "PostgreSQL",
+            "MySQL"
+        ]
     }
 }

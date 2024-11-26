@@ -2,6 +2,7 @@ import { Header } from "@/components/client/feature/header/Header"
 import { AboutMe } from "@/components/server/feature/about-me/AboutMe"
 import { Career } from "@/components/server/feature/career/Career"
 import { CoverPage } from "@/components/server/feature/cover-page/CoverPage"
+import { MyStack } from "@/components/server/feature/my-stack/MyStack"
 import { Projects } from "@/components/server/feature/projects/Projects"
 import { Locale } from "@/root/i18n-config"
 import { getTranslation } from "@/utils/common/getTranslations"
@@ -17,6 +18,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
         <AboutMe TranslationsAboutMe={translations.about_me} />
         <Career translationsCareer={translations.career} />
         <Projects translationsProjects={translations.projects} />
+        <MyStack translationsMyStack={translations.my_stack} />
       </main>
     </div>
   )
