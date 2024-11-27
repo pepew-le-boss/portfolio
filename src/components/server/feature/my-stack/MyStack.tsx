@@ -9,7 +9,7 @@ interface MyStackProps {
 export function MyStack({ translationsMyStack }: MyStackProps) {
   return (
     <Section number="04" sectionName="Ma stack" title="En apprendre plus sur ma stack de technologies" subtitle="Gouzi gouzi gouzi la marsupilami ehehe">
-      <div className="grid grid-cols-4 gap-10">
+      <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 sm:gap-10 md:grid-cols-4">
         {translationsMyStack.technologies.map((technology) => (
           <TechnologyStack key={technology} technology={technology} />
         ))}

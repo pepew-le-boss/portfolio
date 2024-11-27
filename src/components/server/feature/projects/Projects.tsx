@@ -9,7 +9,7 @@ interface ProjectsProps {
 export function Projects({ translationsProjects }: ProjectsProps) {
   return (
     <Section number="03" sectionName="Mes projets" title="En apprendre plus sur mes projets" subtitle="Gouzi gouzi gouzi la marsupilami ehehe">
-      <div className="grid grid-cols-3 gap-10">
+      <div className="flex flex-wrap justify-center gap-10">
         {translationsProjects.works.map((project) => (
           <ProjectCard key={project.title} project={project} />
         ))}
