@@ -15,7 +15,7 @@ export function Marquee({ className, children, repeat = 20 }: MarqueeProps) {
       {Array(repeat)
         .fill(0)
         .map((_, i) => (
-          <div key={i} className="animate-marquee flex shrink-0 flex-row justify-around [gap:var(--gap)]">
+          <div key={i} className="flex shrink-0 animate-marquee flex-row justify-around [gap:var(--gap)]">
             {children}
           </div>
         ))}

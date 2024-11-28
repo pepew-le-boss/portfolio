@@ -247,5 +247,10 @@
             "PostgreSQL",
             "MySQL"
         ]
+    },
+    "contact": {
+        "title": "Un projet en tête ?",
+        "description": "Faisons en sorte que ce rêve devienne réalité",
+        "marquee_text": "Discutons ensemble"
     }
 }

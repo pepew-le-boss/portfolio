@@ -2,6 +2,7 @@ import { Header } from "@/components/client/feature/header/Header"
 import { Marquee } from "@/components/server/common/Marquee"
 import { AboutMe } from "@/components/server/feature/about-me/AboutMe"
 import { Career } from "@/components/server/feature/career/Career"
+import { Contact } from "@/components/server/feature/contact/Contact"
 import { CoverPage } from "@/components/server/feature/cover-page/CoverPage"
 import { MyStack } from "@/components/server/feature/my-stack/MyStack"
 import { Projects } from "@/components/server/feature/projects/Projects"
@@ -20,12 +21,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
         <Career translationsCareer={translations.career} />
         <Projects translationsProjects={translations.projects} />
         <MyStack translationsMyStack={translations.my_stack} />
-        <div className="w-screen border-y border-foreground bg-background py-2">
-          <Marquee>
-            <span className="text-sm uppercase leading-none text-foreground">DISCUTONS ENSEMBLE</span>
-            <span className="text-sm leading-none text-foreground">//</span>
-          </Marquee>
-        </div>
+        <Contact translationsContact={translations.contact} />
       </main>
     </div>
   )

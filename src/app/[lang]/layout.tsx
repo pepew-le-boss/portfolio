@@ -37,3 +37,7 @@ export default function RootLayout({ children, params }: { children: ReactNode; 
 // refaire les titres des sections avec des chips (pourquoi pas sous titre aussi) cf: Knives Producer Website et Cal.com
 // Créer une section mes technologies phares, cf: Maquette Brooks
 // refaire le header ? cd: Knives Producer Website et Architecture Agency
+// Dans la section mes projets, mettre les screens dans des mockups. cf: https://pix.framer.website/
+// Faire une animation sur les images en hover, cf: https://cal.com/fr/platform?month=2024-11&date=2024-11-28
+// Faire un effet de skew sur les cards des technos. cf: https://animata.design/docs/card/github-card-skew
+// Faire un effet de gravité en easter egg
