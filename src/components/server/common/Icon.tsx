@@ -8,6 +8,11 @@ export const Icon = {
       <path fill="none" stroke="currentColor" d="M7.979 12.979v-10m3.5 3.25l-3.5-3.5l-3.5 3.5" />
     </svg>
   ),
+  BrokenArrow: (props: IconProps) => (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
+      <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m12 4l-6 6m6-6l6 6m-6-6v10.5m0 5.5v-2.5" />
+    </svg>
+  ),
   Close: (props: IconProps) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
       <path
@@ -25,15 +30,35 @@ export const Icon = {
     </svg>
   ),
   Logo: (props: IconProps) => (
-    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <mask id="cutout-mask">
-        <rect width="48" height="48" rx="8" fill="white" />
-        <path d="M25.2212 34L19.9815 16.7313L19.1573 14H23.2784L28.6358 31.6211L26.5458 31.5037L31.1085 14H35.4651L29.9605 34H25.2212Z" fill="black" />
-        <path d="M12.5046 34L7 14H11.3272L15.9193 31.5037L13.8293 31.6211L19.1573 14H23.2784L22.4836 16.7313L17.2439 34H12.5046Z" fill="black" />
-        <path d="M31.6972 14H42V18.185H31.6972V14Z" fill="black" />
-        <path d="M30.2254 21.2981H39.0564V25.4831H30.2254V21.2981Z" fill="black" />
-      </mask>
-      <rect width="48" height="48" rx="8" fill="currentColor" mask="url(#cutout-mask)" />
+    <svg xmlns="http://www.w3.org/2000/svg" width="51" height="50" viewBox="0 0 51 50" fill="none" {...props}>
+      <path d="M0.0578613 8C0.0578613 3.58172 3.63958 0 8.05786 0H42.0579C46.4761 0 50.0579 3.58172 50.0579 8V42C50.0579 46.4183 46.4761 50 42.0579 50H8.05786C3.63958 50 0.0578613 46.4183 0.0578613 42V8Z" />
+      <path
+        d="M11.0674 33.8626L6.19556 16.1441H10.0788L13.4337 28.3409L16.7814 16.1441H20.8454L24.3515 28.9096L27.8575 16.1405H31.738L26.8712 33.8617H21.8317L18.8116 22.8777L15.8001 33.8626H11.0674Z"
+        fill="white"
+      />
+      <path d="M29.1365 33.8626L34.0008 16.1373H43.9201V19.8098H36.874L35.8586 23.5004H42.2243V27.1477H34.8577L33.0142 33.8626H29.1365Z" fill="white" />
+    </svg>
+  ),
+  LogoSlashSepareted: (props: IconProps) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="39" height="18" viewBox="0 0 39 18" fill="currentColor" {...props}>
+      <path d="M22.3195 0.275635H26.2063L21.3499 17.9923H17.4558L22.3195 0.275635Z" />
+      <path d="M23.6112 17.9923L28.4787 0.275635H32.3625L27.4951 17.9923H23.6112Z" />
+      <path
+        d="M5.54102 18L0.669922 0.285185H4.54883L7.9043 12.4805L11.248 0.285185H15.3145L18.8184 13.0508L17.4588 18H16.2988L13.2832 7.02347L10.2754 18H5.54102Z"
+        fill="transparent"
+      />
+      <path
+        d="M32.3564 0.275635H38.3875V3.94141H31.3492L30.3333 7.63866H36.6934V11.2852H29.3314L30.3333 7.63866L31.3492 3.94141L32.3564 0.275635Z"
+        fill="transparent"
+      />
+    </svg>
+  ),
+  LogoWithoutBg: (props: IconProps) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="39" height="18" viewBox="0 0 39 18" fill="currentColor" {...props}>
+      <path d="M22.3195 0.275635H26.2063L21.3499 17.9923H17.4558L22.3195 0.275635Z" />
+      <path d="M23.6112 17.9923L28.4787 0.275635H32.3625L27.4951 17.9923H23.6112Z" />
+      <path d="M5.54102 18L0.669922 0.285185H4.54883L7.9043 12.4805L11.248 0.285185H15.3145L18.8184 13.0508L17.4588 18H16.2988L13.2832 7.02347L10.2754 18H5.54102Z" />
+      <path d="M32.3564 0.275635H38.3875V3.94141H31.3492L30.3333 7.63866H36.6934V11.2852H29.3314L30.3333 7.63866L31.3492 3.94141L32.3564 0.275635Z" />
     </svg>
   ),
   Moon: (props: IconProps) => (

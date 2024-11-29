@@ -1,9 +1,9 @@
 import { Header } from "@/components/client/feature/header/Header"
-import { Marquee } from "@/components/server/common/Marquee"
 import { AboutMe } from "@/components/server/feature/about-me/AboutMe"
 import { Career } from "@/components/server/feature/career/Career"
 import { Contact } from "@/components/server/feature/contact/Contact"
 import { CoverPage } from "@/components/server/feature/cover-page/CoverPage"
+import { Footer } from "@/components/server/feature/footer/Footer"
 import { MyStack } from "@/components/server/feature/my-stack/MyStack"
 import { Projects } from "@/components/server/feature/projects/Projects"
 import { Locale } from "@/root/i18n-config"
@@ -23,6 +23,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
         <MyStack translationsMyStack={translations.my_stack} />
         <Contact translationsContact={translations.contact} />
       </main>
+      <Footer />
     </div>
   )
 }
