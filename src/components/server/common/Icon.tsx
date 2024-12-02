@@ -10,7 +10,7 @@ export const Icon = {
   ),
   BrokenArrow: (props: IconProps) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
-      <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m12 4l-6 6m6-6l6 6m-6-6v10.5m0 5.5v-2.5" />
+      <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m12 4l-6 6m6-6l6 6m-6-6v10.5m0 5.5v-2.5" />
     </svg>
   ),
   Close: (props: IconProps) => (
@@ -30,7 +30,7 @@ export const Icon = {
     </svg>
   ),
   Logo: (props: IconProps) => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="51" height="50" viewBox="0 0 51 50" fill="none" {...props}>
+    <svg xmlns="http://www.w3.org/2000/svg" width="51" height="50" viewBox="0 0 51 50" fill="currentColor" {...props}>
       <path d="M0.0578613 8C0.0578613 3.58172 3.63958 0 8.05786 0H42.0579C46.4761 0 50.0579 3.58172 50.0579 8V42C50.0579 46.4183 46.4761 50 42.0579 50H8.05786C3.63958 50 0.0578613 46.4183 0.0578613 42V8Z" />
       <path
         d="M11.0674 33.8626L6.19556 16.1441H10.0788L13.4337 28.3409L16.7814 16.1441H20.8454L24.3515 28.9096L27.8575 16.1405H31.738L26.8712 33.8617H21.8317L18.8116 22.8777L15.8001 33.8626H11.0674Z"
