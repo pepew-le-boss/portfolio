@@ -1,4 +1,4 @@
-import { Sheet, SheetClose, SheetContent, SheetDescription, SheetTitle, SheetTrigger } from "@/components/client/common/Sheet"
+import { Sheet, SheetContent, SheetDescription, SheetTitle, SheetTrigger } from "@/components/client/common/Sheet"
 import { Translations } from "@/utils/common/getTranslations"
 import { sectionLinks } from "@/utils/common/link.utils"
 import { cn } from "@/utils/lib/tailwind/cn"
@@ -22,21 +22,19 @@ export function HeaderMenuSheet({ headerTranslations, className }: HeaderMenuShe
         <nav>
           <ul className="flex flex-col items-center gap-12">
             <li>
-              <SheetClose>
-                <HeaderLink number="01" text={headerTranslations.about} link={sectionLinks.about} />
-              </SheetClose>
+              <HeaderLink number="01" text={headerTranslations.about} link={sectionLinks.about} isInsideSheet={true} />
             </li>
             <li>
-              <HeaderLink number="02" text={headerTranslations.work} link={sectionLinks.career} />
+              <HeaderLink number="02" text={headerTranslations.work} link={sectionLinks.career} isInsideSheet={true} />
             </li>
             <li>
-              <HeaderLink number="03" text={headerTranslations.projects} link={sectionLinks.projects} />
+              <HeaderLink number="03" text={headerTranslations.projects} link={sectionLinks.projects} isInsideSheet={true} />
             </li>
             <li>
-              <HeaderLink number="04" text={headerTranslations.technologies} link={sectionLinks.technologies} />
+              <HeaderLink number="04" text={headerTranslations.technologies} link={sectionLinks.technologies} isInsideSheet={true} />
             </li>
             <li>
-              <HeaderLink number="05" text={headerTranslations.contact} link={sectionLinks.contact} />
+              <HeaderLink number="05" text={headerTranslations.contact} link={sectionLinks.contact} isInsideSheet={true} />
             </li>
           </ul>
         </nav>
