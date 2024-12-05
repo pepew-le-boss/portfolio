@@ -1,6 +1,6 @@
-import { ReactNode } from "react"
+import { type ComponentProps, ReactNode } from "react"
 
-interface SectionProps {
+interface SectionProps extends ComponentProps<"section"> {
   number: string
   sectionName: string
   title: string
@@ -8,9 +8,9 @@ interface SectionProps {
   children: ReactNode
 }
 
-export function Section({ number, sectionName, title, subtitle, children }: SectionProps) {
+export function Section({ number, sectionName, title, subtitle, children, ...props }: SectionProps) {
   return (
-    <section className="flex max-w-7xl flex-col items-center gap-10">
+    <section className="flex max-w-7xl flex-col items-center gap-10" {...props}>
       <div className="flex flex-col items-center gap-5">
         <h3 className="inline-flex items-center justify-start gap-2 rounded-full border border-foreground bg-background px-3.5 py-1 font-sfmono text-sm">
           <span className="text-muted-foreground">{number}</span>

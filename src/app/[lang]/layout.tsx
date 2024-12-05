@@ -20,8 +20,8 @@ export async function generateMetadata({ params: { lang } }: { params: { lang: L
 
 export default function RootLayout({ children, params }: { children: ReactNode; params: { lang: string } }) {
   return (
-    <html lang={params.lang} suppressHydrationWarning>
-      <body className={`${gabarito.variable} ${sfmono.variable} scroll-smooth bg-foreground/5 font-gabarito`}>
+    <html lang={params.lang} suppressHydrationWarning className="scroll-pt-24 scroll-smooth">
+      <body className={`${gabarito.variable} ${sfmono.variable} bg-foreground/5 font-gabarito`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <div className="relative">
             <Topography />

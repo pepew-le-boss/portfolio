@@ -6,8 +6,11 @@
         "about": "about",
         "work": "work",
         "projects": "projects",
+        "technologies": "technologies",
         "contact": "contact",
-        "alt_lang": "Choose the language"
+        "alt_lang": "Choose the language",
+        "sheet_title": "Navigation menu",
+        "sheet_description": "Menu containing links to the differents sections of the site"
     },
     "cover_page": {
         "hello": "Hello, I am",
