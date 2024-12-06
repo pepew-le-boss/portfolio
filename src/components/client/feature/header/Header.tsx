@@ -7,12 +7,12 @@ import { Icon } from "@/components/server/common/Icon"
 import { HeaderLink } from "@/components/server/feature/header/HeaderLink"
 import { HeaderMenuSheet } from "@/components/server/feature/header/HeaderMenuSheet"
 import { debounce } from "@/utils/common/debounce"
-import { getTranslation } from "@/utils/common/getTranslations"
+import type { Translations } from "@/utils/common/getTranslations"
 import { sectionLinks } from "@/utils/common/link.utils"
 import { cn } from "@/utils/lib/tailwind/cn"
 
 interface HeaderProps {
-  headerTranslations: Awaited<ReturnType<typeof getTranslation>>["header"]
+  headerTranslations: Translations["header"]
 }
 
 export function Header({ headerTranslations }: HeaderProps) {

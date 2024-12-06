@@ -33,7 +33,7 @@ export default function ThemeSwitcher({ className }: ThemeSwitcherProps) {
           className="hidden h-8 w-8 place-items-center bg-foreground transition-all focus:scale-125 dark:grid"
           onClick={() => setTheme("light")}
         >
-          <Sun className="h-auto w-6 text-background" />
+          <Sun className="h-auto w-5 text-background" />
         </DropdownMenuItem>
         <DropdownMenuItem className="grid h-8 w-8 place-items-center bg-foreground transition-all focus:scale-125 dark:hidden" onClick={() => setTheme("dark")}>
           <Moon className="h-auto w-5 text-background" />
