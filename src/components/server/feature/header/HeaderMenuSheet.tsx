@@ -1,3 +1,4 @@
+import { Menu } from "lucide-react"
 import { Sheet, SheetContent, SheetDescription, SheetTitle, SheetTrigger } from "@/components/client/common/Sheet"
 import { Translations } from "@/utils/common/getTranslations"
 import { sectionLinks } from "@/utils/common/link.utils"
@@ -12,9 +13,13 @@ interface HeaderMenuSheetProps {
 export function HeaderMenuSheet({ headerTranslations, className }: HeaderMenuSheetProps) {
   return (
     <Sheet>
-      <SheetTrigger className={cn("group flex flex-col gap-2 p-2 transition-all hover:-rotate-45 lg:hidden", className)}>
-        <span className="h-[2px] w-6 bg-foreground transition-all group-hover:translate-x-1"></span>
-        <span className="h-[2px] w-6 bg-foreground transition-all group-hover:-translate-x-1"></span>
+      <SheetTrigger
+        className={cn(
+          "group grid h-8 w-8 place-items-center rounded-full border border-foreground bg-background transition-all hover:ring-2 hover:ring-ring hover:ring-offset-2 hover:ring-offset-background focus:ring-2 focus:ring-ring focus:ring-offset-2 lg:hidden",
+          className
+        )}
+      >
+        <Menu className="h-4 w-4 text-foreground" />
       </SheetTrigger>
       <SheetContent className="grid place-items-center">
         <SheetTitle className="sr-only">{headerTranslations.sheet_title}</SheetTitle>

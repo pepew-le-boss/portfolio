@@ -16,7 +16,7 @@ export default function ThemeSwitcher({ className }: ThemeSwitcherProps) {
     <DropdownMenu modal={false}>
       <DropdownMenuTrigger
         className={cn(
-          "grid h-8 w-8 place-items-center rounded-full bg-foreground transition-all hover:ring-2 hover:ring-ring hover:ring-offset-2 hover:ring-offset-background focus:ring-2 focus:ring-ring focus:ring-offset-2",
+          "group grid h-8 w-8 place-items-center rounded-full bg-foreground transition-all hover:ring-2 hover:ring-ring hover:ring-offset-2 hover:ring-offset-background focus:ring-2 focus:ring-ring focus:ring-offset-2 data-[state=open]:rounded-b-none data-[state=open]:ring-0 data-[state=open]:ring-offset-0",
           className
         )}
       >
@@ -24,26 +24,21 @@ export default function ThemeSwitcher({ className }: ThemeSwitcherProps) {
         <Moon className="hidden h-auto w-5 text-background dark:block" />
       </DropdownMenuTrigger>
       <DropdownMenuContent
-        className="flex flex-col gap-2 p-1"
+        className="flex flex-col rounded-b-full bg-foreground py-2"
+        sideOffset={0}
         onCloseAutoFocus={(event) => event.preventDefault()}
         onFocusOutside={(event) => event.preventDefault()}
       >
         <DropdownMenuItem
-          className="hidden h-8 w-8 place-items-center rounded-full bg-foreground transition-all focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background dark:grid"
+          className="hidden h-8 w-8 place-items-center bg-foreground transition-all focus:scale-125 dark:grid"
           onClick={() => setTheme("light")}
         >
           <Sun className="h-auto w-6 text-background" />
         </DropdownMenuItem>
-        <DropdownMenuItem
-          className="grid h-8 w-8 place-items-center rounded-full bg-foreground transition-all focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background dark:hidden"
-          onClick={() => setTheme("dark")}
-        >
+        <DropdownMenuItem className="grid h-8 w-8 place-items-center bg-foreground transition-all focus:scale-125 dark:hidden" onClick={() => setTheme("dark")}>
           <Moon className="h-auto w-5 text-background" />
         </DropdownMenuItem>
-        <DropdownMenuItem
-          className="grid h-8 w-8 place-items-center rounded-full bg-foreground transition-all focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
-          onClick={() => setTheme("system")}
-        >
+        <DropdownMenuItem className="grid h-8 w-8 place-items-center bg-foreground transition-all focus:scale-125" onClick={() => setTheme("system")}>
           <Laptop className="h-auto w-5 text-background" />
         </DropdownMenuItem>
       </DropdownMenuContent>
