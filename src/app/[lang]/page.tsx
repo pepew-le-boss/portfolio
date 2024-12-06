@@ -1,5 +1,4 @@
 import { Header } from "@/components/client/feature/header/Header"
-import { Header2 } from "@/components/client/feature/header/Header2"
 import { AboutMe } from "@/components/server/feature/about-me/AboutMe"
 import { Career } from "@/components/server/feature/career/Career"
 import { Contact } from "@/components/server/feature/contact/Contact"
@@ -15,7 +14,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
 
   return (
     <div className="relative z-20">
-      <Header2 lang={lang} headerTranslations={translations.header} />
+      <Header headerTranslations={translations.header} />
       <main className="flex flex-col items-center gap-60 overflow-x-hidden px-5 py-20 sm:px-10 lg:px-20">
         <CoverPage coverPageTranslations={translations.cover_page} />
         <AboutMe TranslationsAboutMe={translations.about_me} />

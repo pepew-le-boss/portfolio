@@ -1,8 +1,8 @@
 "use client"
 
+import { Laptop, Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/client/common/DropDownMenu"
-import { Icon } from "@/components/server/common/Icon"
 import { cn } from "@/utils/lib/tailwind/cn"
 
 interface ThemeSwitcherProps {
@@ -20,8 +20,8 @@ export default function ThemeSwitcher({ className }: ThemeSwitcherProps) {
           className
         )}
       >
-        <Icon.Sun className="block h-auto w-6 text-background dark:hidden" />
-        <Icon.Moon className="hidden h-auto w-5 text-background dark:block" />
+        <Sun className="block h-auto w-5 text-background dark:hidden" />
+        <Moon className="hidden h-auto w-5 text-background dark:block" />
       </DropdownMenuTrigger>
       <DropdownMenuContent
         className="flex flex-col gap-2 p-1"
@@ -29,22 +29,22 @@ export default function ThemeSwitcher({ className }: ThemeSwitcherProps) {
         onFocusOutside={(event) => event.preventDefault()}
       >
         <DropdownMenuItem
-          className="hidden h-8 w-8 place-items-center rounded-full bg-foreground transition-all hover:ring-2 hover:ring-ring hover:ring-offset-2 hover:ring-offset-background dark:grid"
+          className="hidden h-8 w-8 place-items-center rounded-full bg-foreground transition-all focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background dark:grid"
           onClick={() => setTheme("light")}
         >
-          <Icon.Sun className="h-auto w-6 text-background" />
+          <Sun className="h-auto w-6 text-background" />
         </DropdownMenuItem>
         <DropdownMenuItem
-          className="grid h-8 w-8 place-items-center rounded-full bg-foreground transition-all hover:ring-2 hover:ring-ring hover:ring-offset-2 hover:ring-offset-background dark:hidden"
+          className="grid h-8 w-8 place-items-center rounded-full bg-foreground transition-all focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background dark:hidden"
           onClick={() => setTheme("dark")}
         >
-          <Icon.Moon className="h-auto w-5 text-background" />
+          <Moon className="h-auto w-5 text-background" />
         </DropdownMenuItem>
         <DropdownMenuItem
-          className="grid h-8 w-8 place-items-center rounded-full bg-foreground transition-all hover:ring-2 hover:ring-ring hover:ring-offset-2 hover:ring-offset-background"
+          className="grid h-8 w-8 place-items-center rounded-full bg-foreground transition-all focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
           onClick={() => setTheme("system")}
         >
-          <Icon.System className="h-auto w-5 text-background" />
+          <Laptop className="h-auto w-5 text-background" />
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
