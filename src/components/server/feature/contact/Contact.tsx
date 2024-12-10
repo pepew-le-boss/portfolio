@@ -2,7 +2,7 @@ import { LinkButton } from "@/components/server/common/LinkButton"
 import { Marquee } from "@/components/server/common/Marquee"
 import { Section } from "@/components/server/common/Section"
 import type { Translations } from "@/utils/common/getTranslations"
-import { sectionLinks } from "@/utils/common/link.utils"
+import { headerLinks } from "@/utils/common/link.utils"
 
 interface ContactProps {
   translationsContact: Translations["contact"]
@@ -17,7 +17,7 @@ export function Contact({ translationsContact }: ContactProps) {
           <span className="text-sm leading-none text-foreground">{`//`}</span>
         </Marquee>
       </div>
-      <Section id={sectionLinks.contact} number="05" sectionName="Contact" title={translationsContact.title} subtitle={translationsContact.description}>
+      <Section id={headerLinks.contact} number="05" sectionName="Contact" title={translationsContact.title} subtitle={translationsContact.description}>
         <div className="flex flex-wrap justify-center gap-5 px-10">
           <LinkButton href="https://www.linkedin.com/in/william-fargues-74a9b515a/" text="Me contacter sur LinkedIn" isExternal />
           <LinkButton href="mailto:fargues.wlm@gmail.com" text="Me contacter par email" isExternal />

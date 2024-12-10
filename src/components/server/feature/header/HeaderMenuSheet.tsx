@@ -1,7 +1,7 @@
 import { Menu } from "lucide-react"
 import { Sheet, SheetContent, SheetDescription, SheetTitle, SheetTrigger } from "@/components/client/common/Sheet"
 import { Translations } from "@/utils/common/getTranslations"
-import { sectionLinks } from "@/utils/common/link.utils"
+import { headerLinks } from "@/utils/common/link.utils"
 import { cn } from "@/utils/lib/tailwind/cn"
 import { HeaderLink } from "./HeaderLink"
 
@@ -27,19 +27,19 @@ export function HeaderMenuSheet({ headerTranslations, className }: HeaderMenuShe
         <nav>
           <ul className="flex flex-col items-center gap-12">
             <li>
-              <HeaderLink number="01" text={headerTranslations.about} link={sectionLinks.about} isInsideSheet={true} />
+              <HeaderLink number="01" text={headerTranslations.about} link={headerLinks.about} isInsideSheet={true} />
             </li>
             <li>
-              <HeaderLink number="02" text={headerTranslations.work} link={sectionLinks.career} isInsideSheet={true} />
+              <HeaderLink number="02" text={headerTranslations.career} link={headerLinks.career} isInsideSheet={true} />
             </li>
             <li>
-              <HeaderLink number="03" text={headerTranslations.projects} link={sectionLinks.projects} isInsideSheet={true} />
+              <HeaderLink number="03" text={headerTranslations.projects} link={headerLinks.projects} isInsideSheet={true} />
             </li>
             <li>
-              <HeaderLink number="04" text={headerTranslations.technologies} link={sectionLinks.technologies} isInsideSheet={true} />
+              <HeaderLink number="04" text={headerTranslations.technologies} link={headerLinks.technologies} isInsideSheet={true} />
             </li>
             <li>
-              <HeaderLink number="05" text={headerTranslations.contact} link={sectionLinks.contact} isInsideSheet={true} />
+              <HeaderLink number="05" text={headerTranslations.contact} link={headerLinks.contact} isInsideSheet={true} />
             </li>
           </ul>
         </nav>

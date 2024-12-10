@@ -5,11 +5,15 @@ import LocaleSwitcher from "@/components/client/feature/header/LocaleSwitcher"
 import ThemeSwitcher from "@/components/client/feature/header/ThemeSwitcher"
 import { Icon } from "@/components/server/common/Icon"
 import { HeaderLink } from "@/components/server/feature/header/HeaderLink"
-import { HeaderMenuSheet } from "@/components/server/feature/header/HeaderMenuSheet"
+import { HeaderMenuDrawer } from "@/components/server/feature/header/HeaderMenuDrawer"
 import { debounce } from "@/utils/common/debounce"
 import type { Translations } from "@/utils/common/getTranslations"
-import { sectionLinks } from "@/utils/common/link.utils"
+import { headerLinks } from "@/utils/common/link.utils"
 import { cn } from "@/utils/lib/tailwind/cn"
+
+// améliorer le header sheet en terme de design (cf https://arik-template.framer.website/ // https://cal.com/fr // https://ui.shadcn.com/docs/components/drawer)
+// améliorer le système d'animations
+// scroll to top quand on clique sur le logo du header
 
 interface HeaderProps {
   headerTranslations: Translations["header"]
@@ -64,15 +68,15 @@ export function Header({ headerTranslations }: HeaderProps) {
             <HeaderLink
               number="01"
               text={headerTranslations.about}
-              link={sectionLinks.about}
+              link={headerLinks.about}
               className="animate-appearance-right opacity-0 fill-mode-forwards [animation-delay:0.1s]"
             />
           </li>
           <li>
             <HeaderLink
               number="02"
-              text={headerTranslations.work}
-              link={sectionLinks.career}
+              text={headerTranslations.career}
+              link={headerLinks.career}
               className="animate-appearance-right opacity-0 fill-mode-forwards [animation-delay:0.2s]"
             />
           </li>
@@ -80,7 +84,7 @@ export function Header({ headerTranslations }: HeaderProps) {
             <HeaderLink
               number="03"
               text={headerTranslations.projects}
-              link={sectionLinks.projects}
+              link={headerLinks.projects}
               className="animate-appearance-right opacity-0 fill-mode-forwards [animation-delay:0.3s]"
             />
           </li>
@@ -88,7 +92,7 @@ export function Header({ headerTranslations }: HeaderProps) {
             <HeaderLink
               number="04"
               text={headerTranslations.technologies}
-              link={sectionLinks.technologies}
+              link={headerLinks.technologies}
               className="animate-appearance-right opacity-0 fill-mode-forwards [animation-delay:0.4s]"
             />
           </li>
@@ -96,7 +100,7 @@ export function Header({ headerTranslations }: HeaderProps) {
             <HeaderLink
               number="05"
               text={headerTranslations.contact}
-              link={sectionLinks.contact}
+              link={headerLinks.contact}
               className="animate-appearance-right opacity-0 fill-mode-forwards [animation-delay:0.5s]"
             />
           </li>
@@ -106,7 +110,7 @@ export function Header({ headerTranslations }: HeaderProps) {
         <LocaleSwitcher className="animate-appearance-right opacity-0 fill-mode-forwards [animation-delay:0.1s] lg:[animation-delay:0.6s]" />
         <ThemeSwitcher className="animate-appearance-right opacity-0 fill-mode-forwards [animation-delay:0.2s] lg:[animation-delay:0.7s]" />
       </div>
-      <HeaderMenuSheet headerTranslations={headerTranslations} className="animate-appearance-right opacity-0 fill-mode-forwards [animation-delay:0.3s]" />
+      <HeaderMenuDrawer headerTranslations={headerTranslations} className="animate-appearance-right opacity-0 fill-mode-forwards [animation-delay:0.3s]" />
     </header>
   )
 }

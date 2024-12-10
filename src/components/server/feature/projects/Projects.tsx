@@ -1,7 +1,7 @@
 import { Section } from "@/components/server/common/Section"
 import { ProjectCard } from "@/components/server/feature/projects/ProjectCard"
 import type { Translations } from "@/utils/common/getTranslations"
-import { sectionLinks } from "@/utils/common/link.utils"
+import { headerLinks } from "@/utils/common/link.utils"
 
 interface ProjectsProps {
   translationsProjects: Translations["projects"]
@@ -10,7 +10,7 @@ interface ProjectsProps {
 export function Projects({ translationsProjects }: ProjectsProps) {
   return (
     <Section
-      id={sectionLinks.projects}
+      id={headerLinks.projects}
       number="03"
       sectionName="Mes projets"
       title="En apprendre plus sur mes projets"

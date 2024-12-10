@@ -1,7 +1,7 @@
 import { Section } from "@/components/server/common/Section"
 import { TechnologyStack } from "@/components/server/common/TechnologyStack"
 import type { Translations } from "@/utils/common/getTranslations"
-import { sectionLinks } from "@/utils/common/link.utils"
+import { headerLinks } from "@/utils/common/link.utils"
 
 interface MyStackProps {
   translationsMyStack: Translations["my_stack"]
@@ -10,7 +10,7 @@ interface MyStackProps {
 export function MyStack({ translationsMyStack }: MyStackProps) {
   return (
     <Section
-      id={sectionLinks.technologies}
+      id={headerLinks.technologies}
       number="04"
       sectionName="Ma stack"
       title="En apprendre plus sur ma stack de technologies"

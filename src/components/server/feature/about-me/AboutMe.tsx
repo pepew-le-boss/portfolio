@@ -3,7 +3,7 @@ import profilePic from "/public/images/me.webp"
 import { Section } from "@/components/server/common/Section"
 import { StatCard } from "@/components/server/feature/about-me/StatCard"
 import { Translations } from "@/utils/common/getTranslations"
-import { sectionLinks } from "@/utils/common/link.utils"
+import { headerLinks } from "@/utils/common/link.utils"
 
 interface AboutMeProps {
   TranslationsAboutMe: Translations["about_me"]
@@ -12,7 +12,7 @@ interface AboutMeProps {
 export function AboutMe({ TranslationsAboutMe }: AboutMeProps) {
   return (
     <Section
-      id={sectionLinks.about}
+      id={headerLinks.about}
       number="01"
       sectionName="À propos de moi"
       title="En apprendre plus sur moi"
