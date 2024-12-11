@@ -1,5 +1,5 @@
 import { Menu, X } from "lucide-react"
-import { Drawer, DrawerClose, DrawerContent, DrawerHeader, DrawerTitle, DrawerTrigger } from "@/components/client/common/Drawer"
+import { Drawer, DrawerClose, DrawerContent, DrawerDescription, DrawerHeader, DrawerTitle, DrawerTrigger } from "@/components/client/common/Drawer"
 import { HeaderLinkMobile } from "@/components/server/feature/header/HeaderLinkMobile"
 import type { Translations } from "@/utils/common/getTranslations"
 import { headerLinks } from "@/utils/common/link.utils"
@@ -22,10 +22,11 @@ export function HeaderMenuDrawer({ headerTranslations, className }: HeaderMenuDr
         <Menu className="h-4 w-4 text-foreground" />
       </DrawerTrigger>
       <DrawerContent>
-        <DrawerHeader className="relative">
-          <DrawerTitle className="text-xl uppercase">Navigation</DrawerTitle>
-          <DrawerClose>
-            <X className="absolute right-4 top-1/2 h-6 w-6 -translate-y-1/2 text-foreground" />
+        <DrawerHeader className="relative flex items-center justify-between py-4 pl-4 pr-3">
+          <DrawerTitle className="text-lg uppercase">{headerTranslations.drawer_title}</DrawerTitle>
+          <DrawerDescription className="sr-only">{headerTranslations.drawer_description}</DrawerDescription>
+          <DrawerClose className="rounded-full p-1 transition-all hover:bg-foreground/10">
+            <X className="h-6 w-6 text-foreground" />
           </DrawerClose>
         </DrawerHeader>
         <nav>

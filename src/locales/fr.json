@@ -9,8 +9,8 @@
         "technologies": "technologies",
         "contact": "contact",
         "alt_lang": "Choisir la langue",
-        "sheet_title": "Menu de navigation",
-        "sheet_description": "Menu contenant les liens de navigation vers les différentes sections du site"
+        "drawer_title": "Navigation",
+        "drawer_description": "Menu contenant les liens de navigation vers les différentes sections du site"
     },
     "cover_page": {
         "hello": "Salut, je suis",
