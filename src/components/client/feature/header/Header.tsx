@@ -64,46 +64,16 @@ export function Header({ headerTranslations }: HeaderProps) {
       <Icon.Logo className="h-9 w-9 animate-appearance-left text-foreground opacity-0 fill-mode-forwards [animation-delay:0.3s] " />
       <nav className="hidden lg:block">
         <ul className="flex items-center gap-8">
-          <li>
-            <HeaderLink
-              number="01"
-              text={headerTranslations.about}
-              link={headerLinks.about}
-              className="animate-appearance-right opacity-0 fill-mode-forwards [animation-delay:0.1s]"
-            />
-          </li>
-          <li>
-            <HeaderLink
-              number="02"
-              text={headerTranslations.career}
-              link={headerLinks.career}
-              className="animate-appearance-right opacity-0 fill-mode-forwards [animation-delay:0.2s]"
-            />
-          </li>
-          <li>
-            <HeaderLink
-              number="03"
-              text={headerTranslations.projects}
-              link={headerLinks.projects}
-              className="animate-appearance-right opacity-0 fill-mode-forwards [animation-delay:0.3s]"
-            />
-          </li>
-          <li>
-            <HeaderLink
-              number="04"
-              text={headerTranslations.technologies}
-              link={headerLinks.technologies}
-              className="animate-appearance-right opacity-0 fill-mode-forwards [animation-delay:0.4s]"
-            />
-          </li>
-          <li>
-            <HeaderLink
-              number="05"
-              text={headerTranslations.contact}
-              link={headerLinks.contact}
-              className="animate-appearance-right opacity-0 fill-mode-forwards [animation-delay:0.5s]"
-            />
-          </li>
+          {Object.values(headerLinks).map((link, index) => (
+            <li key={link}>
+              <HeaderLink
+                number={`0${index + 1}`}
+                text={headerTranslations[link]}
+                link={link}
+                className={`animate-appearance-right opacity-0 fill-mode-forwards [animation-delay:0.${index + 1}s]`}
+              />
+            </li>
+          ))}
         </ul>
       </nav>
       <div className="ml-auto flex gap-6 lg:ml-0">
