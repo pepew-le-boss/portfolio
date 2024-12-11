@@ -9,6 +9,7 @@ import { HeaderMenuDrawer } from "@/components/server/feature/header/HeaderMenuD
 import { debounce } from "@/utils/common/debounce"
 import type { Translations } from "@/utils/common/getTranslations"
 import { headerLinks } from "@/utils/common/link.utils"
+import { getAppearanceAnimation } from "@/utils/lib/tailwind/animation.utils"
 import { cn } from "@/utils/lib/tailwind/cn"
 
 // améliorer le header sheet en terme de design (cf https://arik-template.framer.website/ // https://cal.com/fr // https://ui.shadcn.com/docs/components/drawer)
@@ -66,12 +67,7 @@ export function Header({ headerTranslations }: HeaderProps) {
         <ul className="flex items-center gap-8">
           {Object.values(headerLinks).map((link, index) => (
             <li key={link}>
-              <HeaderLink
-                number={`0${index + 1}`}
-                text={headerTranslations[link]}
-                link={link}
-                className={`animate-appearance-right opacity-0 fill-mode-forwards [animation-delay:0.${index + 1}s]`}
-              />
+              <HeaderLink number={`0${index + 1}`} text={headerTranslations[link]} link={link} className={getAppearanceAnimation("top", `0.${index + 1}`)} />
             </li>
           ))}
         </ul>

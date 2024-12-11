@@ -1,4 +1,19 @@
 import type { Config } from "tailwindcss"
+import type { PluginCreator } from "tailwindcss/types/config"
+
+const animationDelay: PluginCreator = ({ matchUtilities, theme }) =>
+  matchUtilities(
+    {
+      "animation-delay": (value) => {
+        return {
+          "animation-delay": value
+        }
+      }
+    },
+    {
+      values: theme("transitionDelay")
+    }
+  )
 
 const config: Config = {
   content: ["./src/pages/**/*.{js,ts,jsx,tsx,mdx}", "./src/components/**/*.{js,ts,jsx,tsx,mdx}", "./src/app/**/*.{js,ts,jsx,tsx,mdx}"],
@@ -45,6 +60,10 @@ const config: Config = {
         }
       },
       keyframes: {
+        "appearance-top": {
+          "0%": { opacity: "0", transform: "translateY(-100px)" },
+          "100%": { opacity: "1", transform: "translateY(0px)" }
+        },
         "appearance-bottom": {
           "0%": { opacity: "0", transform: "translateY(100px)" },
           "100%": { opacity: "1", transform: "translateY(0px)" }
@@ -63,6 +82,7 @@ const config: Config = {
         }
       },
       animation: {
+        "appearance-top": "appearance-top 1s",
         "appearance-bottom": "appearance-bottom 1s",
         "appearance-left": "appearance-left 1s",
         "appearance-right": "appearance-right 1s",
@@ -70,6 +90,21 @@ const config: Config = {
       }
     }
   },
-  plugins: [require("tailwindcss-animate")]
+  plugins: [require("tailwindcss-animate"), animationDelay],
+  safelist: [
+    "animate-appearance-top",
+    "animate-appearance-bottom",
+    "animate-appearance-left",
+    "animate-appearance-right",
+    "animation-delay-[0.1s]",
+    "animation-delay-[0.2s]",
+    "animation-delay-[0.3s]",
+    "animation-delay-[0.4s]",
+    "animation-delay-[0.5s]",
+    "animation-delay-[0.6s]",
+    "animation-delay-[0.7s]",
+    "animation-delay-[0.8s]",
+    "animation-delay-[0.9s]"
+  ]
 }
 export default config
