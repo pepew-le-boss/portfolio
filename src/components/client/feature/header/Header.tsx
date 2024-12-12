@@ -11,10 +11,6 @@ import type { Translations } from "@/utils/common/getTranslations"
 import { headerLinks } from "@/utils/common/link.utils"
 import { cn } from "@/utils/lib/tailwind/cn"
 
-// améliorer le header sheet en terme de design (cf https://arik-template.framer.website/ // https://cal.com/fr // https://ui.shadcn.com/docs/components/drawer)
-// améliorer le système d'animations
-// scroll to top quand on clique sur le logo du header
-
 interface HeaderProps {
   headerTranslations: Translations["header"]
 }
