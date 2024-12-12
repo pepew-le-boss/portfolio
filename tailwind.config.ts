@@ -1,19 +1,5 @@
 import type { Config } from "tailwindcss"
-import type { PluginCreator } from "tailwindcss/types/config"
-
-const animationDelay: PluginCreator = ({ matchUtilities, theme }) =>
-  matchUtilities(
-    {
-      "animation-delay": (value) => {
-        return {
-          "animation-delay": value
-        }
-      }
-    },
-    {
-      values: theme("transitionDelay")
-    }
-  )
+import { animationBase, animationDelay } from "./src/utils/lib/tailwind/plugin.utils"
 
 const config: Config = {
   content: ["./src/pages/**/*.{js,ts,jsx,tsx,mdx}", "./src/components/**/*.{js,ts,jsx,tsx,mdx}", "./src/app/**/*.{js,ts,jsx,tsx,mdx}"],
@@ -90,12 +76,8 @@ const config: Config = {
       }
     }
   },
-  plugins: [require("tailwindcss-animate"), animationDelay],
+  plugins: [require("tailwindcss-animate"), animationDelay, animationBase],
   safelist: [
-    "animate-appearance-top",
-    "animate-appearance-bottom",
-    "animate-appearance-left",
-    "animate-appearance-right",
     "animation-delay-[0.1s]",
     "animation-delay-[0.2s]",
     "animation-delay-[0.3s]",

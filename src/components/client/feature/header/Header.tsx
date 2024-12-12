@@ -9,7 +9,6 @@ import { HeaderMenuDrawer } from "@/components/server/feature/header/HeaderMenuD
 import { debounce } from "@/utils/common/debounce"
 import type { Translations } from "@/utils/common/getTranslations"
 import { headerLinks } from "@/utils/common/link.utils"
-import { getAppearanceAnimation } from "@/utils/lib/tailwind/animation.utils"
 import { cn } from "@/utils/lib/tailwind/cn"
 
 // améliorer le header sheet en terme de design (cf https://arik-template.framer.website/ // https://cal.com/fr // https://ui.shadcn.com/docs/components/drawer)
@@ -62,21 +61,28 @@ export function Header({ headerTranslations }: HeaderProps) {
         }
       )}
     >
-      <Icon.Logo className="h-9 w-9 animate-appearance-left text-foreground opacity-0 fill-mode-forwards [animation-delay:0.3s] " />
+      <button className="transition-all hover:-translate-y-0.5" onClick={() => window.scrollTo({ top: 0 })}>
+        <Icon.Logo className="animation-appearance-base h-9 w-9 animate-appearance-left text-foreground animation-delay-[0.1s]" />
+      </button>
       <nav className="hidden lg:block">
         <ul className="flex items-center gap-8">
           {Object.values(headerLinks).map((link, index) => (
             <li key={link}>
-              <HeaderLink number={`0${index + 1}`} text={headerTranslations[link]} link={link} className={getAppearanceAnimation("top", `0.${index + 1}`)} />
+              <HeaderLink
+                number={`0${index + 1}`}
+                text={headerTranslations[link]}
+                link={link}
+                className={`animation-appearance-base animate-appearance-top animation-delay-[0.${index + 1}s]`}
+              />
             </li>
           ))}
         </ul>
       </nav>
       <div className="ml-auto flex gap-6 lg:ml-0">
-        <LocaleSwitcher className="animate-appearance-right opacity-0 fill-mode-forwards [animation-delay:0.1s] lg:[animation-delay:0.6s]" />
-        <ThemeSwitcher className="animate-appearance-right opacity-0 fill-mode-forwards [animation-delay:0.2s] lg:[animation-delay:0.7s]" />
+        <LocaleSwitcher className="animation-appearance-base animate-appearance-right animation-delay-[0.2s] lg:animation-delay-[0.6s]" />
+        <ThemeSwitcher className="animation-appearance-base animate-appearance-right animation-delay-[0.3s] lg:animation-delay-[0.7s]" />
       </div>
-      <HeaderMenuDrawer headerTranslations={headerTranslations} className="animate-appearance-right opacity-0 fill-mode-forwards [animation-delay:0.3s]" />
+      <HeaderMenuDrawer headerTranslations={headerTranslations} className="animation-appearance-base animate-appearance-right animation-delay-[0.4s]" />
     </header>
   )
 }
