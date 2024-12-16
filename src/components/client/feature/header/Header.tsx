@@ -58,7 +58,7 @@ export function Header({ headerTranslations }: HeaderProps) {
       )}
     >
       <button className="transition-all hover:-translate-y-0.5" onClick={() => window.scrollTo({ top: 0 })}>
-        <Icon.Logo className="animation-appearance-base h-9 w-9 animate-appearance-left text-foreground animation-delay-[0.1s]" />
+        <Icon.Logo className="h-9 w-9 animate-appearance-left text-foreground animation-delay-[0.1s] animation-appearance-base" />
       </button>
       <nav className="hidden lg:block">
         <ul className="flex items-center gap-8">
@@ -68,17 +68,17 @@ export function Header({ headerTranslations }: HeaderProps) {
                 number={`0${index + 1}`}
                 text={headerTranslations[link]}
                 link={link}
-                className={`animation-appearance-base animate-appearance-top animation-delay-[0.${index + 1}s]`}
+                className={`animate-appearance-top animation-appearance-base animation-delay-[0.${index + 1}s]`}
               />
             </li>
           ))}
         </ul>
       </nav>
       <div className="ml-auto flex gap-6 lg:ml-0">
-        <LocaleSwitcher className="animation-appearance-base animate-appearance-right animation-delay-[0.2s] lg:animation-delay-[0.6s]" />
-        <ThemeSwitcher className="animation-appearance-base animate-appearance-right animation-delay-[0.3s] lg:animation-delay-[0.7s]" />
+        <LocaleSwitcher className="animate-appearance-right animation-delay-[0.2s] animation-appearance-base lg:animation-delay-[0.6s]" />
+        <ThemeSwitcher className="animate-appearance-right animation-delay-[0.3s] animation-appearance-base lg:animation-delay-[0.7s]" />
       </div>
-      <HeaderMenuDrawer headerTranslations={headerTranslations} className="animation-appearance-base animate-appearance-right animation-delay-[0.4s]" />
+      <HeaderMenuDrawer headerTranslations={headerTranslations} className="animate-appearance-right animation-delay-[0.4s] animation-appearance-base" />
     </header>
   )
 }

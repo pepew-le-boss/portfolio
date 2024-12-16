@@ -16,8 +16,12 @@
         "hello": "Hello, I am",
         "william": "William Fargues",
         "developer": "Engineer and web developer",
-        "work_1": "In my work, I place great importance on rigor and quality. Currently working at",
-        "work_2": "in Colomiers"
+        "description": "Une rigueur à toute épreuve, une écoute attentive des besoins, et une approche méthodique pour concevoir des solutions fiables, innovantes et performantes. Enthousiaste à l'idée de travailler avec vous.",
+        "current_situation_1": "Actuellement en poste chez",
+        "current_situation_2": "Bébéboutik",
+        "current_situation_3": "à",
+        "current_situation_4": "Colomiers",
+        "cta": "Échanger avec moi"
     },
     "about_me": {
         "paragraph1": "Bonjour ! Je m’appelle William et j’aime créer des expériences sur internet. Depuis que j’ai commencé à travaillé sur des projets en école d’ingénieurs, mon intérêt pour le code n’a pas arrêté de grandir et aujourd’hui plus que jamais j’adore m’améliorer, progresser et proposer un travail de plus en plus qualitatif.",

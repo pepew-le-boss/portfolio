@@ -12,7 +12,7 @@ export function Footer() {
         <span className="text-center font-sfmono text-sm sm:text-start">Tous droits réservés.©2024 William Fargues.</span>
         <span className="text-center font-sfmono text-sm sm:text-start">
           Code source disponible sur mon{" "}
-          <Link href="https://github.com/pepew-le-boss/portfolio" className="italic underline" target="_blank" rel="noopener noreferrer">
+          <Link href="https://github.com/pepew-le-boss/portfolio" className="italic underline" target="_blank" rel="noreferrer">
             GitHub
           </Link>
           .

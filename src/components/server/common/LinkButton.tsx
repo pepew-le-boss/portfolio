@@ -1,22 +1,25 @@
 import Link from "next/link"
-import { Icon } from "@/components/server/common/Icon"
+import type { ReactNode } from "react"
+import { cn } from "@/utils/lib/tailwind/cn"
 
 interface LinkButtonProps {
   href: string
   text: string
+  icon?: ReactNode
   isExternal?: boolean
+  className?: string
 }
 
-export function LinkButton({ href, text, isExternal = false }: LinkButtonProps) {
+export function LinkButton({ href, text, icon, isExternal = false, className }: LinkButtonProps) {
   return (
     <Link
       href={href}
       target={isExternal ? "_blank" : "_self"}
       rel={isExternal ? "noopener noreferrer" : ""}
-      className="group flex items-center gap-2 rounded-lg bg-foreground px-8 py-4 text-background transition-all hover:opacity-95"
+      className={cn("group flex w-fit items-center gap-4 rounded-lg bg-foreground px-8 py-4 text-background transition-all hover:opacity-95", className)}
     >
       <span className="transition-all group-hover:translate-x-1">{text}</span>
-      {isExternal && <Icon.BrokenArrow className="ml-2 h-6 w-6 rotate-45 text-background transition-all group-hover:translate-x-1 group-hover:rotate-90" />}
+      {icon}
     </Link>
   )
 }

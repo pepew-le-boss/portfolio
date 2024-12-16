@@ -1,3 +1,4 @@
+import { Icon } from "@/components/server/common/Icon"
 import { LinkButton } from "@/components/server/common/LinkButton"
 import { Marquee } from "@/components/server/common/Marquee"
 import { Section } from "@/components/server/common/Section"
@@ -19,8 +20,18 @@ export function Contact({ translationsContact }: ContactProps) {
       </div>
       <Section id={headerLinks.contact} number="05" sectionName="Contact" title={translationsContact.title} subtitle={translationsContact.description}>
         <div className="flex flex-wrap justify-center gap-5 px-10">
-          <LinkButton href="https://www.linkedin.com/in/william-fargues-74a9b515a/" text="Me contacter sur LinkedIn" isExternal />
-          <LinkButton href="mailto:fargues.wlm@gmail.com" text="Me contacter par email" isExternal />
+          <LinkButton
+            href="https://www.linkedin.com/in/william-fargues-74a9b515a/"
+            icon={<Icon.BrokenArrow className="h-6 w-6 rotate-45 text-background transition-all group-hover:translate-x-1 group-hover:rotate-90" />}
+            text="Me contacter sur LinkedIn"
+            isExternal
+          />
+          <LinkButton
+            href="mailto:fargues.wlm@gmail.com"
+            icon={<Icon.BrokenArrow className="h-6 w-6 rotate-45 text-background transition-all group-hover:translate-x-1 group-hover:rotate-90" />}
+            text="Me contacter par email"
+            isExternal
+          />
         </div>
       </Section>
     </div>

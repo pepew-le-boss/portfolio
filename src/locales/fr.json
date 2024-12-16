@@ -3,21 +3,25 @@
         "description": "William Fargues est un ingénieur et dévelopeur web."
     },
     "header": {
-        "about": "à propos",
-        "career": "carrière",
+        "about": "profil",
+        "career": "parcours",
         "projects": "projets",
-        "technologies": "technologies",
+        "technologies": "expertise",
         "contact": "contact",
         "alt_lang": "Choisir la langue",
-        "drawer_title": "Navigation",
-        "drawer_description": "Menu contenant les liens de navigation vers les différentes sections du site"
+        "drawer_title": "Explorer",
+        "drawer_description": "Accéder rapidement à tous les sections du site"
     },
     "cover_page": {
-        "hello": "Salut, je suis",
+        "hello": "Bienvenue, moi c'est",
         "william": "William Fargues",
         "developer": "Ingénieur et développeur web",
-        "work_1": "Dans mon travail, j’accorde une grande importance à la rigueur et la qualité. Actuellement en poste chez",
-        "work_2": "à Colomiers"
+        "description": "Avec rigueur, écoute et méthodologie, je conçois des solutions modernes, fiables, sur-mesure et pensées pour durer. Enthousiaste à l'idée de travailler avec vous.",
+        "current_situation_1": "Actuellement en poste chez",
+        "current_situation_2": "Bébéboutik",
+        "current_situation_3": "à",
+        "current_situation_4": "Colomiers",
+        "cta": "Échanger avec moi"
     },
     "about_me": {
         "paragraph1": "Bonjour ! Je m’appelle William et j’aime créer des expériences sur internet. Depuis que j’ai commencé à travaillé sur des projets en école d’ingénieurs, mon intérêt pour le code n’a pas arrêté de grandir et aujourd’hui plus que jamais j’adore m’améliorer, progresser et proposer un travail de plus en plus qualitatif.",
