@@ -19,10 +19,10 @@ export function CoverPage({ coverPageTranslations }: CoverPageProps) {
       </span>
       <h1 className="flex flex-col gap-2">
         <span className="animate-appearance-bottom text-[clamp(2.25rem,10vw,4.5rem)] font-medium leading-none opacity-0 fill-mode-forwards [animation-delay:0.2s]">
-          {coverPageTranslations.william}.
+          {coverPageTranslations.william}
         </span>
         <span className="animate-appearance-bottom text-[clamp(2.25rem,10vw,4.5rem)] font-medium leading-none text-muted-foreground opacity-0 fill-mode-forwards [animation-delay:0.3s]">
-          {coverPageTranslations.developer}.
+          {coverPageTranslations.developer}
         </span>
       </h1>
       <h2 className="max-w-prose animate-appearance-bottom text-[clamp(1rem,5vw,1.25rem)] font-normal leading-tight text-muted-foreground opacity-0 fill-mode-forwards [animation-delay:0.4s]">
