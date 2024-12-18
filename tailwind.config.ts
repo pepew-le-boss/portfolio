@@ -6,6 +6,9 @@ const config: Config = {
   darkMode: "class",
   theme: {
     extend: {
+      screens: {
+        xs: "480px"
+      },
       fontFamily: {
         gabarito: ["var(--font-gabarito)"],
         sfmono: ["var(--font-sfmono)"]

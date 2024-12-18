@@ -22,13 +22,13 @@ export function Contact({ translationsContact }: ContactProps) {
         <div className="flex flex-wrap justify-center gap-5 px-10">
           <LinkButton
             href="https://www.linkedin.com/in/william-fargues-74a9b515a/"
-            icon={<Icon.BrokenArrow className="h-6 w-6 rotate-45 text-background transition-all group-hover:translate-x-1 group-hover:rotate-90" />}
+            icon={<Icon.BrokenArrow className="h-6 w-6 rotate-45 text-background transition-all ease-out group-hover:translate-x-1 group-hover:rotate-90" />}
             text="Me contacter sur LinkedIn"
             isExternal
           />
           <LinkButton
             href="mailto:fargues.wlm@gmail.com"
-            icon={<Icon.BrokenArrow className="h-6 w-6 rotate-45 text-background transition-all group-hover:translate-x-1 group-hover:rotate-90" />}
+            icon={<Icon.BrokenArrow className="h-6 w-6 rotate-45 text-background transition-all ease-out group-hover:translate-x-1 group-hover:rotate-90" />}
             text="Me contacter par email"
             isExternal
           />

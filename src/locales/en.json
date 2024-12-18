@@ -17,10 +17,9 @@
         "william": "William Fargues",
         "developer": "Engineer and web developer",
         "description": "Une rigueur à toute épreuve, une écoute attentive des besoins, et une approche méthodique pour concevoir des solutions fiables, innovantes et performantes. Enthousiaste à l'idée de travailler avec vous.",
-        "current_situation_1": "Actuellement en poste chez",
-        "current_situation_2": "Bébéboutik",
-        "current_situation_3": "à",
-        "current_situation_4": "Colomiers",
+        "available": "Disponible",
+        "job": "Bébéboutik",
+        "home": "Colomiers",
         "cta": "Échanger avec moi"
     },
     "about_me": {

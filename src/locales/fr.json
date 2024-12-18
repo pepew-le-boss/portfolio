@@ -13,14 +13,13 @@
         "drawer_description": "Accéder rapidement à tous les sections du site"
     },
     "cover_page": {
-        "hello": "Bienvenue, moi c'est,",
+        "hello": "Bienvenue, moi c'est",
         "william": "William Fargues",
         "developer": "Ingénieur et développeur web",
         "description": "Avec rigueur, écoute et méthodologie, je conçois des solutions modernes, fiables, sur-mesure et pensées pour durer. Enthousiaste à l'idée de travailler avec vous.",
-        "current_situation_1": "Actuellement en poste chez",
-        "current_situation_2": "Bébéboutik",
-        "current_situation_3": "à",
-        "current_situation_4": "Colomiers",
+        "available": "Disponible",
+        "job": "Bébéboutik",
+        "home": "Colomiers",
         "cta": "Échanger avec moi"
     },
     "about_me": {
