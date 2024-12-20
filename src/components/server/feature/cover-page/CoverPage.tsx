@@ -12,7 +12,7 @@ interface CoverPageProps {
 
 export function CoverPage({ coverPageTranslations }: CoverPageProps) {
   return (
-    <div className="relative mt-5 grid h-[calc(100vh_-_10rem)] content-center justify-center gap-5">
+    <section className="relative mt-5 grid h-[calc(100vh_-_10rem)] content-center justify-center gap-5">
       <span className="animate-appearance-bottom font-sfmono text-[clamp(1rem,5vw,1.25rem)] font-semibold text-muted-foreground animation-delay-[0.1s] animation-appearance-base">
         {coverPageTranslations.hello}
       </span>
@@ -24,10 +24,10 @@ export function CoverPage({ coverPageTranslations }: CoverPageProps) {
           {coverPageTranslations.developer}
         </span>
       </h1>
-      <h2 className="xs:mt-5 mt-2 max-w-prose animate-appearance-bottom text-pretty text-[clamp(1rem,5vw,1.25rem)] font-normal leading-tight text-muted-foreground animation-delay-[0.4s] animation-appearance-base">
+      <h2 className="mt-2 max-w-prose animate-appearance-bottom text-pretty text-[clamp(1rem,5vw,1.25rem)] font-normal leading-tight text-muted-foreground animation-delay-[0.4s] animation-appearance-base xs:mt-5">
         {coverPageTranslations.description}
       </h2>
-      <div className="xs:items-center xs:flex-row xs:gap-4 xs:my-5 my-2 flex flex-col gap-2">
+      <div className="my-2 flex flex-col gap-2 xs:my-5 xs:flex-row xs:items-center xs:gap-4">
         <div className="flex animate-appearance-bottom items-center gap-2 animation-delay-[0.5s] animation-appearance-base">
           <CalendarCheck className="h-4 w-4" />
           <span className="font-sfmono text-sm font-semibold">{coverPageTranslations.available}</span>
@@ -62,6 +62,6 @@ export function CoverPage({ coverPageTranslations }: CoverPageProps) {
         className="animate-appearance-bottom animation-delay-[0.8s] animation-appearance-base"
       />
       <Icon.ScrollDown className="absolute -bottom-4 left-1/2 h-8 w-auto -translate-x-1/2 animate-appearance-bottom text-muted-foreground opacity-0 fill-mode-forwards [animation-delay:3s]" />
-    </div>
+    </section>
   )
 }
