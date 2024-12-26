@@ -17,7 +17,7 @@ export function Reveal({ children, className }: RevealProps) {
 
   return cloneElement(children, {
     ref,
-    className: cn(children.props.className, {
+    className: cn(children.props.className, "opacity-0", {
       [className]: inView
     })
   })

@@ -1,41 +1,53 @@
 import Image from "next/image"
 import profilePic from "/public/images/me.webp"
+import { Reveal } from "@/components/client/common/Reveal"
 import { Section } from "@/components/server/common/Section"
 import { StatCard } from "@/components/server/feature/about-me/StatCard"
+import { getYearsOfExperience } from "@/utils/common/date.utils"
 import { Translations } from "@/utils/common/getTranslations"
 import { headerLinks } from "@/utils/common/link.utils"
 
 interface AboutMeProps {
-  TranslationsAboutMe: Translations["about_me"]
+  translationsAboutMe: Translations["about_me"]
 }
 
-export function AboutMe({ TranslationsAboutMe }: AboutMeProps) {
+export function AboutMe({ translationsAboutMe }: AboutMeProps) {
   return (
     <Section
       id={headerLinks.about}
       number="01"
-      sectionName="À propos de moi"
-      title="En apprendre plus sur moi"
-      subtitle="Gouzi gouzi gouzi la marsupilami ehehe"
+      sectionName={translationsAboutMe.section_title}
+      title={translationsAboutMe.title}
+      subtitle={translationsAboutMe.subtitle}
     >
       <div className="grid w-full grid-flow-row-dense grid-cols-6 gap-4">
-        <div className="col-span-6 rounded-2xl border-2 border-muted-foreground bg-background px-5 py-2.5 lg:col-span-4 lg:px-10 lg:py-5">
-          <p className="text-base text-foreground md:text-lg">
-            {TranslationsAboutMe.paragraph1}
-            <br />
-            <br />
-            {TranslationsAboutMe.paragraph2}
-            <br />
-            <br />
-            {TranslationsAboutMe.paragraph3}
-          </p>
-        </div>
-        <div className="relative col-span-6 h-48 sm:col-span-3 sm:col-start-4 sm:row-span-2 sm:h-auto lg:col-span-2 lg:col-start-auto lg:row-span-1">
-          <Image src={profilePic} alt={TranslationsAboutMe.img_alt} fill={true} sizes="100vw" className="h-full rounded-2xl object-cover" />
-        </div>
-        <StatCard bigInfo="5+" description="années d'expérience" className="col-span-6 sm:col-span-3 lg:col-span-2" />
-        <StatCard bigInfo="10+" description="technologies maitrisées" className="col-span-6 sm:col-span-3 lg:col-span-2" />
-        <StatCard bigInfo="100%" description="à l'écoute du besoin" className="col-span-6 lg:col-span-2" />
+        <Reveal className="animate-appearance-left animation-delay-[0.8s] animation-appearance-base">
+          <div className="col-span-6 rounded-2xl border-2 border-muted-foreground bg-background px-5 py-2.5 lg:col-span-4 lg:px-10 lg:py-5">
+            <p className="text-base text-foreground md:text-lg">
+              {translationsAboutMe.paragraph1}
+              <br />
+              <br />
+              {translationsAboutMe.paragraph2}
+              <br />
+              <br />
+              {translationsAboutMe.paragraph3}
+            </p>
+          </div>
+        </Reveal>
+        <Reveal className="animate-appearance-right animation-delay-[0.8s] animation-appearance-base">
+          <div className="relative col-span-6 h-48 sm:col-span-3 sm:col-start-4 sm:row-span-2 sm:h-auto lg:col-span-2 lg:col-start-auto lg:row-span-1">
+            <Image src={profilePic} alt={translationsAboutMe.img_alt} fill={true} sizes="100vw" className="h-full rounded-2xl object-cover" />
+          </div>
+        </Reveal>
+        <Reveal className="animate-appearance-bottom animation-delay-[0.2s] animation-appearance-base">
+          <StatCard bigInfo={`+${getYearsOfExperience()}`} description={translationsAboutMe.stat_card_1} className="col-span-6 sm:col-span-3 lg:col-span-2" />
+        </Reveal>
+        <Reveal className="animate-appearance-bottom animation-delay-[0.3s] animation-appearance-base">
+          <StatCard bigInfo="10+" description={translationsAboutMe.stat_card_2} className="col-span-6 sm:col-span-3 lg:col-span-2" />
+        </Reveal>
+        <Reveal className="animate-appearance-bottom animation-delay-[0.4s] animation-appearance-base">
+          <StatCard bigInfo="100%" description={translationsAboutMe.stat_card_3} className="col-span-6 lg:col-span-2" />
+        </Reveal>
       </div>
     </Section>
   )
