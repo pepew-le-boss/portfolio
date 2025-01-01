@@ -35,20 +35,20 @@
         "stat_card_3": "à l'écoute du besoin"
     },
     "career": {
+        "see_more": "Voir plus",
         "experiences": [
             {
-                "range": "2022 - present",
                 "title": "Ingénieur développeur sénior frontend web",
+                "range": "2022 - présent",
                 "company": "Bébéboutik",
-                "description": [
-                    "Bébéboutik est un site de ventes privées dans la petite enfance. Ma mission est constituée de principalement deux objectifs:",
-                    [
-                        "Créer une marketplace Bébéboutik",
-                        "Faire une migration du site de ventes privées de Prestashop à NextJS"
-                    ],
-                    "Nous sommes deux développeurs sur le frontend."
+                "overview": "Bébéboutik est une plateforme de ventes privées dédiée à la petite enfance, où l'objectif principal est de moderniser les services numériques et développer des solutions innovantes.",
+                "responsibilities": [
+                    "Développer une marketplace complète.",
+                    "Migrer le site de ventes privées de Prestashop à NextJS pour améliorer les performances.",
+                    "Collaborer avec un autre développeur frontend pour garantir une expérience fluide."
                 ],
                 "technologies": [
+                    "Turborepo",
                     "NextJS",
                     "ReactJS",
                     "TailwindCSS",
@@ -63,13 +63,11 @@
                 "range": "2020 - 2022",
                 "title": "Ingénieur développeur web",
                 "company": "Sopra Steria",
-                "description": [
-                    "Il s'agit du projet Ecomode visant à faciliter et améliorer l'écomobilté au sein de la région Occitanie.",
-                    [
-                        "React Native pour l'application mobile grand public",
-                        "ReactJS pour les applications web de gestion et administration",
-                        "NodeJS, ExpressJS, TypeORM, Kafka et PostgreSQL pour le backend"
-                    ]
+                "overview": "Projet Ecomode, une initiative visant à améliorer l’écomobilité en Occitanie grâce à des solutions technologiques avancées.",
+                "responsibilities": [
+                    "Développer l’application mobile grand public en React Native.",
+                    "Créer l’interface web pour les gestionnaires administratifs avec ReactJS.",
+                    "Implémenter une architecture backend microservices en NodeJS, Kafka et PostgreSQL."
                 ],
                 "technologies": [
                     "ReactJS",
@@ -84,15 +82,12 @@
                 "range": "2019 - 2020",
                 "title": "Ingénieur développeur web",
                 "company": "Sopra Steria",
-                "description": [
-                    "Différents projets réalisés au sein d'un service appelé la \"Factory\".",
-                    [
-                        "Application mobile native iOS: Utilisation de Swift",
-                        "Application web de gestion de beacons Bluetooth: Utilisation d'Angular et AWS",
-                        "Application mobile native Android: Utilisation de Kotlin pour scanner des couleurs LEDs",
-                        "Application web 3D: Utilisation de ThreeJS pour visualiser des avions en temps réel",
-                        "Application web de gestion d'entrées et sorties: Utilisation de ReactJS et Azure"
-                    ]
+                "overview": "Participation à divers projets au sein de la \"Factory\", un service spécialisé dans le prototypage rapide d’applications sur mesure.",
+                "responsibilities": [
+                    "Développer une application mobile native iOS avec Swift.",
+                    "Créer une application web de gestion de beacons Bluetooth avec Angular et AWS.",
+                    "Réaliser une application 3D en temps réel pour visualiser des avions avec ThreeJS.",
+                    "Développer une application web de gestion des entrées et sorties avec ReactJS et Azure."
                 ],
                 "technologies": [
                     "Angular",
@@ -106,15 +101,12 @@
             },
             {
                 "range": "2019 - 2019",
-                "title": "Ingénieur Stagiaire Développement Web",
+                "title": "Ingénieur stagiaire développeur web",
                 "company": "Expleo Group",
-                "description": [
-                    "Refonte d'une application web interne servant de plateforme de gestion de projets.",
-                    [
-                        "Mettre à jour les librairies et corriger les erreurs",
-                        "Faire une refonte graphique complète de l'interface selon une maquette"
-                    ],
-                    "Technologies utilisées: HTML, CSS, Bootstrap 4, jQuery, PHP(ZendFramework), PostgreSQL"
+                "overview": "Refonte d’une application web interne dédiée à la gestion de projets, avec une attention particulière portée à l’interface utilisateur et à la maintenance technique.",
+                "responsibilities": [
+                    "Mettre à jour les librairies et corriger les erreurs existantes.",
+                    "Refondre complètement l’interface graphique conformément aux maquettes fournies."
                 ],
                 "technologies": [
                     "HTML",
