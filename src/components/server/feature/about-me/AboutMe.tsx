@@ -40,7 +40,7 @@ export function AboutMe({ translationsAboutMe }: AboutMeProps) {
           </div>
         </Reveal>
         <Reveal className="animate-appearance-bottom animation-delay-[0.2s] animation-appearance-base">
-          <StatCard bigInfo={`+${getYearsOfExperience()}`} description={translationsAboutMe.stat_card_1} className="col-span-6 sm:col-span-3 lg:col-span-2" />
+          <StatCard bigInfo={`${getYearsOfExperience()}+`} description={translationsAboutMe.stat_card_1} className="col-span-6 sm:col-span-3 lg:col-span-2" />
         </Reveal>
         <Reveal className="animate-appearance-bottom animation-delay-[0.3s] animation-appearance-base">
           <StatCard bigInfo="10+" description={translationsAboutMe.stat_card_2} className="col-span-6 sm:col-span-3 lg:col-span-2" />

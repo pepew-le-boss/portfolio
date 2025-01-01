@@ -12,7 +12,7 @@ interface RevealProps {
 export function Reveal({ children, className }: RevealProps) {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0
+    threshold: 0.1
   })
 
   return cloneElement(children, {
