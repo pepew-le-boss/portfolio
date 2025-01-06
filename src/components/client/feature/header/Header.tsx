@@ -49,7 +49,7 @@ export function Header({ headerTranslations }: HeaderProps) {
   return (
     <header
       className={cn(
-        "fixed left-0 right-0 z-10 mx-5 flex items-center justify-between gap-6 border-b border-b-transparent px-5 py-5 [transition:all_300ms,_border_100ms] sm:mx-10",
+        "fixed left-0 right-0 z-10 mx-5 flex items-center justify-between gap-6 border-b border-b-transparent p-5 [transition:all_300ms,_border_100ms] sm:mx-10",
         {
           "mt-2 rounded-2xl border border-muted-foreground bg-background px-4 py-3 shadow-sm [transition:all_300ms,_border_300ms] lg:mx-20": hasPageScrolled,
           "mt-0 -translate-y-full": !isHeaderVisible,

@@ -14,7 +14,7 @@ export function TimelineCard({ experience, isEven, translationsCareer }: Timelin
   return (
     <Reveal className={cn("animate-appearance-left animation-delay-[0.1s] animation-appearance-base", { "animate-appearance-right": isEven })}>
       <div
-        className={cn("col-start-1 flex max-w-lg flex-col gap-4 rounded-2xl border-2 border-muted-foreground bg-background p-10 lg:max-w-none", {
+        className={cn("col-start-1 flex max-w-lg flex-col gap-4 rounded-2xl border-2 border-muted-foreground bg-background p-5 sm:p-10 lg:max-w-none", {
           "col-start-3": isEven
         })}
       >
@@ -25,8 +25,8 @@ export function TimelineCard({ experience, isEven, translationsCareer }: Timelin
         </div>
         <Tabs defaultValue="account">
           <TabsList>
-            <TabsTrigger value="account">Résumé</TabsTrigger>
-            <TabsTrigger value="password">Responsabilités</TabsTrigger>
+            <TabsTrigger value="account">{translationsCareer.overview}</TabsTrigger>
+            <TabsTrigger value="password">{translationsCareer.responsibilities}</TabsTrigger>
           </TabsList>
           <TabsContent value="account">
             <p>{experience.overview}</p>

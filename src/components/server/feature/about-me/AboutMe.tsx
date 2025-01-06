@@ -22,7 +22,7 @@ export function AboutMe({ translationsAboutMe }: AboutMeProps) {
     >
       <div className="grid w-full grid-flow-row-dense grid-cols-6 gap-4">
         <Reveal className="animate-appearance-left animation-delay-[0.8s] animation-appearance-base">
-          <div className="col-span-6 rounded-2xl border-2 border-muted-foreground bg-background px-5 py-2.5 lg:col-span-4 lg:px-10 lg:py-5">
+          <div className="col-span-6 rounded-2xl border-2 border-muted-foreground bg-background p-5 lg:col-span-4 lg:p-10">
             <p className="text-base text-foreground md:text-lg">
               {translationsAboutMe.paragraph1}
               <br />
