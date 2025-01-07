@@ -25,7 +25,7 @@
     "about_me": {
         "section_title": "Profil",
         "title": "Qui suis-je ?",
-        "subtitle": "Mon histoire et ma mission pour vos projets.",
+        "subtitle": "Mon histoire et ma mission pour vos projets",
         "paragraph1": "Bonjour, je suis William, ingénieur et développeur web passionné. Depuis mes premiers projets en école d’ingénieur, je n’ai cessé de perfectionner mes compétences et de repousser mes limites pour répondre aux défis techniques les plus variés. Ce qui me motive ? Concevoir des solutions élégantes, fiables et adaptées aux besoins uniques de chaque projet.",
         "paragraph2": "Au fil de mes expériences, j’ai eu l’occasion de travailler sur des projets d’envergure, touchant aussi bien au développement backend qu’au développement frontend. Ces projets m’ont permis d’approfondir mes compétences techniques et de m’adapter à des environnements variés.",
         "paragraph3": "Aujourd’hui, en tant que freelance, j’apporte cette polyvalence et cette expérience aux entreprises de toutes tailles, avec un objectif clair : transformer vos idées en projets concrets, performants et durables.",
@@ -35,18 +35,49 @@
         "stat_card_3": "à l'écoute de vos besoins"
     },
     "career": {
-        "overview": "Aperçu",
-        "responsibilities": "Responsabilités",
+        "section_title": "Parcours",
+        "title": "Mon parcours professionnel",
+        "subtitle": "Les expériences qui façonnent mon expertise",
+        "see_more": "Voir plus",
+        "company": "L'entriprise",
+        "team": "L'équipe",
+        "projects": "Les projets",
         "experiences": [
             {
                 "title": "Ingénieur développeur sénior frontend web",
                 "range": "2022 - présent",
                 "company": "Bébéboutik",
-                "overview": "Bébéboutik est une plateforme de ventes privées dédiée à la petite enfance, où l'objectif principal est de moderniser les services numériques et développer des solutions innovantes.",
+                "company_description": "Bébéboutik est une plateforme de ventes privées dédiée à la petite enfance. Cette plateforme se décline sous plusieurs formes: un site web et une application mobile de ventes privées ainsi qu'un site web type marketplace.",
+                "company_size": "Bébéboutik est composé d'environ une soixantaine de personnes.",
+                "team": "L'équipe dans laquelle je me trouve est composée de 5-6 personnes. Le CTO, 3 développeurs backend et 1-2 développeurs frontend. Ma collaboration se fait essentiellement avec les peronnes de mon équipe et parfois aussi avec d'autres services comme le service marketing.",
+                "projects": [
+                    "Migration du site web de ventes privées de Prestashop à NextJS. (frontent/2 dev backend et 1 dev frontend / url du projet) ",
+                    "Création d'un site web type marketplace.",
+                    "Refonte complète de l'application mobile de ventes privées.",
+                    "Création d'un site web type dashboard utile aux différents fournisseurs."
+                ],
+                "technologies": [
+                    "Turborepo",
+                    "NextJS",
+                    "ReactJS",
+                    "TailwindCSS",
+                    "React Native",
+                    "GraphQL",
+                    "NodeJS",
+                    "ExpressJS",
+                    "Redis"
+                ]
+            },
+            {
+                "title": "Ingénieur développeur sénior frontend web",
+                "range": "2022 - présent",
+                "company": "Bébéboutik",
+                "overview": "Bébéboutik est une plateforme de ventes privées dédiée à la petite enfance. Cette plateforme se décline sous plusieurs formes: un site web et une application mobile de ventes privées ainsi qu'un site web type marketplace.",
                 "responsibilities": [
-                    "Développer une marketplace complète.",
-                    "Migrer le site de ventes privées de Prestashop à NextJS pour améliorer les performances.",
-                    "Collaborer avec un autre développeur frontend pour garantir une expérience fluide."
+                    "Migration du site web de ventes privées de Prestashop à NextJS.",
+                    "Création du site web type marketplace.",
+                    "Refonte complète de l'application mobile de ventes privées.",
+                    "Création d'un site web type dashboard utile aux différents fournisseurs."
                 ],
                 "technologies": [
                     "Turborepo",

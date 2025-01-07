@@ -35,6 +35,9 @@
         "stat_card_3": "à l'écoute du besoin"
     },
     "career": {
+        "section_title": "Parcours",
+        "title": "Mon parcours professionnel",
+        "subtitle": "Les expériences qui façonnent mon expertise",
         "overview": "Aperçu",
         "responsibilities": "Responsabilités",
         "experiences": [

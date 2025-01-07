@@ -12,9 +12,9 @@ export function Career({ translationsCareer }: CareerProps) {
     <Section
       id={headerLinks.career}
       number="02"
-      sectionName="Ma carrière"
-      title="En apprendre plus sur ma carrière"
-      subtitle="Gouzi gouzi gouzi la marsupilami ehehe"
+      sectionName={translationsCareer.section_title}
+      title={translationsCareer.title}
+      subtitle={translationsCareer.subtitle}
     >
       <Timeline translationsCareer={translationsCareer} />
     </Section>
