@@ -38,18 +38,35 @@
         "section_title": "Parcours",
         "title": "Mon parcours professionnel",
         "subtitle": "Les expériences qui façonnent mon expertise",
-        "overview": "Aperçu",
-        "responsibilities": "Responsabilités",
+        "see_more": "Voir plus",
+        "company": "L'entreprise",
+        "team": "L'équipe",
+        "projects": "Les projets",
         "experiences": [
             {
                 "title": "Ingénieur développeur sénior frontend web",
                 "range": "2022 - présent",
                 "company": "Bébéboutik",
-                "overview": "Bébéboutik est une plateforme de ventes privées dédiée à la petite enfance, où l'objectif principal est de moderniser les services numériques et développer des solutions innovantes.",
-                "responsibilities": [
-                    "Développer une marketplace complète.",
-                    "Migrer le site de ventes privées de Prestashop à NextJS pour améliorer les performances.",
-                    "Collaborer avec un autre développeur frontend pour garantir une expérience fluide."
+                "company_description": "Bébéboutik est une plateforme de ventes privées dédiée à la petite enfance. Cette plateforme se décline sous plusieurs formes: un site web et une application mobile de ventes privées ainsi qu'un site web type \"marketplace\".",
+                "company_size": "Bébéboutik compte environ une soixantaine de personnes.",
+                "team": "L'équipe dans laquelle je me trouve est composée de 5-6 personnes. Le CTO, 3 développeurs backend et 1-2 développeurs frontend. Ma collaboration se fait essentiellement avec les peronnes de mon équipe et parfois aussi avec d'autres services comme le service marketing.",
+                "projects": [
+                    {
+                        "id": "bbtk-website",
+                        "description": "Migration du site web de ventes privées de Prestashop à NextJS."
+                    },
+                    {
+                        "id": "bbtk-website",
+                        "description": "Création d'un site web type \"marketplace\"."
+                    },
+                    {
+                        "id": "bbtk-mobile",
+                        "description": "Refonte complète de l'application mobile de ventes privées."
+                    },
+                    {
+                        "id": "bbtk-dashboard",
+                        "description": "Création d'un site web type \"dashboard\" utile aux différents fournisseurs."
+                    }
                 ],
                 "technologies": [
                     "Turborepo",
@@ -67,11 +84,22 @@
                 "range": "2020 - 2022",
                 "title": "Ingénieur développeur web",
                 "company": "Sopra Steria",
-                "overview": "Projet Ecomode, une initiative visant à améliorer l’écomobilité en Occitanie grâce à des solutions technologiques avancées.",
-                "responsibilities": [
-                    "Développer l’application mobile grand public en React Native.",
-                    "Créer l’interface web pour les gestionnaires administratifs avec ReactJS.",
-                    "Implémenter une architecture backend microservices en NodeJS, Kafka et PostgreSQL."
+                "company_description": "Sopra Steria est une entreprise de services du numérique (ESN) française et une société de conseil en transformation numérique des entreprises et des organisations.",
+                "company_size": "Sopra Steria compte environ 55 000 salariés.",
+                "team": "J'ai travaillé sur le projet Ecomode (une application mobile qui accompagne et récompense les déplacements bas carbone quotidiens dans l’agglomération toulousaine). Notre équipe était composée de 5 à 12 personnes en fonction de la vie du projet. Un chef de projet, un srum master, un architecte, 3 business analyst et le reste de développeurs. Ma collaboration se faisait essentiellement avec les peronnes de cette équipe et parfois aussi avec d'autres services comme les UI/UX designers.",
+                "projects": [
+                    {
+                        "id": "sprstr-ecomode",
+                        "description": "Création de l'application mobile grand public Ecomode."
+                    },
+                    {
+                        "id": "sprstr-ecomode",
+                        "description": "Implémentation d'une architecture backend microservices."
+                    },
+                    {
+                        "id": "",
+                        "description": "Création d'une application web de gestion pour l'application mobile Ecomode."
+                    }
                 ],
                 "technologies": [
                     "ReactJS",
@@ -86,20 +114,28 @@
                 "range": "2019 - 2020",
                 "title": "Ingénieur développeur web",
                 "company": "Sopra Steria",
-                "overview": "Participation à divers projets au sein de la \"Factory\", un service spécialisé dans le prototypage rapide d’applications sur mesure.",
-                "responsibilities": [
-                    "Développer une application mobile native iOS avec Swift.",
-                    "Créer une application web de gestion de beacons Bluetooth avec Angular et AWS.",
-                    "Réaliser une application 3D en temps réel pour visualiser des avions avec ThreeJS.",
-                    "Développer une application web de gestion des entrées et sorties avec ReactJS et Azure."
+                "company_description": "Sopra Steria est une entreprise de services du numérique (ESN) française et une société de conseil en transformation numérique des entreprises et des organisations.",
+                "company_size": "Sopra Steria compte environ 55 000 salariés.",
+                "team": "J'ai travaillé dans un service appelé la \"Factory\", spécialisé dans le prototypage rapide d’applications sur mesure. Notre service était composé d'environ 25 personnes. Un chef de service, 2 architectes , le reste de développeurs. Nous étions assignés à différents projets en plus petites équipes (en général de 3 à 5 personnes) ayant pour durée moyenne 3 à 6 mois. Ma collaboration se faisait essentiellement avec les peronnes de la \"Factory\" et aussi souvent avec les clients.",
+                "projects": [
+                    {
+                        "id": "",
+                        "description": "Création d'une application web de gestion/localisation de beacons Bluetooth."
+                    },
+                    {
+                        "id": "",
+                        "description": "Prototypage d'une application web 3D en temps réel pour visualiser des avions."
+                    },
+                    {
+                        "id": "",
+                        "description": "Création d'une application web de contrôle des entrées et sorties de bâtiments."
+                    }
                 ],
                 "technologies": [
-                    "Angular",
-                    "AWS",
-                    "Kotlin",
-                    "Swift",
-                    "ThreeJS",
                     "ReactJS",
+                    "Angular",
+                    "ThreeJS",
+                    "AWS",
                     "Azure"
                 ]
             },
@@ -107,10 +143,14 @@
                 "range": "2019 - 2019",
                 "title": "Ingénieur stagiaire développeur web",
                 "company": "Expleo Group",
-                "overview": "Refonte d’une application web interne dédiée à la gestion de projets, avec une attention particulière portée à l’interface utilisateur et à la maintenance technique.",
-                "responsibilities": [
-                    "Mettre à jour les librairies et corriger les erreurs existantes.",
-                    "Refondre complètement l’interface graphique conformément aux maquettes fournies."
+                "company_description": "Expleo Group est une entreprise de services du numérique (ESN) et un prestataire de services global en ingénierie, technologie et conseil.",
+                "company_size": "Expleo Group compte environ 17 000 salariés.",
+                "team": "L'équipe dans laquelle je me trouvais était composée de 5 personnes. Un chef de projet et 4 développeurs. Nous étions assignés à différents projets en plus petites équipes (en général de 3 à 5 personnes) ayant pour durée moyenne 3 à 6 mois. Ma collaboration se faisait essentiellement avec les peronnes de notre équipe.",
+                "projects": [
+                    {
+                        "id": "",
+                        "description": "Refonte d’une application web interne dédiée à la gestion de projets, avec une attention particulière portée à l’interface utilisateur."
+                    }
                 ],
                 "technologies": [
                     "HTML",

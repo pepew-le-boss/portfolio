@@ -31,7 +31,9 @@ const TabsList = React.forwardRef<React.ElementRef<typeof TabsPrimitive.List>, R
 TabsList.displayName = TabsPrimitive.List.displayName
 
 const TabsTrigger = React.forwardRef<React.ElementRef<typeof TabsPrimitive.Trigger>, React.ComponentPropsWithoutRef<typeof TabsPrimitive.Trigger>>(
-  ({ className, children, ...props }) => {
+  // to prevent error in console
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  ({ className, children, ...props }, ref) => {
     const triggerRef = React.useRef<HTMLButtonElement>(null)
     const [isActive, setIsActive] = React.useState(false)
     const tabsId = React.useContext(TabsContext)

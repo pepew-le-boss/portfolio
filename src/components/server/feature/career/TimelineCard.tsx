@@ -23,20 +23,25 @@ export function TimelineCard({ experience, isEven, translationsCareer }: Timelin
           <div className="text-2xl font-semibold leading-tight">{experience.title}</div>
           <div className="text-lg text-muted-foreground">{experience.company}</div>
         </div>
-        <Tabs defaultValue="account">
+        <Tabs defaultValue="projects">
           <TabsList>
-            <TabsTrigger value="account">{translationsCareer.overview}</TabsTrigger>
-            <TabsTrigger value="password">{translationsCareer.responsibilities}</TabsTrigger>
+            <TabsTrigger value="projects">{translationsCareer.projects}</TabsTrigger>
+            <TabsTrigger value="team">{translationsCareer.team}</TabsTrigger>
+            <TabsTrigger value="company">{translationsCareer.company}</TabsTrigger>
           </TabsList>
-          <TabsContent value="account">
-            <p>{experience.overview}</p>
-          </TabsContent>
-          <TabsContent value="password">
+          <TabsContent value="projects">
             <ul className="list-disc pl-5">
-              {experience.responsibilities.map((responsability) => (
-                <li key={responsability}>{responsability}</li>
+              {experience.projects.map((project) => (
+                <li key={project.description}>{project.description}</li>
               ))}
             </ul>
+          </TabsContent>
+          <TabsContent value="team">
+            <p>{experience.team}</p>
+          </TabsContent>
+          <TabsContent value="company">
+            <p>{experience.company_description}</p>
+            <p>{experience.company_size}</p>
           </TabsContent>
         </Tabs>
         <div className="mt-2 flex flex-wrap gap-2">
