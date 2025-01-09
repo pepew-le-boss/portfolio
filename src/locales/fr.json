@@ -48,7 +48,7 @@
                 "range": "2022 - présent",
                 "company": "Bébéboutik",
                 "company_description": "Bébéboutik est une plateforme de ventes privées dédiée à la petite enfance. Cette plateforme se décline sous plusieurs formes: un site web et une application mobile de ventes privées ainsi qu'un site web type \"marketplace\".",
-                "company_size": "Bébéboutik compte environ une soixantaine de personnes.",
+                "company_size": "Bébéboutik compte environ une soixantaine de salariés.",
                 "team": "L'équipe dans laquelle je me trouve est composée de 5-6 personnes. Le CTO, 3 développeurs backend et 1-2 développeurs frontend. Ma collaboration se fait essentiellement avec les peronnes de mon équipe et parfois aussi avec d'autres services comme le service marketing.",
                 "projects": [
                     {
@@ -97,7 +97,7 @@
                         "description": "Implémentation d'une architecture backend microservices."
                     },
                     {
-                        "id": "",
+                        "id": "sprstr-ecomode",
                         "description": "Création d'une application web de gestion pour l'application mobile Ecomode."
                     }
                 ],
@@ -167,48 +167,24 @@
         "title": "Projets sur lesquels j'ai travaillé",
         "works": [
             {
-                "id": "bbtk-website",
-                "title": "Bébéboutik | Sites web",
-                "company": "Bébéboutik",
-                "name": "Sites web (ventes privées et marketplace)",
-                "description": [
-                    "Il s'agit de deux sites web avec une grande partie du code partagée grâce à un monorepo:",
-                    [
-                        "Le site de ventes privées",
-                        "Le site marketplace"
-                    ],
-                    "J'ai travaillé que sur la partie frontend (NextJS et GraphQL) des sites, le backend (PHP) étant géré par deux autres développeurs.",
-                    "En moyenne deux développeurs sur ce projet."
-                ],
-                "team": "2 dev backend et 1-2 dev frontend (dont moi)",
-                "type": "frontent",
-                "link": "https://www.bebeboutik-prive.fr/",
-                "technologies": [
-                    "Turborepo",
-                    "Typescript",
-                    "NextJS",
-                    "ReactJS",
-                    "TailwindCSS",
-                    "GraphQL",
-                    "NodeJS",
-                    "ExpressJS",
-                    "Redis"
-                ]
-            },
-            {
+                "id": "bbtk-dashboard",
                 "title": "Bébéboutik | Dashboard",
                 "company": "Bébéboutik",
                 "name": "Dashboard",
-                "description": [
-                    "Il s'agit d'un dashboard destiné aux fournisseurs du site de ventes privées. Il peuvent y exécuter plusieurs actions comme:",
-                    [
-                        "Voir les ventes en cours sur le site",
-                        "Modififier les ventes en cours",
-                        "Voir les chiffres réalisés sur le site"
-                    ],
-                    "Cette platforme est réalisée en full NextJS, c'est à dire que le backend aussi est en NextJS.",
-                    "Seulement moi sur le projet."
+                "description": "Ce projet consiste en la réalisation d'un dashboard destiné aux fournisseurs du site de ventes privées. La plateforme leur permet d'exécuter plusieurs actions, telles que consulter les ventes en cours ainsi que visualiser les chiffres réalisés sur le site. Elle a été développée en NextJS de bout en bout, englobant à la fois le frontend et le backend.",
+                "responsabilities": [
+                    "Développer puis maintenir le dashboard en utilisant NextJS.",
+                    "Responsable de l'intégration de la partie frontend et backend (carte blanche ou presque).",
+                    "Créer une interface utilisateur réactive et performante avec ReactJS, TailwindCSS et du caching.",
+                    "Gérer l'intégration du backend en NextJS, DrizzleORM et MySQL pour fournir des fonctionnalités complètes."
                 ],
+                "other_info": {
+                    "team": "1 développeur fullstack (moi)",
+                    "type": "fullstack",
+                    "link_web": "confidential",
+                    "link_appstore": "",
+                    "link_playstore": ""
+                },
                 "technologies": [
                     "Typescript",
                     "NextJS",
@@ -219,18 +195,26 @@
                 ]
             },
             {
-                "title": "Bébéboutik | Site web",
+                "id": "bbtk-website",
+                "title": "Bébéboutik | Sites web",
                 "company": "Bébéboutik",
-                "name": "Site web",
-                "description": [
-                    "Il s'agit de deux sites web avec une grande partie du code partagée grâce à un monorepo:",
-                    [
-                        "Le site de ventes privées",
-                        "Le site marketplace"
-                    ],
-                    "J'ai travaillé que sur la partie frontend (NextJS et GraphQL) des sites, le backend (PHP) étant géré par deux autres développeurs.",
-                    "En moyenne deux développeurs sur ce projet."
+                "name": "Sites web (ventes privées et marketplace)",
+                "description": "Ce projet consiste à développer deux sites web interconnectés — un site de ventes privées et une marketplace — partageant une grande partie du code grâce à une configuration de monorepo. Le travail se concentre exclusivement sur les aspects frontend de ces sites.",
+                "responsabilities": [
+                    "Développer puis maintenir les sites en utilisant NextJS.",
+                    "Responsable de l'intégration de la partie frontend (avec consultation du CTO).",
+                    "Implémenter des stratégies de cache pour améliorer les performances grâce à Redis.",
+                    "Mettre en place un monorepo pour partager le code entre les deux sites.",
+                    "Créer un serveur GraphQL pour une manipulation efficace des données avec le backend.",
+                    "Collaborer avec deux développeurs backend travaillant sur PHP, en assurant une intégration fluide entre le frontend et le backend."
                 ],
+                "other_info": {
+                    "team": "2 développeurs backend et 1-2 développeurs frontend (dont moi) et le CTO",
+                    "type": "frontend",
+                    "link_web": "https://www.bebeboutik-prive.fr/",
+                    "link_appstore": "",
+                    "link_playstore": ""
+                },
                 "technologies": [
                     "Turborepo",
                     "Typescript",
@@ -244,15 +228,23 @@
                 ]
             },
             {
+                "id": "bbtk-mobile",
                 "title": "Bébéboutik | Application mobile",
                 "company": "Bébéboutik",
                 "name": "Application mobile",
-                "description": [
-                    "Il s'agit de la version mobile du site de ventes privées. L'application ne partage pas le code avec le site web en revanche elle utilise le même GraphQL.",
-                    "C'est l'application mobile qui génère le plus de chiffre avec plusieurs millions de téléchargements entre l'AppStore et le PlayStore.",
-                    "L'application est réalisée exclusivement en React Native",
-                    "En moyenne deux à trois développeurs sur ce projet."
+                "description": "Ce projet concernait le développement de la version mobile du site de ventes privées. Bien qu'elle ne partage pas son code avec le site web, l'application utilise la même API GraphQL. Réalisée exclusivement en React Native (Expo), elle est devenue la principale source de revenus avec plusieurs millions de téléchargements sur l'AppStore et le PlayStore.",
+                "responsabilities": [
+                    "Développer puis maintenir l'application mobile en React Native (Expo).",
+                    "Assurer l'intégration avec le backend via le serveur GraphQL pour une synchronisation des données.",
+                    "Collaborer avec deux développeurs backend travaillant sur PHP, en assurant une intégration fluide entre l'application et le backend."
                 ],
+                "other_info": {
+                    "team": "2 développeurs backend et 1-2 développeurs frontend (dont moi) et le CTO",
+                    "type": "frontend mobile",
+                    "link_web": "",
+                    "link_appstore": "https://apps.apple.com/fr/app/bebeboutik-ventes-priv%C3%A9es/id1287943233",
+                    "link_playstore": "https://play.google.com/store/apps/details?id=com.bebeboutik&hl=fr"
+                },
                 "technologies": [
                     "Typescript",
                     "Expo",
@@ -263,18 +255,24 @@
                 ]
             },
             {
+                "id": "sprstr-ecomode",
                 "title": "Sopra Steria | Ecomode",
                 "company": "Sopra Steria",
                 "name": "Ecomode",
-                "description": [
-                    "Il s'agit de deux applications, une mobile et une web, la mobile étant la version destinée au grand public et la web étant une interface administrateur.",
-                    [
-                        "L'application mobile est réalisée en React Native",
-                        "L'application web est réalisée en ReactJS",
-                        "J'ai aussi travaillé sur le backend qui lui est une architecture en microservices en NodeJS"
-                    ],
-                    "En moyenne 4 à 8 développeurs répartis sur ces projets."
+                "description": "Ce projet comprenait le développement de deux applications distinctes : une application mobile destinée au grand public et une interface web pour les administrateurs. En parallèle, j'ai contribué au développement du backend, basé sur une architecture en microservices avec NodeJS.",
+                "responsabilities": [
+                    "Participer au développement de l'application mobile en React Native.",
+                    "Contribuer à la création de l'interface web administrative en ReactJS.",
+                    "Travailler sur le backend en NodeJS dans une architecture microservices.",
+                    "Collaborer au sein d'une équipe de 4 à 8 développeurs dans un environnement agile."
                 ],
+                "other_info": {
+                    "team": "1 chef de projet, 1 srum master, 1 architecte, 3 business analyst et le reste de développeurs (tous fullstack) (dont moi)",
+                    "type": "fullstack",
+                    "link_web": "https://www.ecomode.fr/",
+                    "link_appstore": "shutdown",
+                    "link_playstore": "shutdown"
+                },
                 "technologies": [
                     "Typescript",
                     "ReactJS",
@@ -288,19 +286,25 @@
                 ]
             },
             {
+                "id": "perso-planidays",
                 "title": "Personel | Planidays",
                 "company": "Personel",
                 "name": "Planidays",
-                "description": [
-                    "Planidays est une application web réalisée avec un ami sur notre temps libre. Il s'agit d'une application de planification de voyages assistée par IA.",
-                    "Nous avons tous les deux travaillé sur toutes les parties du projet:",
-                    [
-                        "L'application web en NextJS",
-                        "La partie IA avec l'API d'OpenAI et le AI SDK de Vercel",
-                        "Le backend en NextJS aussi"
-                    ],
-                    "Deux développeurs sur ce projet."
+                "description": "Planidays est une application web de planification de voyages assistée par IA, développée sur mon temps libre avec un ami. Ce projet touche à la fois au frontend, au backend et à l'intelligence artificielle.",
+                "responsabilities": [
+                    "Concevoir et développer l'application web en NextJS.",
+                    "Implémenter la partie IA en intégrant l'API d'OpenAI avec le AI SDK de Vercel pour l'assistance à la planification de voyages.",
+                    "Construire et maintenir le backend en NextJS, DrizzleORM et PostgreSQL, assurant une communication fluide entre les différentes composantes du système.",
+                    "Collaborer étroitement avec un autre développeur pour partager les responsabilités sur toutes les parties du projet.",
+                    "Établir une vision claire pour l'évolution du projet puis organiser et prioriser les tâches."
                 ],
+                "other_info": {
+                    "team": "2 développeurs fullstack (dont moi)",
+                    "type": "fullstack",
+                    "link_web": "https://www.planidays.com/",
+                    "link_appstore": "",
+                    "link_playstore": ""
+                },
                 "technologies": [
                     "Typescript",
                     "NextJS",
