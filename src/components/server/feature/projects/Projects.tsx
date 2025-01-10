@@ -12,13 +12,13 @@ export function Projects({ translationsProjects }: ProjectsProps) {
     <Section
       id={headerLinks.projects}
       number="03"
-      sectionName="Mes projets"
-      title="En apprendre plus sur mes projets"
-      subtitle="Gouzi gouzi gouzi la marsupilami ehehe"
+      sectionName={translationsProjects.section_title}
+      title={translationsProjects.title}
+      subtitle={translationsProjects.subtitle}
     >
       <div className="flex flex-wrap justify-center gap-10">
         {translationsProjects.works.map((project) => (
-          <ProjectCard key={project.title} project={project} />
+          <ProjectCard key={project.title} project={project} translationsProjects={translationsProjects} />
         ))}
       </div>
     </Section>

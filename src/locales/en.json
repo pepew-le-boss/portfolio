@@ -164,7 +164,20 @@
         ]
     },
     "projects": {
-        "title": "Projets sur lesquels j'ai travaillé",
+        "section_title": "Projets",
+        "title": "Mes projets",
+        "subtitle": "Les expériences qui façonnent mon expertise",
+        "description": "Description",
+        "responsabilities": "Responsabilités",
+        "informations": "Informations",
+        "team": "Équipe",
+        "type": "Type",
+        "link_web": "Site web",
+        "link_appstore": "App Store",
+        "link_playstore": "Play Store",
+        "click_here": "cliquer ici",
+        "confidential": "confidentiel",
+        "shutdown": "annulé/retiré",
         "works": [
             {
                 "id": "bbtk-dashboard",

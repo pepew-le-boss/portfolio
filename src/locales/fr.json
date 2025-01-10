@@ -164,7 +164,20 @@
         ]
     },
     "projects": {
-        "title": "Projets sur lesquels j'ai travaillé",
+        "section_title": "Projets",
+        "title": "Mon parcours en actions",
+        "subtitle": "De la réflexion à la mise en œuvre : retour sur des projets marquants",
+        "description": "Description",
+        "responsabilities": "Responsabilités",
+        "informations": "Informations",
+        "team": "Équipe",
+        "type": "Type",
+        "link_web": "Site web",
+        "link_appstore": "App Store",
+        "link_playstore": "Play Store",
+        "click_here": "cliquer ici",
+        "confidential": "confidentiel",
+        "shutdown": "annulé/retiré",
         "works": [
             {
                 "id": "bbtk-dashboard",
@@ -198,7 +211,7 @@
                 "id": "bbtk-website",
                 "title": "Bébéboutik | Sites web",
                 "company": "Bébéboutik",
-                "name": "Sites web (ventes privées et marketplace)",
+                "name": "Sites web",
                 "description": "Ce projet consiste à développer deux sites web interconnectés — un site de ventes privées et une marketplace — partageant une grande partie du code grâce à une configuration de monorepo. Le travail se concentre exclusivement sur les aspects frontend de ces sites.",
                 "responsabilities": [
                     "Développer puis maintenir les sites en utilisant NextJS.",
@@ -267,7 +280,7 @@
                     "Collaborer au sein d'une équipe de 4 à 8 développeurs dans un environnement agile."
                 ],
                 "other_info": {
-                    "team": "1 chef de projet, 1 srum master, 1 architecte, 3 business analyst et le reste de développeurs (tous fullstack) (dont moi)",
+                    "team": "1 chef de projet, 1 srum master, 1 architecte, 3 business analyst et le 3-6 développeurs fullstack (dont moi)",
                     "type": "fullstack",
                     "link_web": "https://www.ecomode.fr/",
                     "link_appstore": "shutdown",

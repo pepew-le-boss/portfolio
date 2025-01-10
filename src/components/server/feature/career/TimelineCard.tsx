@@ -37,7 +37,7 @@ export function TimelineCard({ experience, isEven, translationsCareer }: Timelin
             </ul>
           </TabsContent>
           <TabsContent value="team">
-            <p>{experience.team}</p>
+            <p className="text-pretty">{experience.team}</p>
           </TabsContent>
           <TabsContent value="company">
             <p>{experience.company_description}</p>
