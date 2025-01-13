@@ -47,3 +47,4 @@ export default function RootLayout({ children, params }: { children: ReactNode; 
 // Faire un effet de gravité en easter egg, cf: https://www.designspells.com/spells/apps-fall-to-the-bottom-of-the-screen-when-a-search-yields-no-results-on
 // Voir pour utiliser la font de https://mode.com/
 // Voir pour utiliser la font de https://fonts.google.com/specimen/Geist+Mono
+// Contacter ce gars pour lui proposer mes services: https://www.youtube.com/watch?v=SMi72xAM3H8

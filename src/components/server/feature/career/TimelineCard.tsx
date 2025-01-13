@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { Reveal } from "@/components/client/common/Reveal"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/client/common/Tabs"
 import { TechnologyChips } from "@/components/server/common/TechnologyChips"
@@ -30,9 +31,19 @@ export function TimelineCard({ experience, isEven, translationsCareer }: Timelin
             <TabsTrigger value="company">{translationsCareer.company}</TabsTrigger>
           </TabsList>
           <TabsContent value="projects">
-            <ul className="list-disc pl-5">
+            <ul className="flex list-disc flex-col gap-2 pl-5">
               {experience.projects.map((project) => (
-                <li key={project.description}>{project.description}</li>
+                <li key={project.description} className="leading-tight">
+                  {project.description}{" "}
+                  {project.id && (
+                    <Link
+                      href={`#${project.id}`}
+                      className="block whitespace-nowrap text-sm text-muted-foreground underline decoration-transparent transition-all hover:decoration-muted-foreground"
+                    >
+                      {translationsCareer.see_more}
+                    </Link>
+                  )}
+                </li>
               ))}
             </ul>
           </TabsContent>

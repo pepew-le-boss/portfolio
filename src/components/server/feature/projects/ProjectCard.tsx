@@ -12,7 +12,7 @@ interface ProjectCardProps {
 
 export function ProjectCard({ project, translationsProjects }: ProjectCardProps) {
   return (
-    <div className="flex min-w-80 max-w-96 flex-1 flex-col overflow-hidden rounded-2xl border-2 border-muted-foreground bg-background">
+    <div id={project.id} className="flex min-w-80 max-w-96 flex-1 flex-col overflow-hidden rounded-2xl border-2 border-muted-foreground bg-background">
       <div className="relative h-48 w-full">
         <Image src={profilePic} alt="test" fill={true} sizes="100vw" className="object-cover" />
       </div>
