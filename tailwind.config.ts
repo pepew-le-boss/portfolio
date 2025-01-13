@@ -65,6 +65,10 @@ const config: Config = {
           "0%": { opacity: "0", transform: "translateX(100px)" },
           "100%": { opacity: "1", transform: "translateX(0px)" }
         },
+        "appearance-static": {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" }
+        },
         marquee: {
           from: { transform: "translateX(0)" },
           to: { transform: "translateX(calc(-100% - var(--gap)))" }
@@ -75,6 +79,7 @@ const config: Config = {
         "appearance-bottom": "appearance-bottom 1s",
         "appearance-left": "appearance-left 1s",
         "appearance-right": "appearance-right 1s",
+        "appearance-static": "appearance-static 1s",
         marquee: "marquee var(--duration) linear infinite"
       }
     }
