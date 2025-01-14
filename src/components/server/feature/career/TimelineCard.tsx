@@ -38,7 +38,7 @@ export function TimelineCard({ experience, isEven, translationsCareer }: Timelin
                   {project.id && (
                     <Link
                       href={`#${project.id}`}
-                      className="block whitespace-nowrap text-sm text-muted-foreground underline decoration-transparent transition-all hover:decoration-muted-foreground"
+                      className="block w-fit whitespace-nowrap text-sm text-muted-foreground underline decoration-transparent transition-all hover:decoration-muted-foreground"
                     >
                       {translationsCareer.see_more}
                     </Link>
