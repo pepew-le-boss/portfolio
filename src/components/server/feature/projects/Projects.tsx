@@ -1,4 +1,4 @@
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/client/common/Carousel"
+import { Carousel, CarouselContent, CarouselDotIndicators, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/client/common/Carousel"
 import { Section } from "@/components/server/common/Section"
 import { ProjectCard } from "@/components/server/feature/projects/ProjectCard"
 import { Translations } from "@/utils/common/getTranslations"
@@ -31,8 +31,8 @@ export function Projects({ translationsProjects }: ProjectsProps) {
           ))}
         </CarouselContent>
         <div className="flex items-center justify-between gap-4">
-          <p>pagination</p>
-          <div className="flex items-center gap-4">
+          <CarouselDotIndicators />
+          <div className="flex items-center gap-2">
             <CarouselPrevious />
             <CarouselNext />
           </div>

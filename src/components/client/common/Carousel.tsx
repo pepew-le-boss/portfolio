@@ -24,6 +24,8 @@ type CarouselContextProps = {
   scrollNext: () => void
   canScrollPrev: boolean
   canScrollNext: boolean
+  selectedIndex: number
+  slideCount: number
 } & CarouselProps
 
 const CarouselContext = React.createContext<CarouselContextProps | null>(null)
@@ -49,6 +51,8 @@ const Carousel = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivEl
     )
     const [canScrollPrev, setCanScrollPrev] = React.useState(false)
     const [canScrollNext, setCanScrollNext] = React.useState(false)
+    const [selectedIndex, setSelectedIndex] = React.useState(0)
+    const [slideCount, setSlideCount] = React.useState(0)
 
     const onSelect = React.useCallback((api: CarouselApi) => {
       if (!api) {
@@ -57,6 +61,9 @@ const Carousel = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivEl
 
       setCanScrollPrev(api.canScrollPrev())
       setCanScrollNext(api.canScrollNext())
+
+      setSelectedIndex(api.selectedScrollSnap())
+      setSlideCount(api.scrollSnapList().length)
     }, [])
 
     const scrollPrev = React.useCallback(() => {
@@ -112,7 +119,9 @@ const Carousel = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivEl
           scrollPrev,
           scrollNext,
           canScrollPrev,
-          canScrollNext
+          canScrollNext,
+          selectedIndex,
+          slideCount
         }}
       >
         <div ref={ref} onKeyDownCapture={handleKeyDown} className={cn("relative", className)} role="region" aria-roledescription="carousel" {...props}>
@@ -156,12 +165,12 @@ const CarouselPrevious = React.forwardRef<HTMLButtonElement, React.ComponentProp
   return (
     <button
       ref={ref}
-      className={cn("grid h-8 w-8 place-items-center rounded-full border border-foreground", className)}
+      className={cn("group grid h-8 w-8 place-items-center rounded-full bg-foreground disabled:opacity-50", className)}
       disabled={!canScrollPrev}
       onClick={scrollPrev}
       {...props}
     >
-      <ArrowLeft className="h-4 w-4" />
+      <ArrowLeft className="h-4 w-4 text-background transition-all ease-out group-hover:group-enabled:-translate-x-0.5" />
       <span className="sr-only">Previous slide</span>
     </button>
   )
@@ -174,16 +183,57 @@ const CarouselNext = React.forwardRef<HTMLButtonElement, React.ComponentProps<"b
   return (
     <button
       ref={ref}
-      className={cn("grid h-8 w-8 place-items-center rounded-full border border-foreground", className)}
+      className={cn("group grid h-8 w-8 place-items-center rounded-full bg-foreground disabled:opacity-50", className)}
       disabled={!canScrollNext}
       onClick={scrollNext}
       {...props}
     >
-      <ArrowRight className="h-4 w-4" />
+      <ArrowRight className="h-4 w-4 text-background transition-all ease-out group-hover:group-enabled:translate-x-0.5" />
       <span className="sr-only">Next slide</span>
     </button>
   )
 })
 CarouselNext.displayName = "CarouselNext"
 
-export { Carousel, type CarouselApi, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious }
+const CarouselDotIndicators = React.forwardRef<HTMLDivElement, React.ComponentProps<"div">>(({ className, ...props }, ref) => {
+  const { selectedIndex, slideCount, api } = useCarousel()
+
+  if (!api || slideCount < 2) return null
+
+  return (
+    <div ref={ref} className={cn("flex items-center gap-2 rounded-full", className)} {...props}>
+      {Array.from({ length: slideCount }).map((_, index) => {
+        const isActive = index === selectedIndex
+        return (
+          <button
+            key={index}
+            onClick={() => api.scrollTo(index)}
+            aria-label={`Go to slide ${index + 1}`}
+            className={cn(
+              "relative h-7 w-7 whitespace-nowrap rounded-full border border-foreground bg-background font-sfmono text-sm leading-none text-foreground transition-all duration-300 hover:bg-foreground hover:text-background",
+              {
+                "w-[3.25rem] bg-foreground text-background": isActive
+              }
+            )}
+          >
+            <span
+              className={cn("absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-[opacity,transform] duration-300", {
+                "-translate-x-full opacity-100": isActive
+              })}
+            >
+              {`//`}
+            </span>
+            <span
+              className={cn("absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transition-[opacity,transform] duration-300", {
+                "translate-x-0": isActive
+              })}
+            >{`0${index + 1}`}</span>
+          </button>
+        )
+      })}
+    </div>
+  )
+})
+CarouselDotIndicators.displayName = "CarouselDotIndicators"
+
+export { Carousel, type CarouselApi, CarouselContent, CarouselDotIndicators, CarouselItem, CarouselNext, CarouselPrevious }
