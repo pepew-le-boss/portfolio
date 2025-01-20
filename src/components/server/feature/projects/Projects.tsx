@@ -17,15 +17,10 @@ export function Projects({ translationsProjects }: ProjectsProps) {
       title={translationsProjects.title}
       subtitle={translationsProjects.subtitle}
     >
-      {/* <div className="flex flex-wrap justify-center gap-10">
-        {translationsProjects.works.map((project) => (
-          <ProjectCard key={project.title} project={project} translationsProjects={translationsProjects} />
-        ))}
-      </div> */}
-      <Carousel className="flex w-full flex-col gap-6">
+      <Carousel className="flex w-full max-w-[90vw] flex-col gap-6">
         <CarouselContent className="-ml-16">
           {translationsProjects.works.map((project, index) => (
-            <CarouselItem key={index} className="pl-16 md:basis-1/2 lg:basis-1/3">
+            <CarouselItem key={index} className="pl-16 md:basis-1/2 xl:basis-1/3">
               <ProjectCard key={project.title} project={project} translationsProjects={translationsProjects} />
             </CarouselItem>
           ))}
