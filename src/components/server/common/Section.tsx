@@ -1,5 +1,6 @@
 import { type ComponentProps, ReactNode } from "react"
 import { Reveal } from "@/components/client/common/Reveal"
+import { cn } from "@/utils/lib/tailwind/cn"
 
 interface SectionProps extends ComponentProps<"section"> {
   number: string
@@ -9,9 +10,9 @@ interface SectionProps extends ComponentProps<"section"> {
   children: ReactNode
 }
 
-export function Section({ number, sectionName, title, subtitle, children, ...props }: SectionProps) {
+export function Section({ number, sectionName, title, subtitle, children, className, ...props }: SectionProps) {
   return (
-    <section className="flex max-w-7xl flex-col items-center gap-10" {...props}>
+    <section className={cn("flex max-w-7xl flex-col items-center gap-10", className)} {...props}>
       <div className="flex flex-col items-center gap-5">
         <Reveal className="animate-appearance-bottom animation-delay-[0.1s] animation-appearance-base">
           <h3 className="inline-flex items-center justify-start gap-2 rounded-full border border-foreground bg-background px-3.5 py-1 font-sfmono text-sm">

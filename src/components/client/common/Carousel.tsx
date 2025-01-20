@@ -45,7 +45,12 @@ const Carousel = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivEl
     const [carouselRef, api] = useEmblaCarousel(
       {
         ...opts,
+        align: "start",
         axis: orientation === "horizontal" ? "x" : "y"
+        // watchDrag: (event) => {
+        //   // only watch drag events on touch devices (on PC can't drag carousel with mouse)
+        //   // return "TouchEvent" in window && event instanceof TouchEvent
+        // }
       },
       plugins
     )
