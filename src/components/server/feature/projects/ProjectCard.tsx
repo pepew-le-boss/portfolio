@@ -1,6 +1,7 @@
 import Image from "next/image"
 import profilePic from "/public/images/me.webp"
 import { ScrollArea } from "@/components/client/common/ScrollArea"
+import { Spotlight } from "@/components/client/common/Spotlight"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/client/common/Tabs"
 import { TechnologyChips } from "@/components/server/common/TechnologyChips"
 import { ProjectInfoListItem } from "@/components/server/feature/projects/ProjectInfoListItem"
@@ -15,6 +16,14 @@ export function ProjectCard({ project, translationsProjects }: ProjectCardProps)
   return (
     <div id={project.id} className="flex h-full flex-col overflow-hidden rounded-2xl border-2 border-muted-foreground bg-background">
       <div className="relative h-48 w-full">
+        <Spotlight
+          className="z-10 from-white/100 via-white/80 to-white/50 blur-2xl"
+          size={64}
+          springOptions={{
+            bounce: 0.3,
+            duration: 0.1
+          }}
+        />
         <Image src={profilePic} alt="test" fill={true} sizes="100vw" className="object-cover" />
       </div>
       <div className="flex flex-1 flex-col gap-4 py-6">
