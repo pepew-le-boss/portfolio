@@ -2,6 +2,7 @@ import Image from "next/image"
 import profilePic from "/public/images/me.webp"
 import { Reveal } from "@/components/client/common/Reveal"
 import { Section } from "@/components/server/common/Section"
+import { SpotlightImage } from "@/components/server/common/SpotlightImage"
 import { StatCard } from "@/components/server/feature/about-me/StatCard"
 import { getYearsOfExperience } from "@/utils/common/date.utils"
 import { Translations } from "@/utils/common/getTranslations"
@@ -36,7 +37,9 @@ export function AboutMe({ translationsAboutMe }: AboutMeProps) {
         </Reveal>
         <Reveal className="animate-appearance-right animation-delay-[0.8s] animation-appearance-base">
           <div className="relative col-span-6 h-48 sm:col-span-3 sm:col-start-4 sm:row-span-2 sm:h-auto lg:col-span-2 lg:col-start-auto lg:row-span-1">
-            <Image src={profilePic} alt={translationsAboutMe.img_alt} fill={true} sizes="100vw" className="h-full rounded-2xl object-cover" />
+            <SpotlightImage>
+              <Image src={profilePic} alt={translationsAboutMe.img_alt} fill={true} sizes="100vw" className="h-full rounded-2xl object-cover" />
+            </SpotlightImage>
           </div>
         </Reveal>
         <Reveal className="animate-appearance-bottom animation-delay-[0.2s] animation-appearance-base">
