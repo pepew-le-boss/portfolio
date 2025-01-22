@@ -1,3 +1,4 @@
+import { Reveal } from "@/components/client/common/Reveal"
 import { Section } from "@/components/server/common/Section"
 import { TechnologyStack } from "@/components/server/common/TechnologyStack"
 import type { Translations } from "@/utils/common/getTranslations"
@@ -17,8 +18,8 @@ export function MyStack({ translationsMyStack }: MyStackProps) {
       subtitle="Gouzi gouzi gouzi la marsupilami ehehe"
     >
       <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 sm:gap-10 md:grid-cols-4">
-        {translationsMyStack.technologies.map((technology) => (
-          <TechnologyStack key={technology} technology={technology} />
+        {translationsMyStack.technologies.map((technology, index) => (
+          <TechnologyStack key={technology} technology={technology} index={index} />
         ))}
       </div>
     </Section>

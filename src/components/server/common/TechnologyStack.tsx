@@ -1,3 +1,4 @@
+import { Reveal } from "@/components/client/common/Reveal"
 import { Tilt } from "@/components/client/common/Tilt"
 import { Icon } from "@/components/server/common/Icon"
 import { getTextColorForBackground } from "@/utils/common/color.utils"
@@ -17,9 +18,10 @@ const technologyColors = {
 
 interface TechnologyStackProps {
   technology: string
+  index: number
 }
 
-export function TechnologyStack({ technology }: TechnologyStackProps) {
+export function TechnologyStack({ technology, index }: TechnologyStackProps) {
   if (!isTechnologyType(technology)) {
     throw new Error(`Technology "${technology}" is not found in the list of technologies, maybe add it ?`)
   }
@@ -28,16 +30,22 @@ export function TechnologyStack({ technology }: TechnologyStackProps) {
   const color = technologyColors[technology as keyof typeof technologyColors]
   const contrastingTextColor = getTextColorForBackground(color)
 
+  const delay = (index * 0.1).toFixed(1)
+
   return (
-    <Tilt rotationFactor={20} isRevese>
-      <div
-        key={technology}
-        style={{ "--technology-color": color, "--text-color-hover": contrastingTextColor } as CSSPropertiesWithVars}
-        className="group flex flex-col items-center gap-2 rounded-lg border-2 border-muted-foreground bg-background p-6 transition-all hover:border-[--technology-color] hover:bg-[--technology-color] hover:shadow-lg"
-      >
-        <IconTechnology className="h-10 w-10 text-foreground transition-all group-hover:text-[--text-color-hover]" />
-        <span className="text-lg font-medium group-hover:text-[--text-color-hover]">{technology}</span>
+    <Reveal key={technology} className={`animate-appearance-bottom animation-delay-[${delay}s] animation-appearance-base`}>
+      <div>
+        <Tilt rotationFactor={20} isRevese>
+          <div
+            key={technology}
+            style={{ "--technology-color": color, "--text-color-hover": contrastingTextColor } as CSSPropertiesWithVars}
+            className="group flex flex-col items-center gap-2 rounded-lg border-2 border-muted-foreground bg-background p-6 transition-all hover:border-[--technology-color] hover:bg-[--technology-color] hover:shadow-lg"
+          >
+            <IconTechnology className="h-10 w-10 text-foreground transition-all group-hover:text-[--text-color-hover]" />
+            <span className="text-lg font-medium group-hover:text-[--text-color-hover]">{technology}</span>
+          </div>
+        </Tilt>
       </div>
-    </Tilt>
+    </Reveal>
   )
 }
