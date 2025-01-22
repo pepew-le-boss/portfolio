@@ -333,13 +333,13 @@
     "my_stack": {
         "technologies": [
             "Typescript",
+            "Javascript",
             "NextJS",
             "ReactJS",
             "TailwindCSS",
             "NodeJS",
             "DrizzleORM",
-            "PostgreSQL",
-            "MySQL"
+            "PostgreSQL"
         ]
     },
     "contact": {

@@ -1,5 +1,6 @@
 const technologies = [
   "Typescript",
+  "Javascript",
   "Turborepo",
   "NextJS",
   "ReactJS",
