@@ -1,4 +1,5 @@
 import { Carousel, CarouselContent, CarouselDotIndicators, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/client/common/Carousel"
+import { Reveal } from "@/components/client/common/Reveal"
 import { Section } from "@/components/server/common/Section"
 import { ProjectCard } from "@/components/server/feature/projects/ProjectCard"
 import { Translations } from "@/utils/common/getTranslations"
@@ -25,13 +26,15 @@ export function Projects({ translationsProjects }: ProjectsProps) {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <div className="flex items-center justify-between gap-4">
-          <CarouselDotIndicators />
-          <div className="flex items-center gap-2">
-            <CarouselPrevious />
-            <CarouselNext />
+        <Reveal className="animate-appearance-bottom animation-delay-[0.2s] animation-appearance-base">
+          <div className="flex items-center justify-between gap-4">
+            <CarouselDotIndicators />
+            <div className="flex items-center gap-2">
+              <CarouselPrevious />
+              <CarouselNext />
+            </div>
           </div>
-        </div>
+        </Reveal>
       </Carousel>
     </Section>
   )
