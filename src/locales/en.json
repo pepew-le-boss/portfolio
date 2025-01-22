@@ -331,6 +331,9 @@
         ]
     },
     "my_stack": {
+        "section_title": "Expertise",
+        "title": "Technologies au cœur de mes projets",
+        "subtitle": "Les outils que j’utilise au quotidien pour développer des solutions modernes et performantes",
         "technologies": [
             "Typescript",
             "Javascript",
