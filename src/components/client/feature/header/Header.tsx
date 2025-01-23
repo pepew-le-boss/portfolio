@@ -1,12 +1,12 @@
 "use client"
 
+import debounce from "lodash.debounce"
 import { useEffect, useRef, useState } from "react"
 import { HeaderMenuDrawer } from "@/components/client/feature/header/HeaderMenuDrawer"
 import LocaleSwitcher from "@/components/client/feature/header/LocaleSwitcher"
 import ThemeSwitcher from "@/components/client/feature/header/ThemeSwitcher"
 import { Icon } from "@/components/server/common/Icon"
 import { HeaderLink } from "@/components/server/feature/header/HeaderLink"
-import { debounce } from "@/utils/common/debounce"
 import type { Translations } from "@/utils/common/getTranslations"
 import { headerLinks } from "@/utils/common/link.utils"
 import { cn } from "@/utils/lib/tailwind/cn"
