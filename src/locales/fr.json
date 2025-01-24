@@ -346,8 +346,11 @@
         ]
     },
     "contact": {
+        "section_title": "Contact",
         "title": "Un projet en tête ?",
-        "description": "Faisons en sorte que ce rêve devienne réalité",
-        "marquee_text": "Discutons ensemble"
+        "subtitle": "Discutons ensemble et transformons votre idée en solution concrète",
+        "marquee_text": "Discutons ensemble",
+        "contact_me_linkedin": "Me contacter sur LinkedIn",
+        "contact_me_email": "Me contacter par email"
     }
 }
