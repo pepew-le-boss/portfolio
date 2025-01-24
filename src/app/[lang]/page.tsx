@@ -7,7 +7,7 @@ import { Footer } from "@/components/server/feature/footer/Footer"
 import { MyStack } from "@/components/server/feature/my-stack/MyStack"
 import { Projects } from "@/components/server/feature/projects/Projects"
 import { Locale } from "@/root/i18n-config"
-import { getTranslation } from "@/utils/common/getTranslations"
+import { getTranslation } from "@/utils/common/get-translations.utils"
 
 export default async function Home({ params: { lang } }: { params: { lang: Locale } }) {
   const translations = await getTranslation(lang)

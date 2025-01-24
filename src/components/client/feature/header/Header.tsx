@@ -7,9 +7,9 @@ import LocaleSwitcher from "@/components/client/feature/header/LocaleSwitcher"
 import ThemeSwitcher from "@/components/client/feature/header/ThemeSwitcher"
 import { Icon } from "@/components/server/common/Icon"
 import { HeaderLink } from "@/components/server/feature/header/HeaderLink"
-import type { Translations } from "@/utils/common/getTranslations"
+import type { Translations } from "@/utils/common/get-translations.utils"
 import { headerLinks } from "@/utils/common/link.utils"
-import { cn } from "@/utils/lib/tailwind/cn"
+import { cn } from "@/utils/lib/tailwind/cn.utils"
 
 interface HeaderProps {
   headerTranslations: Translations["header"]

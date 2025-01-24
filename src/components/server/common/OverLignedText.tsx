@@ -1,5 +1,5 @@
 import type { ReactNode } from "react"
-import { cn } from "@/utils/lib/tailwind/cn"
+import { cn } from "@/utils/lib/tailwind/cn.utils"
 
 interface OverLignedTextProps {
   children: ReactNode

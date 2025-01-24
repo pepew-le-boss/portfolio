@@ -4,9 +4,9 @@ import { Menu, X } from "lucide-react"
 import { useState } from "react"
 import { Drawer, DrawerClose, DrawerContent, DrawerDescription, DrawerHeader, DrawerTitle, DrawerTrigger } from "@/components/client/common/Drawer"
 import { HeaderLinkMobile } from "@/components/server/feature/header/HeaderLinkMobile"
-import type { Translations } from "@/utils/common/getTranslations"
+import type { Translations } from "@/utils/common/get-translations.utils"
 import { headerLinks } from "@/utils/common/link.utils"
-import { cn } from "@/utils/lib/tailwind/cn"
+import { cn } from "@/utils/lib/tailwind/cn.utils"
 
 interface HeaderMenuDrawerProps {
   headerTranslations: Translations["header"]

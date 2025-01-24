@@ -5,7 +5,7 @@ import { Section } from "@/components/server/common/Section"
 import { SpotlightImage } from "@/components/server/common/SpotlightImage"
 import { StatCard } from "@/components/server/feature/about-me/StatCard"
 import { getYearsOfExperience } from "@/utils/common/date.utils"
-import { Translations } from "@/utils/common/getTranslations"
+import { Translations } from "@/utils/common/get-translations.utils"
 import { headerLinks } from "@/utils/common/link.utils"
 
 interface AboutMeProps {

@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Icon } from "@/components/server/common/Icon"
-import type { Translations } from "@/utils/common/getTranslations"
+import type { Translations } from "@/utils/common/get-translations.utils"
 
 interface FooterProps {
   translationsFooter: Translations["footer"]

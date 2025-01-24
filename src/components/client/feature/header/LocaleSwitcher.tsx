@@ -5,7 +5,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/client/common/DropDownMenu"
 import { i18n, Locale } from "@/root/i18n-config"
-import { cn } from "@/utils/lib/tailwind/cn"
+import { cn } from "@/utils/lib/tailwind/cn.utils"
 
 interface LocaleSwitcherProps {
   className?: string

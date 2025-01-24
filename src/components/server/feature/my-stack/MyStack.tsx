@@ -1,6 +1,6 @@
 import { Section } from "@/components/server/common/Section"
 import { TechnologyStack } from "@/components/server/common/TechnologyStack"
-import type { Translations } from "@/utils/common/getTranslations"
+import type { Translations } from "@/utils/common/get-translations.utils"
 import { headerLinks } from "@/utils/common/link.utils"
 
 interface MyStackProps {

@@ -2,7 +2,7 @@
 
 import { useInView } from "motion/react"
 import { cloneElement, type ReactElement, useRef } from "react"
-import { cn } from "@/utils/lib/tailwind/cn"
+import { cn } from "@/utils/lib/tailwind/cn.utils"
 
 interface RevealProps {
   children: ReactElement

@@ -2,8 +2,8 @@ import Link from "next/link"
 import { Reveal } from "@/components/client/common/Reveal"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/client/common/Tabs"
 import { TechnologyChips } from "@/components/server/common/TechnologyChips"
-import type { Translations } from "@/utils/common/getTranslations"
-import { cn } from "@/utils/lib/tailwind/cn"
+import type { Translations } from "@/utils/common/get-translations.utils"
+import { cn } from "@/utils/lib/tailwind/cn.utils"
 
 interface TimelineCardProps {
   experience: Translations["career"]["experiences"][number]

@@ -2,7 +2,7 @@
 
 import * as ScrollAreaPrimitive from "@radix-ui/react-scroll-area"
 import { ComponentPropsWithoutRef, ElementRef, forwardRef } from "react"
-import { cn } from "@/utils/lib/tailwind/cn"
+import { cn } from "@/utils/lib/tailwind/cn.utils"
 
 const ScrollArea = forwardRef<React.ElementRef<typeof ScrollAreaPrimitive.Root>, ComponentPropsWithoutRef<typeof ScrollAreaPrimitive.Root>>(
   ({ className, children, ...props }, ref) => (

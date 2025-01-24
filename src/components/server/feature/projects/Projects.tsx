@@ -2,7 +2,7 @@ import { Carousel, CarouselContent, CarouselDotIndicators, CarouselItem, Carouse
 import { Reveal } from "@/components/client/common/Reveal"
 import { Section } from "@/components/server/common/Section"
 import { ProjectCard } from "@/components/server/feature/projects/ProjectCard"
-import { Translations } from "@/utils/common/getTranslations"
+import { Translations } from "@/utils/common/get-translations.utils"
 import { headerLinks } from "@/utils/common/link.utils"
 
 interface ProjectsProps {

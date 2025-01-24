@@ -1,4 +1,4 @@
-import { cn } from "@/utils/lib/tailwind/cn"
+import { cn } from "@/utils/lib/tailwind/cn.utils"
 
 interface StatCardProps {
   bigInfo: string

@@ -1,6 +1,6 @@
 import { type ComponentProps, ReactNode } from "react"
 import { Reveal } from "@/components/client/common/Reveal"
-import { cn } from "@/utils/lib/tailwind/cn"
+import { cn } from "@/utils/lib/tailwind/cn.utils"
 
 interface SectionProps extends ComponentProps<"section"> {
   number: string

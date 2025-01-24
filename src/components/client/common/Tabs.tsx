@@ -3,7 +3,7 @@
 import * as TabsPrimitive from "@radix-ui/react-tabs"
 import { motion } from "motion/react"
 import * as React from "react"
-import { cn } from "@/utils/lib/tailwind/cn"
+import { cn } from "@/utils/lib/tailwind/cn.utils"
 
 // for more info, check: https://github.com/ibelick/motion-primitives/blob/main/components/website/tabs.tsx
 

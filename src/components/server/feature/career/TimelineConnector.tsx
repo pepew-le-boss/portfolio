@@ -1,5 +1,5 @@
 import { Reveal } from "@/components/client/common/Reveal"
-import { cn } from "@/utils/lib/tailwind/cn"
+import { cn } from "@/utils/lib/tailwind/cn.utils"
 
 interface TimelineConnectorProps {
   index: number

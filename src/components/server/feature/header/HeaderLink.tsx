@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { cn } from "@/utils/lib/tailwind/cn"
+import { cn } from "@/utils/lib/tailwind/cn.utils"
 
 interface HeaderLinkProps {
   number: string

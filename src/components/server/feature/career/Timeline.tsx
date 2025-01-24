@@ -1,7 +1,7 @@
 import { ChevronsDown } from "lucide-react"
 import { Reveal } from "@/components/client/common/Reveal"
 import { TimelineSlot } from "@/components/server/feature/career/TimelineSlot"
-import type { Translations } from "@/utils/common/getTranslations"
+import type { Translations } from "@/utils/common/get-translations.utils"
 
 interface TimelineProps {
   translationsCareer: Translations["career"]

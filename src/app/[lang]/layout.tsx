@@ -3,8 +3,8 @@ import { ReactNode } from "react"
 import { ThemeProvider } from "@/components/client/common/ThemeProvider"
 import { Topography } from "@/components/client/common/Topography"
 import { i18n, Locale } from "@/root/i18n-config"
-import { getTranslation } from "@/utils/common/getTranslations"
-import { gabarito, sfmono } from "@/utils/lib/next/fonts"
+import { getTranslation } from "@/utils/common/get-translations.utils"
+import { gabarito, sfmono } from "@/utils/lib/next/fonts.utils"
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }))

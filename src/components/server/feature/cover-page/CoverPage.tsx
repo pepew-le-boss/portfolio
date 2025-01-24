@@ -3,7 +3,7 @@ import Link from "next/link"
 import { Icon } from "@/components/server/common/Icon"
 import { LinkButton } from "@/components/server/common/LinkButton"
 import { OverLignedText } from "@/components/server/common/OverLignedText"
-import { Translations } from "@/utils/common/getTranslations"
+import { Translations } from "@/utils/common/get-translations.utils"
 import { headerLinks } from "@/utils/common/link.utils"
 
 interface CoverPageProps {

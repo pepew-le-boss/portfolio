@@ -1,7 +1,7 @@
 import { TimelineCard } from "@/components/server/feature/career/TimelineCard"
 import { TimelineConnector } from "@/components/server/feature/career/TimelineConnector"
-import type { Translations } from "@/utils/common/getTranslations"
-import { cn } from "@/utils/lib/tailwind/cn"
+import type { Translations } from "@/utils/common/get-translations.utils"
+import { cn } from "@/utils/lib/tailwind/cn.utils"
 
 interface TimelineSlotProps {
   experience: Translations["career"]["experiences"][number]

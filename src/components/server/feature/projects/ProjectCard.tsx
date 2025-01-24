@@ -6,7 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/client/co
 import { SpotlightImage } from "@/components/server/common/SpotlightImage"
 import { TechnologyChips } from "@/components/server/common/TechnologyChips"
 import { ProjectInfoListItem } from "@/components/server/feature/projects/ProjectInfoListItem"
-import type { Translations } from "@/utils/common/getTranslations"
+import type { Translations } from "@/utils/common/get-translations.utils"
 
 interface ProjectCardProps {
   project: Translations["projects"]["works"][number]

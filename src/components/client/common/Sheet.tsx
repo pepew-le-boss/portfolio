@@ -3,7 +3,7 @@
 import * as SheetPrimitive from "@radix-ui/react-dialog"
 import { X } from "lucide-react"
 import * as React from "react"
-import { cn } from "@/utils/lib/tailwind/cn"
+import { cn } from "@/utils/lib/tailwind/cn.utils"
 
 const Sheet = SheetPrimitive.Root
 

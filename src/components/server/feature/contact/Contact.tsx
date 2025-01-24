@@ -2,7 +2,7 @@ import { ExternalLink } from "lucide-react"
 import { LinkButton } from "@/components/server/common/LinkButton"
 import { Marquee } from "@/components/server/common/Marquee"
 import { Section } from "@/components/server/common/Section"
-import type { Translations } from "@/utils/common/getTranslations"
+import type { Translations } from "@/utils/common/get-translations.utils"
 import { headerLinks } from "@/utils/common/link.utils"
 
 interface ContactProps {
