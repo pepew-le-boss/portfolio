@@ -23,7 +23,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
         <MyStack translationsMyStack={translations.my_stack} />
         <Contact translationsContact={translations.contact} />
       </main>
-      <Footer />
+      <Footer translationsFooter={translations.footer} />
     </div>
   )
 }

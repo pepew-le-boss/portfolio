@@ -352,5 +352,10 @@
         "marquee_text": "Discutons ensemble",
         "contact_me_linkedin": "Me contacter sur LinkedIn",
         "contact_me_email": "Me contacter par email"
+    },
+    "footer": {
+        "rights": "William Fargues. Tous droits réservés.",
+        "code": "Code source disponible sur mon",
+        "github": "GitHub"
     }
 }
