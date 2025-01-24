@@ -1,8 +1,8 @@
 "use client"
 
 import * as SheetPrimitive from "@radix-ui/react-dialog"
+import { X } from "lucide-react"
 import * as React from "react"
-import { Icon } from "@/components/server/common/Icon"
 import { cn } from "@/utils/lib/tailwind/cn"
 
 const Sheet = SheetPrimitive.Root
@@ -42,7 +42,7 @@ const SheetContent = React.forwardRef<React.ElementRef<typeof SheetPrimitive.Con
     >
       {children}
       <SheetPrimitive.Close className="absolute right-4 top-4 rounded-sm opacity-70 transition-opacity hover:opacity-100 disabled:pointer-events-none data-[state=open]:bg-secondary">
-        <Icon.Close className="h-auto w-6 text-foreground" />
+        <X className="h-auto w-6 text-foreground" />
       </SheetPrimitive.Close>
     </SheetPrimitive.Content>
   </SheetPortal>
