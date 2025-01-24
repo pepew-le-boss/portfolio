@@ -57,7 +57,7 @@ export function CoverPage({ coverPageTranslations }: CoverPageProps) {
         href={`#${headerLinks.contact}`}
         text={coverPageTranslations.cta}
         icon={
-          <MessageCircle className="h-6 w-6 text-background transition-all ease-out group-hover:translate-x-1 group-hover:rotate-[10deg] group-hover:scale-105" />
+          <MessageCircle className="h-6 w-6 text-background transition-all ease-out group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:rotate-[10deg] group-hover:scale-105" />
         }
         className="animate-appearance-bottom animation-delay-[0.8s] animation-appearance-base"
       />
