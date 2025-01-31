@@ -1,5 +1,5 @@
 import Image from "next/image"
-import profilePic from "/public/images/me.webp"
+import mockup from "/public/images/bebeboutik_prive_mockup.png"
 import { Reveal } from "@/components/client/common/Reveal"
 import { ScrollArea } from "@/components/client/common/ScrollArea"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/client/common/Tabs"
@@ -13,33 +13,41 @@ interface ProjectCardProps {
   translationsProjects: Translations["projects"]
 }
 
+// process to have the image the good ratio:
+// take a 1920x1080 screenshot
+// go on https://shots.so/
+// choose safari browser
+// keep UI scale to 100
+// change size to 115%
+// choose a custom frame of 1920x1260
+
 export function ProjectCard({ project, translationsProjects }: ProjectCardProps) {
   return (
     <Reveal className="animate-appearance-right animation-delay-[0.1s] animation-appearance-base">
       <div id={project.id} className="flex h-full flex-col overflow-hidden rounded-2xl border-2 border-muted-foreground bg-background">
-        <div className="relative h-48 w-full">
+        <div className="relative aspect-[1920/1260] w-full">
           <SpotlightImage>
-            <Image src={profilePic} alt="test" fill={true} sizes="100vw" className="object-cover" />
+            <Image src={mockup} alt="test" fill={true} sizes="100vw" className="object-cover" />
           </SpotlightImage>
         </div>
-        <div className="flex flex-1 flex-col gap-4 py-6">
-          <div className="flex flex-col px-6">
+        <div className="flex flex-1 flex-col gap-4 py-4">
+          <div className="flex flex-col px-4">
             <span className="text-lg text-muted-foreground">{project.company}</span>
             <h4 className="text-2xl font-semibold leading-tight">{project.name}</h4>
           </div>
           <Tabs defaultValue="description">
-            <TabsList className="mx-6">
+            <TabsList className="mx-4">
               <TabsTrigger value="description">{translationsProjects.description}</TabsTrigger>
               <TabsTrigger value="responsabilities">{translationsProjects.responsabilities}</TabsTrigger>
               <TabsTrigger value="informations">{translationsProjects.informations}</TabsTrigger>
             </TabsList>
             <TabsContent value="description">
-              <ScrollArea className="h-[200px] px-6">
+              <ScrollArea className="h-[150px] px-4">
                 <p className="text-pretty">{project.description}</p>
               </ScrollArea>
             </TabsContent>
             <TabsContent value="responsabilities">
-              <ScrollArea className="h-[200px] px-6">
+              <ScrollArea className="h-[150px] px-4">
                 <ul className="list-disc pl-5">
                   {project.responsabilities.map((resposability) => (
                     <li key={resposability}>{resposability}</li>
@@ -48,7 +56,7 @@ export function ProjectCard({ project, translationsProjects }: ProjectCardProps)
               </ScrollArea>
             </TabsContent>
             <TabsContent value="informations">
-              <ScrollArea className="h-[200px] px-6">
+              <ScrollArea className="h-[150px] px-4">
                 <ul className="list-disc pl-5">
                   <ProjectInfoListItem label={translationsProjects.team} translationsProjects={translationsProjects}>
                     {project.other_info.team}
@@ -75,7 +83,7 @@ export function ProjectCard({ project, translationsProjects }: ProjectCardProps)
               </ScrollArea>
             </TabsContent>
           </Tabs>
-          <div className="mt-auto flex flex-wrap gap-2 px-6">
+          <div className="mt-auto flex flex-wrap gap-2 px-4">
             {project.technologies.map((technology) => (
               <TechnologyChips key={technology} technology={technology} />
             ))}
