@@ -1,4 +1,5 @@
 import { ExternalLink } from "lucide-react"
+import { Reveal } from "@/components/client/common/Reveal"
 import { LinkButton } from "@/components/server/common/LinkButton"
 import { Marquee } from "@/components/server/common/Marquee"
 import { Section } from "@/components/server/common/Section"
@@ -26,18 +27,22 @@ export function Contact({ translationsContact }: ContactProps) {
         subtitle={translationsContact.subtitle}
       >
         <div className="flex flex-wrap justify-center gap-5 px-10">
-          <LinkButton
-            href="https://www.linkedin.com/in/william-fargues-74a9b515a/"
-            icon={<ExternalLink className="h-5 w-5 text-background transition-all ease-out group-hover:-translate-y-0.5 group-hover:translate-x-1" />}
-            text={translationsContact.contact_me_linkedin}
-            isExternal
-          />
-          <LinkButton
-            href="mailto:fargues.wlm@gmail.com"
-            icon={<ExternalLink className="h-5 w-5 text-background transition-all ease-out group-hover:-translate-y-0.5 group-hover:translate-x-1" />}
-            text={translationsContact.contact_me_email}
-            isExternal
-          />
+          <Reveal className="animate-appearance-bottom animation-delay-[0.1s] animation-appearance-base">
+            <LinkButton
+              href="https://www.linkedin.com/in/william-fargues-74a9b515a/"
+              icon={<ExternalLink className="h-5 w-5 text-background transition-all ease-out group-hover:-translate-y-0.5 group-hover:translate-x-1" />}
+              text={translationsContact.contact_me_linkedin}
+              isExternal
+            />
+          </Reveal>
+          <Reveal className="animate-appearance-bottom animation-delay-[0.2s] animation-appearance-base">
+            <LinkButton
+              href="mailto:fargues.wlm@gmail.com"
+              icon={<ExternalLink className="h-5 w-5 text-background transition-all ease-out group-hover:-translate-y-0.5 group-hover:translate-x-1" />}
+              text={translationsContact.contact_me_email}
+              isExternal
+            />
+          </Reveal>
         </div>
       </Section>
     </div>

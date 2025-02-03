@@ -40,7 +40,7 @@ export default function RootLayout({ children, params }: { children: ReactNode; 
 // x inspis header: https://sevalla.com/?ref=land-book.com // https://linear.app/homepage
 // x faire que le header disparaisse quand on scroll vers le bas et réapparaisse quand on scroll vers le haut: https://www.gopidge.com/
 // x en mode mobile mettre le header en bas de l'écran ?
-// Dans la section mes projets, mettre les screens dans des mockups. cf: https://pix.framer.website/
+// x Dans la section mes projets, mettre les screens dans des mockups. cf: https://pix.framer.website/
 // x Dans la section mes projets, faire un effet de spotlight sur les images. cf: https://motion-primitives.com/docs/tilt#tilt-with-spotlight
 // Faire une animation sur les images en hover, cf: https://cal.com/fr/platform?month=2024-11&date=2024-11-28
 // x Faire un effet de skew sur les cards des technos. cf: https://animata.design/docs/card/github-card-skew ou ça https://motion-primitives.com/docs/tilt
@@ -48,3 +48,7 @@ export default function RootLayout({ children, params }: { children: ReactNode; 
 // Voir pour utiliser la font de https://mode.com/
 // Voir pour utiliser la font de https://fonts.google.com/specimen/Geist+Mono
 // Contacter ce gars pour lui proposer mes services: https://www.youtube.com/watch?v=SMi72xAM3H8
+// clean le public folder
+// passer en next 15
+// faire les traductions en anglais
+// check le seo

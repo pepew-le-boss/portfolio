@@ -1,5 +1,6 @@
+import { ExternalLink } from "lucide-react"
 import Image from "next/image"
-import mockup from "/public/images/bebeboutik_prive_mockup.png"
+import Link from "next/link"
 import { Reveal } from "@/components/client/common/Reveal"
 import { ScrollArea } from "@/components/client/common/ScrollArea"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/client/common/Tabs"
@@ -7,29 +8,61 @@ import { SpotlightImage } from "@/components/server/common/SpotlightImage"
 import { TechnologyChips } from "@/components/server/common/TechnologyChips"
 import { ProjectInfoListItem } from "@/components/server/feature/projects/ProjectInfoListItem"
 import type { Translations } from "@/utils/common/get-translations.utils"
+import { findBestProjectLink } from "@/utils/common/link.utils"
+import { cn } from "@/utils/lib/tailwind/cn.utils"
 
 interface ProjectCardProps {
   project: Translations["projects"]["works"][number]
   translationsProjects: Translations["projects"]
 }
 
-// process to have the image the good ratio:
+// process to have the image the good ratio (for desktop screenshot):
 // take a 1920x1080 screenshot
 // go on https://shots.so/
 // choose safari browser
 // keep UI scale to 100
-// change size to 115%
+// choose "realistic" shadow
+// change size (size and position menu) to 115%
 // choose a custom frame of 1920x1260
+// export in x2
+
+// for mobile screenshot (same as desktop except):
+// choose "iphone 16 pro max"
+// choose "hug" shadow
+
+// finally:
+// convert png to webp: https://convertio.co/fr/png-webp/
+// optimize webp size: https://tinypng.com/
 
 export function ProjectCard({ project, translationsProjects }: ProjectCardProps) {
+  const link = findBestProjectLink(project)
+
   return (
     <Reveal className="animate-appearance-right animation-delay-[0.1s] animation-appearance-base">
-      <div id={project.id} className="flex h-full flex-col overflow-hidden rounded-2xl border-2 border-muted-foreground bg-background">
-        <div className="relative aspect-[1920/1260] w-full">
+      <div id={project.id} className="group flex h-full flex-col overflow-hidden rounded-2xl border-2 border-muted-foreground bg-background">
+        <Link
+          href={link || ""}
+          target="_blank"
+          rel="noreferrer"
+          aria-disabled={!link}
+          className={cn("group/image relative aspect-[1920/1260] w-full grayscale transition-all duration-300 group-hover:grayscale-0", {
+            "pointer-events-none": !link
+          })}
+        >
+          <span className="absolute right-2 top-2 z-10 rounded-full bg-background p-2 text-foreground opacity-0 transition-all group-hover/image:right-1 group-hover/image:top-1 group-hover/image:opacity-100">
+            <ExternalLink className="h-auto w-4" />
+          </span>
           <SpotlightImage>
-            <Image src={mockup} alt="test" fill={true} sizes="100vw" className="object-cover" />
+            <Image
+              src={project.image}
+              alt={project.image_alt}
+              fill={true}
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+              loading="lazy"
+            />
           </SpotlightImage>
-        </div>
+        </Link>
         <div className="flex flex-1 flex-col gap-4 py-4">
           <div className="flex flex-col px-4">
             <span className="text-lg text-muted-foreground">{project.company}</span>

@@ -185,6 +185,8 @@
                 "company": "Bébéboutik",
                 "name": "Dashboard",
                 "description": "Ce projet consiste en la réalisation d'un dashboard destiné aux fournisseurs du site de ventes privées. La plateforme leur permet d'exécuter plusieurs actions, telles que consulter les ventes en cours ainsi que visualiser les chiffres réalisés sur le site. Elle a été développée en NextJS de bout en bout, englobant à la fois le frontend et le backend.",
+                "image": "/images/mockup_bebeboutik_web.webp",
+                "image_alt": "Mockup de l'application web Dashboard Bébéboutik",
                 "responsabilities": [
                     "Développer puis maintenir le dashboard en utilisant NextJS.",
                     "Responsable de l'intégration de la partie frontend et backend (carte blanche ou presque).",
@@ -213,6 +215,8 @@
                 "company": "Bébéboutik",
                 "name": "Sites web",
                 "description": "Ce projet consiste à développer deux sites web interconnectés — un site de ventes privées et une marketplace — partageant une grande partie du code grâce à une configuration de monorepo. Le travail se concentre exclusivement sur les aspects frontend de ces sites.",
+                "image": "/images/mockup_bebeboutik_web.webp",
+                "image_alt": "Mockup de l'application web Bébéboutik",
                 "responsabilities": [
                     "Développer puis maintenir les sites en utilisant NextJS.",
                     "Responsable de l'intégration de la partie frontend (avec consultation du CTO).",
@@ -246,6 +250,8 @@
                 "company": "Bébéboutik",
                 "name": "Application mobile",
                 "description": "Ce projet concernait le développement de la version mobile du site de ventes privées. Bien qu'elle ne partage pas son code avec le site web, l'application utilise la même API GraphQL. Réalisée exclusivement en React Native (Expo), elle est devenue la principale source de revenus avec plusieurs millions de téléchargements sur l'AppStore et le PlayStore.",
+                "image": "/images/mockup_bebeboutik_mobile.webp",
+                "image_alt": "Mockup de l'application mobile Bébéboutik",
                 "responsabilities": [
                     "Développer puis maintenir l'application mobile en React Native (Expo).",
                     "Assurer l'intégration avec le backend via le serveur GraphQL pour une synchronisation des données.",
@@ -273,6 +279,8 @@
                 "company": "Sopra Steria",
                 "name": "Ecomode",
                 "description": "Ce projet comprenait le développement de deux applications distinctes : une application mobile destinée au grand public et une interface web pour les administrateurs. En parallèle, j'ai contribué au développement du backend, basé sur une architecture en microservices avec NodeJS.",
+                "image": "/images/mockup_ecomode.webp",
+                "image_alt": "Mockup de l'application mobile Ecomode",
                 "responsabilities": [
                     "Participer au développement de l'application mobile en React Native.",
                     "Contribuer à la création de l'interface web administrative en ReactJS.",
@@ -304,6 +312,8 @@
                 "company": "Personel",
                 "name": "Planidays",
                 "description": "Planidays est une application web de planification de voyages assistée par IA, développée sur mon temps libre avec un ami. Ce projet touche à la fois au frontend, au backend et à l'intelligence artificielle.",
+                "image": "/images/mockup_planidays.webp",
+                "image_alt": "Mockup de l'application web Planidays",
                 "responsabilities": [
                     "Concevoir et développer l'application web en NextJS.",
                     "Implémenter la partie IA en intégrant l'API d'OpenAI avec le AI SDK de Vercel pour l'assistance à la planification de voyages.",
