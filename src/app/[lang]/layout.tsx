@@ -1,4 +1,5 @@
 import "@/public/globals.css"
+import type { Metadata } from "next"
 import { ReactNode } from "react"
 import { ThemeProvider } from "@/components/client/common/ThemeProvider"
 import { Topography } from "@/components/client/common/Topography"
@@ -10,11 +11,26 @@ export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }))
 }
 
-export async function generateMetadata({ params: { lang } }: { params: { lang: Locale } }) {
+export async function generateMetadata({ params: { lang } }: { params: { lang: Locale } }): Promise<Metadata> {
   const translations = await getTranslation(lang)
   return {
-    title: "William Fargues",
-    description: translations.metadata.description
+    title: translations.metadata.title,
+    description: translations.metadata.description,
+    openGraph: {
+      title: translations.metadata.title,
+      description: translations.metadata.description,
+      type: "website",
+      locale: lang,
+      url: process.env.WEBSITE_URL,
+      siteName: translations.metadata.title
+    },
+    alternates: {
+      canonical: process.env.WEBSITE_URL,
+      languages: {
+        "fr-FR": `${process.env.WEBSITE_URL}/fr`,
+        "en-US": `${process.env.WEBSITE_URL}/en`
+      }
+    }
   }
 }
 
@@ -51,4 +67,4 @@ export default function RootLayout({ children, params }: { children: ReactNode; 
 // clean le public folder
 // passer en next 15
 // faire les traductions en anglais
-// check le seo
+// check le seo (metadata + balisage)
