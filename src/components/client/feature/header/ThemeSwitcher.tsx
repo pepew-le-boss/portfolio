@@ -3,18 +3,21 @@
 import { Laptop, Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/client/common/DropDownMenu"
+import type { Translations } from "@/utils/common/get-translations.utils"
 import { cn } from "@/utils/lib/tailwind/cn.utils"
 
 interface ThemeSwitcherProps {
+  headerTranslations: Translations["header"]
   className?: string
 }
 
-export default function ThemeSwitcher({ className }: ThemeSwitcherProps) {
+export default function ThemeSwitcher({ headerTranslations, className }: ThemeSwitcherProps) {
   const { setTheme } = useTheme()
 
   return (
     <DropdownMenu modal={false}>
       <DropdownMenuTrigger
+        aria-label={headerTranslations.alt_theme}
         className={cn(
           "group grid h-8 w-8 place-items-center rounded-full bg-foreground transition-all hover:ring-2 hover:ring-ring hover:ring-offset-2 hover:ring-offset-background focus:ring-2 focus:ring-ring focus:ring-offset-2 data-[state=open]:rounded-b-none data-[state=open]:ring-0 data-[state=open]:ring-offset-0",
           className

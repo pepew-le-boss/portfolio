@@ -66,7 +66,7 @@ export function ProjectCard({ project, translationsProjects }: ProjectCardProps)
         <div className="flex flex-1 flex-col gap-4 py-4">
           <div className="flex flex-col px-4">
             <span className="text-lg text-muted-foreground">{project.company}</span>
-            <h4 className="text-2xl font-semibold leading-tight">{project.name}</h4>
+            <h5 className="text-2xl font-semibold leading-tight">{project.name}</h5>
           </div>
           <Tabs defaultValue="description">
             <TabsList className="mx-4">

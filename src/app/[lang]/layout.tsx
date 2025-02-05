@@ -21,11 +21,11 @@ export async function generateMetadata({ params: { lang } }: { params: { lang: L
       description: translations.metadata.description,
       type: "website",
       locale: lang,
-      url: process.env.WEBSITE_URL,
+      url: `${process.env.WEBSITE_URL}/${lang}`,
       siteName: translations.metadata.title
     },
     alternates: {
-      canonical: process.env.WEBSITE_URL,
+      canonical: `${process.env.WEBSITE_URL}/${lang}`,
       languages: {
         "fr-FR": `${process.env.WEBSITE_URL}/fr`,
         "en-US": `${process.env.WEBSITE_URL}/en`
@@ -64,7 +64,8 @@ export default function RootLayout({ children, params }: { children: ReactNode; 
 // Voir pour utiliser la font de https://mode.com/
 // Voir pour utiliser la font de https://fonts.google.com/specimen/Geist+Mono
 // Contacter ce gars pour lui proposer mes services: https://www.youtube.com/watch?v=SMi72xAM3H8
+// check le seo (metadata + balisage)
+// retravailler le contenu (éviter de mentionner freelance et rester généraliste (travailler vaec vous) + insister sur la spécialisation frontend)
+// faire les traductions en anglais
 // clean le public folder
 // passer en next 15
-// faire les traductions en anglais
-// check le seo (metadata + balisage)

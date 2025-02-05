@@ -57,7 +57,7 @@ export function Header({ headerTranslations }: HeaderProps) {
         }
       )}
     >
-      <button className="transition-all hover:-translate-y-0.5" onClick={() => window.scrollTo({ top: 0 })}>
+      <button onClick={() => window.scrollTo({ top: 0 })} aria-label={headerTranslations.alt_logo} className="transition-all hover:-translate-y-0.5">
         <Icon.Logo className="h-9 w-9 animate-appearance-left text-foreground animation-delay-[0.1s] animation-appearance-base" />
       </button>
       <nav className="hidden lg:block">
@@ -75,8 +75,14 @@ export function Header({ headerTranslations }: HeaderProps) {
         </ul>
       </nav>
       <div className="ml-auto flex gap-6 lg:ml-0">
-        <LocaleSwitcher className="animate-appearance-right animation-delay-[0.2s] animation-appearance-base lg:animation-delay-[0.6s]" />
-        <ThemeSwitcher className="animate-appearance-right animation-delay-[0.3s] animation-appearance-base lg:animation-delay-[0.7s]" />
+        <LocaleSwitcher
+          headerTranslations={headerTranslations}
+          className="animate-appearance-right animation-delay-[0.2s] animation-appearance-base lg:animation-delay-[0.6s]"
+        />
+        <ThemeSwitcher
+          headerTranslations={headerTranslations}
+          className="animate-appearance-right animation-delay-[0.3s] animation-appearance-base lg:animation-delay-[0.7s]"
+        />
       </div>
       <HeaderMenuDrawer headerTranslations={headerTranslations} className="animate-appearance-right animation-delay-[0.4s] animation-appearance-base" />
     </header>

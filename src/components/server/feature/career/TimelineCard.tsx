@@ -21,7 +21,7 @@ export function TimelineCard({ experience, isEven, translationsCareer }: Timelin
       >
         <div className="text-sm uppercase text-muted-foreground">{experience.range}</div>
         <div className="flex flex-col">
-          <div className="text-2xl font-semibold leading-tight">{experience.title}</div>
+          <h5 className="text-2xl font-semibold leading-tight">{experience.title}</h5>
           <div className="text-lg text-muted-foreground">{experience.company}</div>
         </div>
         <Tabs defaultValue="projects">

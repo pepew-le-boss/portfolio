@@ -5,13 +5,15 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/client/common/DropDownMenu"
 import { i18n, Locale } from "@/root/i18n-config"
+import type { Translations } from "@/utils/common/get-translations.utils"
 import { cn } from "@/utils/lib/tailwind/cn.utils"
 
 interface LocaleSwitcherProps {
+  headerTranslations: Translations["header"]
   className?: string
 }
 
-export default function LocaleSwitcher({ className }: LocaleSwitcherProps) {
+export default function LocaleSwitcher({ headerTranslations, className }: LocaleSwitcherProps) {
   const pathName = usePathname()
 
   const redirectedPathName = (locale: string) => {
@@ -24,6 +26,7 @@ export default function LocaleSwitcher({ className }: LocaleSwitcherProps) {
   return (
     <DropdownMenu modal={false}>
       <DropdownMenuTrigger
+        aria-label={headerTranslations.alt_lang}
         className={cn(
           "group grid h-8 w-8 place-items-center rounded-full bg-foreground transition-all hover:ring-2 hover:ring-ring hover:ring-offset-2 hover:ring-offset-background focus:ring-2 focus:ring-ring focus:ring-offset-2 data-[state=open]:rounded-b-none data-[state=open]:ring-0 data-[state=open]:ring-offset-0",
           className

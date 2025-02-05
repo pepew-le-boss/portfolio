@@ -4,12 +4,14 @@
         "description": "Bienvenue sur le portfolio de William Fargues, ingénieur et développeur web sénior."
     },
     "header": {
+        "alt_logo": "revenir en haut du site",
         "about": "profil",
         "career": "parcours",
         "projects": "projets",
         "technologies": "expertise",
         "contact": "contact",
         "alt_lang": "Choisir la langue",
+        "alt_theme": "Choisir le thème",
         "drawer_title": "Explorer",
         "drawer_description": "Accéder rapidement à tous les sections du site"
     },
