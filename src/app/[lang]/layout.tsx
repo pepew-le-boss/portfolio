@@ -66,7 +66,8 @@ export default function RootLayout({ children, params }: { children: ReactNode; 
 // Améliorer le dark thème
 // Contacter ce gars pour lui proposer mes services: https://www.youtube.com/watch?v=SMi72xAM3H8
 // x Check le seo (metadata + balisage)
-// Retravailler le contenu (éviter de mentionner freelance et rester généraliste (travailler vaec vous) + insister sur la spécialisation frontend)
-// Faire les traductions en anglais
+// x Retravailler le contenu (éviter de mentionner freelance et rester généraliste (travailler vaec vous) + insister sur la spécialisation frontend)
+// x Faire les traductions en anglais
 // Clean le public folder
 // Passer en next 15
+// Faire une image de moi

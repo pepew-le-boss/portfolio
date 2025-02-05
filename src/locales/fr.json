@@ -21,7 +21,7 @@
         "developer": "Ingénieur et développeur web",
         "description": "Avec rigueur, écoute et méthodologie, je conçois des solutions modernes, fiables, sur-mesure et pensées pour durer. Enthousiaste à l'idée de travailler avec vous.",
         "available": "Disponible",
-        "job": "Bébéboutik",
+        "job": "Bebeboutik",
         "home": "Colomiers",
         "cta": "Échanger avec moi"
     },
@@ -49,9 +49,9 @@
             {
                 "title": "Ingénieur développeur sénior frontend web",
                 "range": "2022 - présent",
-                "company": "Bébéboutik",
-                "company_description": "Bébéboutik est une plateforme de ventes privées dédiée à la petite enfance. Cette plateforme se décline sous plusieurs formes: un site web et une application mobile de ventes privées ainsi qu'un site web type \"marketplace\".",
-                "company_size": "Bébéboutik compte environ une soixantaine de salariés.",
+                "company": "Bebeboutik",
+                "company_description": "Bebeboutik est une plateforme de ventes privées dédiée à la petite enfance. Cette plateforme se décline sous plusieurs formes: un site web et une application mobile de ventes privées ainsi qu'un site web type \"marketplace\".",
+                "company_size": "Bebeboutik compte environ une soixantaine de salariés.",
                 "team": "L'équipe dans laquelle je me trouve est composée de 5-6 personnes. Le CTO, 3 développeurs backend et 1-2 développeurs frontend. Ma collaboration se fait essentiellement avec les peronnes de mon équipe et parfois aussi avec d'autres services comme le service marketing.",
                 "projects": [
                     {
@@ -184,12 +184,12 @@
         "works": [
             {
                 "id": "bbtk-dashboard",
-                "title": "Bébéboutik | Dashboard",
-                "company": "Bébéboutik",
+                "title": "Bebeboutik | Dashboard",
+                "company": "Bebeboutik",
                 "name": "Dashboard",
                 "description": "Ce projet consiste en la réalisation d'un dashboard destiné aux fournisseurs du site de ventes privées. La plateforme leur permet d'exécuter plusieurs actions, telles que consulter les ventes en cours ainsi que visualiser les chiffres réalisés sur le site. Elle a été développée en NextJS de bout en bout, englobant à la fois le frontend et le backend.",
                 "image": "/images/mockup_bebeboutik_web.webp",
-                "image_alt": "Mockup de l'application web Dashboard Bébéboutik",
+                "image_alt": "Mockup de l'application web Dashboard Bebeboutik",
                 "responsabilities": [
                     "Développer puis maintenir le dashboard en utilisant NextJS.",
                     "Responsable de l'intégration de la partie frontend et backend (carte blanche ou presque).",
@@ -214,12 +214,12 @@
             },
             {
                 "id": "bbtk-website",
-                "title": "Bébéboutik | Sites web",
-                "company": "Bébéboutik",
+                "title": "Bebeboutik | Sites web",
+                "company": "Bebeboutik",
                 "name": "Sites web",
                 "description": "Ce projet consiste à développer deux sites web interconnectés — un site de ventes privées et une marketplace — partageant une grande partie du code grâce à une configuration de monorepo. Le travail se concentre exclusivement sur les aspects frontend de ces sites.",
                 "image": "/images/mockup_bebeboutik_web.webp",
-                "image_alt": "Mockup de l'application web Bébéboutik",
+                "image_alt": "Mockup de l'application web Bebeboutik",
                 "responsabilities": [
                     "Développer puis maintenir les sites en utilisant NextJS.",
                     "Responsable de l'intégration de la partie frontend (avec consultation du CTO).",
@@ -249,12 +249,12 @@
             },
             {
                 "id": "bbtk-mobile",
-                "title": "Bébéboutik | Application mobile",
-                "company": "Bébéboutik",
+                "title": "Bebeboutik | Application mobile",
+                "company": "Bebeboutik",
                 "name": "Application mobile",
                 "description": "Ce projet concernait le développement de la version mobile du site de ventes privées. Bien qu'elle ne partage pas son code avec le site web, l'application utilise la même API GraphQL. Réalisée exclusivement en React Native (Expo), elle est devenue la principale source de revenus avec plusieurs millions de téléchargements sur l'AppStore et le PlayStore.",
                 "image": "/images/mockup_bebeboutik_mobile.webp",
-                "image_alt": "Mockup de l'application mobile Bébéboutik",
+                "image_alt": "Mockup de l'application mobile Bebeboutik",
                 "responsabilities": [
                     "Développer puis maintenir l'application mobile en React Native (Expo).",
                     "Assurer l'intégration avec le backend via le serveur GraphQL pour une synchronisation des données.",
