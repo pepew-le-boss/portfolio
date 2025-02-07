@@ -57,7 +57,7 @@ export function Topography() {
           ></div>
         </div>
       </div>
-      <div className="relative z-10 h-full w-full bg-background [-webkit-mask-image:url('./icons/topography_pattern.svg')] [mask-image:url('./icons/topography_pattern.svg')]"></div>
+      <div className="relative z-10 h-full w-full bg-background [-webkit-mask-image:url('/icons/topography_pattern.svg')] [mask-image:url('/icons/topography_pattern.svg')]"></div>
     </div>
   )
 }

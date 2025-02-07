@@ -3,17 +3,17 @@ import localFont from "next/font/local"
 export const sfmono = localFont({
   src: [
     {
-      path: "../../../../public/fonts/SFMono/SFMonoMedium.woff2",
+      path: "../../../app/fonts/SFMono/SFMonoMedium.woff2",
       weight: "500",
       style: "normal"
     },
     {
-      path: "../../../../public/fonts/SFMono/SFMonoSemibold.woff2",
+      path: "../../../app/fonts/SFMono/SFMonoSemibold.woff2",
       weight: "600",
       style: "normal"
     },
     {
-      path: "../../../../public/fonts/SFMono/SFMonoSemiboldItalic.woff2",
+      path: "../../../app/fonts/SFMono/SFMonoSemiboldItalic.woff2",
       weight: "600",
       style: "italic"
     }
@@ -23,7 +23,7 @@ export const sfmono = localFont({
 })
 
 export const gabarito = localFont({
-  src: "../../../../public/fonts/Gabarito/GabaritoVariable.woff2",
+  src: "../../../app/fonts/Gabarito/GabaritoVariable.woff2",
   display: "block",
   variable: "--font-gabarito"
 })
