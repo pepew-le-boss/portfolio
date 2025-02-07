@@ -1,4 +1,6 @@
 import type { Config } from "tailwindcss"
+import tailwindcssanimate from "tailwindcss-animate"
+
 import { animationBase, animationDelay } from "./src/utils/lib/tailwind/plugin.utils"
 
 const config: Config = {
@@ -84,7 +86,7 @@ const config: Config = {
       }
     }
   },
-  plugins: [require("tailwindcss-animate"), animationDelay, animationBase],
+  plugins: [tailwindcssanimate, animationDelay, animationBase],
   safelist: [
     "animation-delay-[0.1s]",
     "animation-delay-[0.2s]",
