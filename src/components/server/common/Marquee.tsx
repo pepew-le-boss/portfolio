@@ -1,4 +1,5 @@
 import type { ReactNode } from "react"
+
 import { cn } from "@/utils/lib/tailwind/cn.utils"
 
 // fore more info, check: https://magicui.design/docs/components/marquee

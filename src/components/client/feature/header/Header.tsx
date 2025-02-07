@@ -2,6 +2,7 @@
 
 import debounce from "lodash.debounce"
 import { useEffect, useRef, useState } from "react"
+
 import { HeaderMenuDrawer } from "@/components/client/feature/header/HeaderMenuDrawer"
 import LocaleSwitcher from "@/components/client/feature/header/LocaleSwitcher"
 import ThemeSwitcher from "@/components/client/feature/header/ThemeSwitcher"

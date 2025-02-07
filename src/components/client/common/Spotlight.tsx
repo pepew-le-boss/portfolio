@@ -2,6 +2,7 @@
 
 import { motion, SpringOptions, useSpring, useTransform } from "motion/react"
 import React, { useCallback, useEffect, useRef, useState } from "react"
+
 import { cn } from "@/utils/lib/tailwind/cn.utils"
 
 export type SpotlightProps = {

@@ -3,6 +3,7 @@
 import * as TabsPrimitive from "@radix-ui/react-tabs"
 import { motion } from "motion/react"
 import * as React from "react"
+
 import { cn } from "@/utils/lib/tailwind/cn.utils"
 
 // for more info, check: https://github.com/ibelick/motion-primitives/blob/main/components/website/tabs.tsx
@@ -11,7 +12,7 @@ const Tabs = TabsPrimitive.Root
 
 const TabsContext = React.createContext<string>("")
 
-const TabsRoot = React.forwardRef<React.ElementRef<typeof TabsPrimitive.Root>, React.ComponentPropsWithoutRef<typeof TabsPrimitive.Root>>(
+const TabsRoot = React.forwardRef<React.ComponentRef<typeof TabsPrimitive.Root>, React.ComponentPropsWithoutRef<typeof TabsPrimitive.Root>>(
   ({ ...props }, ref) => {
     const uniqueId = React.useId()
     return (
@@ -23,12 +24,12 @@ const TabsRoot = React.forwardRef<React.ElementRef<typeof TabsPrimitive.Root>, R
 )
 TabsRoot.displayName = TabsPrimitive.Root.displayName
 
-const TabsList = React.forwardRef<React.ElementRef<typeof TabsPrimitive.List>, React.ComponentPropsWithoutRef<typeof TabsPrimitive.List>>(
+const TabsList = React.forwardRef<React.ComponentRef<typeof TabsPrimitive.List>, React.ComponentPropsWithoutRef<typeof TabsPrimitive.List>>(
   ({ className, ...props }, ref) => <TabsPrimitive.List ref={ref} className={cn("flex h-9 items-center gap-4 border-b border-border", className)} {...props} />
 )
 TabsList.displayName = TabsPrimitive.List.displayName
 
-const TabsTrigger = React.forwardRef<React.ElementRef<typeof TabsPrimitive.Trigger>, React.ComponentPropsWithoutRef<typeof TabsPrimitive.Trigger>>(
+const TabsTrigger = React.forwardRef<React.ComponentRef<typeof TabsPrimitive.Trigger>, React.ComponentPropsWithoutRef<typeof TabsPrimitive.Trigger>>(
   // to prevent error in console
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   ({ className, children, ...props }, ref) => {
@@ -82,7 +83,7 @@ const TabsTrigger = React.forwardRef<React.ElementRef<typeof TabsPrimitive.Trigg
 )
 TabsTrigger.displayName = TabsPrimitive.Trigger.displayName
 
-const TabsContent = React.forwardRef<React.ElementRef<typeof TabsPrimitive.Content>, React.ComponentPropsWithoutRef<typeof TabsPrimitive.Content>>(
+const TabsContent = React.forwardRef<React.ComponentRef<typeof TabsPrimitive.Content>, React.ComponentPropsWithoutRef<typeof TabsPrimitive.Content>>(
   ({ className, ...props }, ref) => (
     <TabsPrimitive.Content
       ref={ref}

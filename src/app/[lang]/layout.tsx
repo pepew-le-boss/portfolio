@@ -1,6 +1,8 @@
 import "@/public/globals.css"
+
 import type { Metadata } from "next"
 import { ReactNode } from "react"
+
 import { ThemeProvider } from "@/components/client/common/ThemeProvider"
 import { Topography } from "@/components/client/common/Topography"
 import { i18n, Locale } from "@/root/i18n-config"

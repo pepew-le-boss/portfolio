@@ -1,5 +1,6 @@
 import Link from "next/link"
 import type { ReactNode } from "react"
+
 import { cn } from "@/utils/lib/tailwind/cn.utils"
 
 interface LinkButtonProps {

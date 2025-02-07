@@ -1,4 +1,5 @@
 import Image from "next/image"
+
 import { Reveal } from "@/components/client/common/Reveal"
 import { Section } from "@/components/server/common/Section"
 import { SpotlightImage } from "@/components/server/common/SpotlightImage"

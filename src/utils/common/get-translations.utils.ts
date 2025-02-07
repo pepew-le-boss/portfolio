@@ -1,4 +1,5 @@
 import "server-only"
+
 import { Locale } from "@/root/i18n-config"
 
 const locales = {

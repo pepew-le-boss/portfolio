@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
+
 import { cn } from "@/utils/lib/tailwind/cn.utils"
 
 export function Topography() {

@@ -1,4 +1,5 @@
 import { ExternalLink } from "lucide-react"
+
 import { Reveal } from "@/components/client/common/Reveal"
 import { LinkButton } from "@/components/server/common/LinkButton"
 import { Marquee } from "@/components/server/common/Marquee"

@@ -1,4 +1,5 @@
 import type { ReactNode } from "react"
+
 import { Spotlight } from "@/components/client/common/Spotlight"
 
 interface SpotlightImageProps {

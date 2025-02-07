@@ -1,5 +1,6 @@
 import type { NextRequest } from "next/server"
 import { NextResponse } from "next/server"
+
 import { i18n } from "@/root/i18n-config"
 
 // fore more, info check: https://github.com/vercel/next.js/blob/canary/examples/app-dir-i18n-routing/middleware.ts

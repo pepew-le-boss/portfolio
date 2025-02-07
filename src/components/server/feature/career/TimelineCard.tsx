@@ -1,4 +1,5 @@
 import Link from "next/link"
+
 import { Reveal } from "@/components/client/common/Reveal"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/client/common/Tabs"
 import { TechnologyChips } from "@/components/server/common/TechnologyChips"

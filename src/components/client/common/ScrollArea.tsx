@@ -1,10 +1,11 @@
 "use client"
 
 import * as ScrollAreaPrimitive from "@radix-ui/react-scroll-area"
-import { ComponentPropsWithoutRef, ElementRef, forwardRef } from "react"
+import { ComponentPropsWithoutRef, ComponentRef, forwardRef } from "react"
+
 import { cn } from "@/utils/lib/tailwind/cn.utils"
 
-const ScrollArea = forwardRef<React.ElementRef<typeof ScrollAreaPrimitive.Root>, ComponentPropsWithoutRef<typeof ScrollAreaPrimitive.Root>>(
+const ScrollArea = forwardRef<React.ComponentRef<typeof ScrollAreaPrimitive.Root>, ComponentPropsWithoutRef<typeof ScrollAreaPrimitive.Root>>(
   ({ className, children, ...props }, ref) => (
     <ScrollAreaPrimitive.Root ref={ref} className={cn("relative overflow-hidden", className)} {...props}>
       <ScrollAreaPrimitive.Viewport className="h-full w-full rounded-[inherit]">{children}</ScrollAreaPrimitive.Viewport>
@@ -16,7 +17,7 @@ const ScrollArea = forwardRef<React.ElementRef<typeof ScrollAreaPrimitive.Root>,
 ScrollArea.displayName = ScrollAreaPrimitive.Root.displayName
 
 const ScrollBar = forwardRef<
-  ElementRef<typeof ScrollAreaPrimitive.ScrollAreaScrollbar>,
+  ComponentRef<typeof ScrollAreaPrimitive.ScrollAreaScrollbar>,
   ComponentPropsWithoutRef<typeof ScrollAreaPrimitive.ScrollAreaScrollbar>
 >(({ className, orientation = "vertical", ...props }, ref) => (
   <ScrollAreaPrimitive.ScrollAreaScrollbar

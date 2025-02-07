@@ -1,4 +1,5 @@
 import Link from "next/link"
+
 import type { Translations } from "@/utils/common/get-translations.utils"
 
 interface ProjectInfoListItemProps {
