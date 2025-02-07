@@ -21,7 +21,7 @@ export function Timeline({ translationsCareer }: TimelineProps) {
       <div className="flex flex-col lg:grid lg:grid-flow-row-dense lg:grid-cols-[1fr_auto_1fr]">
         {translationsCareer.experiences.map((experience, index) => (
           <TimelineSlot
-            key={experience.title}
+            key={`${experience.range}-${experience.title}`}
             experience={experience}
             index={index + 1}
             nbOfExperiences={translationsCareer.experiences.length}

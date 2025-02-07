@@ -11,7 +11,11 @@ export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }))
 }
 
-export async function generateMetadata({ params: { lang } }: { params: { lang: Locale } }): Promise<Metadata> {
+export async function generateMetadata(props: { params: Promise<{ lang: Locale }> }): Promise<Metadata> {
+  const params = await props.params
+
+  const { lang } = params
+
   const translations = await getTranslation(lang)
   return {
     title: translations.metadata.title,
@@ -34,7 +38,11 @@ export async function generateMetadata({ params: { lang } }: { params: { lang: L
   }
 }
 
-export default function RootLayout({ children, params }: { children: ReactNode; params: { lang: string } }) {
+export default async function RootLayout(props: { children: ReactNode; params: Promise<{ lang: string }> }) {
+  const params = await props.params
+
+  const { children } = props
+
   return (
     <html lang={params.lang} suppressHydrationWarning className="scroll-pt-24 scroll-smooth">
       <body className={`${gabarito.variable} ${sfmono.variable} bg-foreground/5 font-gabarito`}>

@@ -9,7 +9,11 @@ import { Projects } from "@/components/server/feature/projects/Projects"
 import { Locale } from "@/root/i18n-config"
 import { getTranslation } from "@/utils/common/get-translations.utils"
 
-export default async function Home({ params: { lang } }: { params: { lang: Locale } }) {
+export default async function Home(props: { params: Promise<{ lang: Locale }> }) {
+  const params = await props.params
+
+  const { lang } = params
+
   const translations = await getTranslation(lang)
 
   return (

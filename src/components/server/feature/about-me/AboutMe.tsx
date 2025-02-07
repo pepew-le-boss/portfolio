@@ -1,5 +1,4 @@
 import Image from "next/image"
-import profilePic from "/public/images/me.webp"
 import { Reveal } from "@/components/client/common/Reveal"
 import { Section } from "@/components/server/common/Section"
 import { SpotlightImage } from "@/components/server/common/SpotlightImage"
@@ -38,7 +37,13 @@ export function AboutMe({ translationsAboutMe }: AboutMeProps) {
         <Reveal className="animate-appearance-right animation-delay-[0.8s] animation-appearance-base">
           <div className="relative col-span-6 h-48 sm:col-span-3 sm:col-start-4 sm:row-span-2 sm:h-auto lg:col-span-2 lg:col-start-auto lg:row-span-1">
             <SpotlightImage>
-              <Image src={profilePic} alt={translationsAboutMe.img_alt} fill={true} sizes="100vw" className="h-full rounded-2xl object-cover" />
+              <Image
+                src="/images/me.webp"
+                alt={translationsAboutMe.img_alt}
+                fill={true}
+                sizes="(max-width: 1024px) 33vw, (max-width: 640px) 50vw, 100vw"
+                className="h-full rounded-2xl object-cover"
+              />
             </SpotlightImage>
           </div>
         </Reveal>
