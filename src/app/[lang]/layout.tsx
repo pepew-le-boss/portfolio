@@ -78,6 +78,6 @@ export default async function RootLayout(props: { children: ReactNode; params: P
 // x Check le seo (metadata + balisage)
 // x Retravailler le contenu (éviter de mentionner freelance et rester généraliste (travailler vaec vous) + insister sur la spécialisation frontend)
 // x Faire les traductions en anglais
-// Clean le public folder
-// Passer en next 15
+// x Clean le public folder
+// x Passer en next 15
 // Faire une image de moi
