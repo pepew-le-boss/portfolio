@@ -39,10 +39,10 @@ export function TechnologyStack({ technology, index }: TechnologyStackProps) {
           <div
             key={technology}
             style={{ "--technology-color": color, "--text-color-hover": contrastingTextColor } as CSSPropertiesWithVars}
-            className="group flex flex-col items-center gap-2 rounded-lg border-2 border-muted-foreground bg-background p-6 transition-all hover:border-[--technology-color] hover:bg-[--technology-color] hover:shadow-lg"
+            className="group flex flex-col items-center gap-4 rounded-lg border-2 border-muted-foreground bg-background p-6 transition-all hover:border-[--technology-color] hover:bg-[--technology-color] hover:shadow-lg"
           >
             <IconTechnology className="h-10 w-10 text-foreground transition-all group-hover:text-[--text-color-hover]" />
-            <span className="text-lg font-medium group-hover:text-[--text-color-hover]">{technology}</span>
+            <span className="font-geist cursor-default text-base font-semibold tracking-tight group-hover:text-[--text-color-hover]">{technology}</span>
           </div>
         </Tilt>
       </div>

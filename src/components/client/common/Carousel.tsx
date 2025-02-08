@@ -216,7 +216,7 @@ const CarouselDotIndicators = React.forwardRef<HTMLDivElement, React.ComponentPr
             onClick={() => api.scrollTo(index)}
             aria-label={`Go to slide ${index + 1}`}
             className={cn(
-              "relative h-7 w-7 whitespace-nowrap rounded-full border border-foreground bg-background font-sfmono text-sm leading-none text-foreground transition-all duration-300 hover:bg-foreground hover:text-background",
+              "font-geist relative h-7 w-7 whitespace-nowrap rounded-full border border-foreground bg-background text-sm leading-none text-foreground transition-all duration-300 hover:bg-foreground hover:text-background",
               {
                 "w-[3.25rem] bg-foreground text-background": isActive
               }

@@ -1,25 +1,9 @@
 import localFont from "next/font/local"
 
-export const sfmono = localFont({
-  src: [
-    {
-      path: "../../../app/fonts/SFMono/SFMonoMedium.woff2",
-      weight: "500",
-      style: "normal"
-    },
-    {
-      path: "../../../app/fonts/SFMono/SFMonoSemibold.woff2",
-      weight: "600",
-      style: "normal"
-    },
-    {
-      path: "../../../app/fonts/SFMono/SFMonoSemiboldItalic.woff2",
-      weight: "600",
-      style: "italic"
-    }
-  ],
+export const geist = localFont({
+  src: "../../../app/fonts/GeistMono/GeistMonoVariable.woff2",
   display: "block",
-  variable: "--font-sfmono"
+  variable: "--font-geist"
 })
 
 export const gabarito = localFont({

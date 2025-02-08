@@ -13,7 +13,7 @@ const config: Config = {
       },
       fontFamily: {
         gabarito: ["var(--font-gabarito)"],
-        sfmono: ["var(--font-sfmono)"]
+        geist: ["var(--font-geist)"]
       },
       colors: {
         border: "hsl(var(--border))",

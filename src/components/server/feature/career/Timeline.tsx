@@ -13,7 +13,7 @@ export function Timeline({ translationsCareer }: TimelineProps) {
     <div className="flex flex-col">
       <Reveal className="animate-appearance-static animation-delay-[0.1s] animation-appearance-base">
         <div className="flex flex-col items-center gap-4 lg:w-full">
-          <div className="grid h-10 w-10 place-items-center rounded-full border border-foreground bg-background font-sfmono text-foreground">
+          <div className="font-geist grid h-10 w-10 place-items-center rounded-full border border-foreground bg-background text-foreground">
             <ChevronsDown className="h-5 w-5 text-foreground" />
           </div>
           <div className="h-5 w-[1px] bg-muted-foreground lg:h-20" />

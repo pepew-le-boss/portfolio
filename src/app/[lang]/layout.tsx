@@ -7,7 +7,7 @@ import { ThemeProvider } from "@/components/client/common/ThemeProvider"
 import { Topography } from "@/components/client/common/Topography"
 import { i18n, Locale } from "@/root/i18n-config"
 import { getTranslation } from "@/utils/common/get-translations.utils"
-import { gabarito, sfmono } from "@/utils/lib/next/fonts.utils"
+import { gabarito, geist } from "@/utils/lib/next/fonts.utils"
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }))
@@ -47,7 +47,7 @@ export default async function RootLayout(props: { children: ReactNode; params: P
 
   return (
     <html lang={params.lang} suppressHydrationWarning className="scroll-pt-24 scroll-smooth">
-      <body className={`${gabarito.variable} ${sfmono.variable} bg-foreground/5 font-gabarito`}>
+      <body className={`${gabarito.variable} ${geist.variable} bg-foreground/5 font-gabarito`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <div className="relative">
             <Topography />

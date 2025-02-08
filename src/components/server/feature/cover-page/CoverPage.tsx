@@ -14,7 +14,7 @@ interface CoverPageProps {
 export function CoverPage({ coverPageTranslations }: CoverPageProps) {
   return (
     <section className="relative mt-5 grid h-[calc(100vh_-_10rem)] content-center justify-center gap-5">
-      <span className="animate-appearance-bottom font-sfmono text-[clamp(1rem,5vw,1.25rem)] font-semibold text-muted-foreground animation-delay-[0.1s] animation-appearance-base">
+      <span className="font-geist animate-appearance-bottom text-[clamp(1rem,5vw,1.25rem)] font-medium tracking-tight text-muted-foreground animation-delay-[0.1s] animation-appearance-base">
         {coverPageTranslations.hello}
       </span>
       <h1 className="flex flex-col gap-2">
@@ -31,7 +31,7 @@ export function CoverPage({ coverPageTranslations }: CoverPageProps) {
       <div className="my-2 flex flex-col gap-2 xs:my-5 xs:flex-row xs:items-center xs:gap-4">
         <div className="flex animate-appearance-bottom items-center gap-2 animation-delay-[0.5s] animation-appearance-base">
           <CalendarCheck className="h-4 w-4" />
-          <span className="font-sfmono text-sm font-semibold">{coverPageTranslations.available}</span>
+          <span className="font-geist text-sm font-medium">{coverPageTranslations.available}</span>
         </div>
         <span className="h-full animate-appearance-bottom rounded-full border-x border-muted-foreground animation-delay-[0.6s] animation-appearance-base" />
         <Link
@@ -41,7 +41,7 @@ export function CoverPage({ coverPageTranslations }: CoverPageProps) {
           className="group flex animate-appearance-bottom items-center gap-2 animation-delay-[0.6s] animation-appearance-base"
         >
           <BriefcaseBusiness className="h-4 w-4" />
-          <OverLignedText className="font-sfmono text-sm font-semibold">{coverPageTranslations.job}</OverLignedText>
+          <OverLignedText className="font-geist text-sm font-medium">{coverPageTranslations.job}</OverLignedText>
         </Link>
         <span className="h-full animate-appearance-bottom rounded-full border-x border-muted-foreground animation-delay-[0.7s] animation-appearance-base" />
         <Link
@@ -51,7 +51,7 @@ export function CoverPage({ coverPageTranslations }: CoverPageProps) {
           className="group flex animate-appearance-bottom items-center gap-2 animation-delay-[0.7s] animation-appearance-base"
         >
           <MapPinHouse className="h-4 w-4" />
-          <OverLignedText className="font-sfmono text-sm font-semibold">{coverPageTranslations.home}</OverLignedText>
+          <OverLignedText className="font-geist text-sm font-medium">{coverPageTranslations.home}</OverLignedText>
         </Link>
       </div>
       <LinkButton
@@ -62,7 +62,7 @@ export function CoverPage({ coverPageTranslations }: CoverPageProps) {
         }
         className="animate-appearance-bottom animation-delay-[0.8s] animation-appearance-base"
       />
-      <Icon.ScrollDown className="absolute -bottom-4 left-1/2 h-8 w-auto -translate-x-1/2 animate-appearance-bottom text-muted-foreground opacity-0 fill-mode-forwards [animation-delay:3s]" />
+      <Icon.ScrollDown className="absolute -bottom-4 left-1/2 hidden h-8 w-auto -translate-x-1/2 animate-appearance-bottom text-muted-foreground opacity-0 fill-mode-forwards [animation-delay:3s] sm:block" />
     </section>
   )
 }

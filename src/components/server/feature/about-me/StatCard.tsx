@@ -14,7 +14,7 @@ export function StatCard({ bigInfo, description, className }: StatCardProps) {
         className
       )}
     >
-      <span className="whitespace-nowrap font-sfmono text-5xl font-bold italic text-foreground lg:text-6xl">{bigInfo}</span>
+      <span className="font-geist whitespace-nowrap text-5xl font-semibold italic text-foreground lg:text-6xl">{bigInfo}</span>
       <span className="whitespace-nowrap text-sm font-medium uppercase text-muted-foreground">{`// ${description}`}</span>
     </div>
   )
