@@ -71,9 +71,9 @@ export default async function RootLayout(props: { children: ReactNode; params: P
 // Faire une animation sur les images en hover, cf: https://cal.com/fr/platform?month=2024-11&date=2024-11-28
 // x Faire un effet de skew sur les cards des technos. cf: https://animata.design/docs/card/github-card-skew ou ça https://motion-primitives.com/docs/tilt
 // Faire un effet de gravité en easter egg, cf: https://www.designspells.com/spells/apps-fall-to-the-bottom-of-the-screen-when-a-search-yields-no-results-on
-// Voir pour utiliser la font de https://mode.com/
-// Voir pour utiliser la font de https://fonts.google.com/specimen/Geist+Mono
-// Améliorer le dark thème
+// x Voir pour utiliser la font de https://mode.com/
+// x Voir pour utiliser la font de https://fonts.google.com/specimen/Geist+Mono
+// x Améliorer le dark thème
 // Contacter ce gars pour lui proposer mes services: https://www.youtube.com/watch?v=SMi72xAM3H8
 // x Check le seo (metadata + balisage)
 // x Retravailler le contenu (éviter de mentionner freelance et rester généraliste (travailler vaec vous) + insister sur la spécialisation frontend)

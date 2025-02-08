@@ -19,14 +19,17 @@ export const Icon = {
       />
     </svg>
   ),
-  Logo: (props: IconProps) => (
+  Logo: (props: IconProps & { letterscolor?: string }) => (
     <svg xmlns="http://www.w3.org/2000/svg" width="51" height="50" viewBox="0 0 51 50" fill="currentColor" {...props}>
       <path d="M0.0578613 8C0.0578613 3.58172 3.63958 0 8.05786 0H42.0579C46.4761 0 50.0579 3.58172 50.0579 8V42C50.0579 46.4183 46.4761 50 42.0579 50H8.05786C3.63958 50 0.0578613 46.4183 0.0578613 42V8Z" />
       <path
         d="M11.0674 33.8626L6.19556 16.1441H10.0788L13.4337 28.3409L16.7814 16.1441H20.8454L24.3515 28.9096L27.8575 16.1405H31.738L26.8712 33.8617H21.8317L18.8116 22.8777L15.8001 33.8626H11.0674Z"
-        fill="white"
+        className={props.letterscolor}
       />
-      <path d="M29.1365 33.8626L34.0008 16.1373H43.9201V19.8098H36.874L35.8586 23.5004H42.2243V27.1477H34.8577L33.0142 33.8626H29.1365Z" fill="white" />
+      <path
+        d="M29.1365 33.8626L34.0008 16.1373H43.9201V19.8098H36.874L35.8586 23.5004H42.2243V27.1477H34.8577L33.0142 33.8626H29.1365Z"
+        className={props.letterscolor}
+      />
     </svg>
   ),
   LogoSlashSepareted: (props: IconProps) => (

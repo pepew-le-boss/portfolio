@@ -59,7 +59,10 @@ export function Header({ headerTranslations }: HeaderProps) {
       )}
     >
       <button onClick={() => window.scrollTo({ top: 0 })} aria-label={headerTranslations.alt_logo} className="transition-all hover:-translate-y-0.5">
-        <Icon.Logo className="h-9 w-9 animate-appearance-left text-foreground animation-delay-[0.1s] animation-appearance-base" />
+        <Icon.Logo
+          letterscolor="fill-background"
+          className="h-9 w-9 animate-appearance-left text-foreground animation-delay-[0.1s] animation-appearance-base"
+        />
       </button>
       <nav className="hidden lg:block">
         <ul className="flex items-center gap-8">
