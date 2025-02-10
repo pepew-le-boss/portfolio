@@ -1,6 +1,7 @@
 import "../globals.css"
 
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import type { Metadata } from "next"
 import { ReactNode } from "react"
 
@@ -54,6 +55,7 @@ export default async function RootLayout(props: { children: ReactNode; params: P
             <Topography />
             {children}
             <Analytics />
+            <SpeedInsights />
           </div>
         </ThemeProvider>
       </body>
