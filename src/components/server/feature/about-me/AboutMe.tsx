@@ -42,7 +42,9 @@ export function AboutMe({ translationsAboutMe }: AboutMeProps) {
                 src="/images/me.webp"
                 alt={translationsAboutMe.img_alt}
                 fill={true}
-                sizes="(max-width: 1024px) 33vw, (max-width: 640px) 50vw, 100vw"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                loading="lazy"
+                quality={100}
                 className="h-full rounded-2xl object-cover"
               />
             </SpotlightImage>

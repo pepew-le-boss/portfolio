@@ -58,9 +58,10 @@ export function ProjectCard({ project, translationsProjects }: ProjectCardProps)
               src={project.image}
               alt={project.image_alt}
               fill={true}
-              className="object-cover"
               sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
               loading="lazy"
+              quality={100}
+              className="object-cover"
             />
           </SpotlightImage>
         </Link>
