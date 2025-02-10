@@ -1,15 +1,374 @@
 {
-    "products": {
-        "cart": "Ajouter au panier"
-    },
     "metadata": {
-        "description": "William Fargues est un ingénieur et dévelopeur web."
+        "title": "William Fargues",
+        "description": "Bienvenue sur le portfolio de William Fargues, ingénieur et développeur web senior."
     },
     "header": {
-        "about": "à propos",
-        "work": "carrière",
+        "alt_logo": "revenir en haut du site",
+        "about": "profil",
+        "career": "parcours",
         "projects": "projets",
+        "technologies": "expertise",
         "contact": "contact",
-        "alt_lang": "Choisir la langue"
+        "alt_lang": "Choisir la langue",
+        "alt_theme": "Choisir le thème",
+        "drawer_title": "Explorer",
+        "drawer_description": "Accéder rapidement à tous les sections du site"
+    },
+    "cover_page": {
+        "hello": "Bienvenue, moi c'est",
+        "william": "William Fargues",
+        "developer": "Ingénieur et développeur web",
+        "description": "Avec rigueur, écoute et méthodologie, je conçois des solutions modernes, fiables, sur-mesure et pensées pour durer. Enthousiaste à l'idée de travailler avec vous.",
+        "available": "Disponible",
+        "job": "Bebeboutik",
+        "home": "Colomiers",
+        "cta": "Échanger avec moi"
+    },
+    "about_me": {
+        "section_title": "Profil",
+        "title": "Qui suis-je ?",
+        "subtitle": "Mon histoire et ma mission pour vos projets",
+        "paragraph1": "Bonjour, je suis William, ingénieur et développeur web passionné. Depuis mes premiers projets en école d’ingénieur, je n’ai cessé de perfectionner mes compétences et de repousser mes limites pour répondre aux défis techniques les plus variés. Ce qui me motive ? Concevoir des solutions élégantes, fiables et adaptées aux besoins uniques de chaque projet.",
+        "paragraph2": "Au fil de mes expériences, j’ai eu l’occasion de travailler aussi bien sur des problématiques frontend que backend, en consolidant mes compétences dans ces deux domaines. Le frontend est celui dans lequel j’excelle le plus et où je prends le plus de plaisir à innover.",
+        "paragraph3": "Aujourd’hui, j’apporte cette polyvalence et cette expérience aux entreprises de toutes tailles, avec un objectif clair : transformer vos idées en projets concrets, performants et durables.",
+        "img_alt": "Photo de William Fargues",
+        "stat_card_1": "années d'expérience",
+        "stat_card_2": "technologies maitrisées",
+        "stat_card_3": "à l'écoute du besoin"
+    },
+    "career": {
+        "section_title": "Parcours",
+        "title": "Mon parcours professionnel",
+        "subtitle": "Les expériences qui façonnent mon expertise",
+        "see_more": "Voir plus",
+        "company": "L'entreprise",
+        "team": "L'équipe",
+        "projects": "Les projets",
+        "experiences": [
+            {
+                "title": "Ingénieur développeur sénior frontend web",
+                "range": "2022 - présent",
+                "company": "Bebeboutik",
+                "company_description": "Bebeboutik est une plateforme de ventes privées dédiée à la petite enfance. Cette plateforme se décline sous plusieurs formes: un site web et une application mobile de ventes privées ainsi qu'un site web type \"marketplace\".",
+                "company_size": "Bebeboutik compte environ une soixantaine de salariés.",
+                "team": "L'équipe dans laquelle je me trouve est composée de 5-6 personnes. Le CTO, 3 développeurs backend et 1-2 développeurs frontend. Ma collaboration se fait essentiellement avec les peronnes de mon équipe et parfois aussi avec d'autres services comme le service marketing.",
+                "projects": [
+                    {
+                        "id": "bbtk-website",
+                        "description": "Migration du site web de ventes privées de Prestashop à NextJS."
+                    },
+                    {
+                        "id": "bbtk-website",
+                        "description": "Création d'un site web type \"marketplace\"."
+                    },
+                    {
+                        "id": "bbtk-mobile",
+                        "description": "Refonte complète de l'application mobile de ventes privées."
+                    },
+                    {
+                        "id": "bbtk-dashboard",
+                        "description": "Création d'un site web type \"dashboard\" utile aux différents fournisseurs."
+                    }
+                ],
+                "technologies": [
+                    "Turborepo",
+                    "NextJS",
+                    "ReactJS",
+                    "TailwindCSS",
+                    "React Native",
+                    "GraphQL",
+                    "NodeJS",
+                    "ExpressJS",
+                    "Redis"
+                ]
+            },
+            {
+                "range": "2020 - 2022",
+                "title": "Ingénieur développeur web",
+                "company": "Sopra Steria",
+                "company_description": "Sopra Steria est une entreprise de services du numérique (ESN) française et une société de conseil en transformation numérique des entreprises et des organisations.",
+                "company_size": "Sopra Steria compte environ 55 000 salariés.",
+                "team": "J'ai travaillé sur le projet Ecomode (une application mobile qui accompagne et récompense les déplacements bas carbone quotidiens dans l’agglomération toulousaine). Notre équipe était composée de 5 à 12 personnes en fonction de la vie du projet. Un chef de projet, un srum master, un architecte, 3 business analyst et le reste de développeurs. Ma collaboration se faisait essentiellement avec les peronnes de cette équipe et parfois aussi avec d'autres services comme les UI/UX designers.",
+                "projects": [
+                    {
+                        "id": "sprstr-ecomode",
+                        "description": "Création de l'application mobile grand public Ecomode."
+                    },
+                    {
+                        "id": "sprstr-ecomode",
+                        "description": "Implémentation d'une architecture backend microservices."
+                    },
+                    {
+                        "id": "sprstr-ecomode",
+                        "description": "Création d'une application web de gestion pour l'application mobile Ecomode."
+                    }
+                ],
+                "technologies": [
+                    "ReactJS",
+                    "React Native",
+                    "PostgreSQL",
+                    "NodeJS",
+                    "ExpressJS",
+                    "Kafka"
+                ]
+            },
+            {
+                "range": "2019 - 2020",
+                "title": "Ingénieur développeur web",
+                "company": "Sopra Steria",
+                "company_description": "Sopra Steria est une entreprise de services du numérique (ESN) française et une société de conseil en transformation numérique des entreprises et des organisations.",
+                "company_size": "Sopra Steria compte environ 55 000 salariés.",
+                "team": "J'ai travaillé dans un service appelé la \"Factory\", spécialisé dans le prototypage rapide d’applications sur mesure. Notre service était composé d'environ 25 personnes. Un chef de service, 2 architectes , le reste de développeurs. Nous étions assignés à différents projets en plus petites équipes (en général de 3 à 5 personnes) ayant pour durée moyenne 3 à 6 mois. Ma collaboration se faisait essentiellement avec les peronnes de la \"Factory\" et aussi souvent avec les clients.",
+                "projects": [
+                    {
+                        "id": "",
+                        "description": "Création d'une application web de gestion/localisation de beacons Bluetooth."
+                    },
+                    {
+                        "id": "",
+                        "description": "Prototypage d'une application web 3D en temps réel pour visualiser des avions."
+                    },
+                    {
+                        "id": "",
+                        "description": "Création d'une application web de contrôle des entrées et sorties de bâtiments."
+                    }
+                ],
+                "technologies": [
+                    "ReactJS",
+                    "Angular",
+                    "ThreeJS",
+                    "AWS",
+                    "Azure"
+                ]
+            },
+            {
+                "range": "2019 - 2019",
+                "title": "Ingénieur stagiaire développeur web",
+                "company": "Expleo Group",
+                "company_description": "Expleo Group est une entreprise de services du numérique (ESN) et un prestataire de services global en ingénierie, technologie et conseil.",
+                "company_size": "Expleo Group compte environ 17 000 salariés.",
+                "team": "L'équipe dans laquelle je me trouvais était composée de 5 personnes. Un chef de projet et 4 développeurs. Nous étions assignés à différents projets en plus petites équipes (en général de 3 à 5 personnes) ayant pour durée moyenne 3 à 6 mois. Ma collaboration se faisait essentiellement avec les peronnes de notre équipe.",
+                "projects": [
+                    {
+                        "id": "",
+                        "description": "Refonte d’une application web interne dédiée à la gestion de projets, avec une attention particulière portée à l’interface utilisateur."
+                    }
+                ],
+                "technologies": [
+                    "HTML",
+                    "CSS",
+                    "Bootstrap",
+                    "jQuery",
+                    "PHP(ZendFramework)",
+                    "PostgreSQL"
+                ]
+            }
+        ]
+    },
+    "projects": {
+        "section_title": "Projets",
+        "title": "Mon parcours en actions",
+        "subtitle": "De la réflexion à la mise en œuvre : retour sur des projets marquants",
+        "description": "Description",
+        "responsabilities": "Responsabilités",
+        "informations": "Informations",
+        "team": "Équipe",
+        "type": "Type",
+        "link_web": "Site web",
+        "link_appstore": "App Store",
+        "link_playstore": "Play Store",
+        "click_here": "cliquer ici",
+        "confidential": "confidentiel",
+        "shutdown": "annulé/retiré",
+        "works": [
+            {
+                "id": "bbtk-dashboard",
+                "title": "Bebeboutik | Dashboard",
+                "company": "Bebeboutik",
+                "name": "Dashboard",
+                "description": "Ce projet consiste en la réalisation d'un dashboard destiné aux fournisseurs du site de ventes privées. La plateforme leur permet d'exécuter plusieurs actions, telles que consulter les ventes en cours ainsi que visualiser les chiffres réalisés sur le site. Elle a été développée en NextJS de bout en bout, englobant à la fois le frontend et le backend.",
+                "image": "/images/mockup_bebeboutik_web.webp",
+                "image_alt": "Mockup de l'application web Dashboard Bebeboutik",
+                "responsabilities": [
+                    "Développer puis maintenir le dashboard en utilisant NextJS.",
+                    "Responsable de l'intégration de la partie frontend et backend (carte blanche ou presque).",
+                    "Créer une interface utilisateur réactive et performante avec ReactJS, TailwindCSS et du caching.",
+                    "Gérer l'intégration du backend en NextJS, DrizzleORM et MySQL pour fournir des fonctionnalités complètes."
+                ],
+                "other_info": {
+                    "team": "1 développeur fullstack (moi)",
+                    "type": "fullstack",
+                    "link_web": "confidential",
+                    "link_appstore": "",
+                    "link_playstore": ""
+                },
+                "technologies": [
+                    "Typescript",
+                    "NextJS",
+                    "ReactJS",
+                    "TailwindCSS",
+                    "MySQL",
+                    "DrizzleORM"
+                ]
+            },
+            {
+                "id": "bbtk-website",
+                "title": "Bebeboutik | Sites web",
+                "company": "Bebeboutik",
+                "name": "Sites web",
+                "description": "Ce projet consiste à développer deux sites web interconnectés — un site de ventes privées et une marketplace — partageant une grande partie du code grâce à une configuration de monorepo. Le travail se concentre exclusivement sur les aspects frontend de ces sites.",
+                "image": "/images/mockup_bebeboutik_web.webp",
+                "image_alt": "Mockup de l'application web Bebeboutik",
+                "responsabilities": [
+                    "Développer puis maintenir les sites en utilisant NextJS.",
+                    "Responsable de l'intégration de la partie frontend (avec consultation du CTO).",
+                    "Implémenter des stratégies de cache pour améliorer les performances grâce à Redis.",
+                    "Mettre en place un monorepo pour partager le code entre les deux sites.",
+                    "Créer un serveur GraphQL pour une manipulation efficace des données avec le backend.",
+                    "Collaborer avec deux développeurs backend travaillant sur PHP, en assurant une intégration fluide entre le frontend et le backend."
+                ],
+                "other_info": {
+                    "team": "2 développeurs backend et 1-2 développeurs frontend (dont moi) et le CTO",
+                    "type": "frontend",
+                    "link_web": "https://www.bebeboutik-prive.fr/",
+                    "link_appstore": "",
+                    "link_playstore": ""
+                },
+                "technologies": [
+                    "Turborepo",
+                    "Typescript",
+                    "NextJS",
+                    "ReactJS",
+                    "TailwindCSS",
+                    "GraphQL",
+                    "NodeJS",
+                    "ExpressJS",
+                    "Redis"
+                ]
+            },
+            {
+                "id": "bbtk-mobile",
+                "title": "Bebeboutik | Application mobile",
+                "company": "Bebeboutik",
+                "name": "Application mobile",
+                "description": "Ce projet concernait le développement de la version mobile du site de ventes privées. Bien qu'elle ne partage pas son code avec le site web, l'application utilise la même API GraphQL. Réalisée exclusivement en React Native (Expo), elle est devenue la principale source de revenus avec plusieurs millions de téléchargements sur l'AppStore et le PlayStore.",
+                "image": "/images/mockup_bebeboutik_mobile.webp",
+                "image_alt": "Mockup de l'application mobile Bebeboutik",
+                "responsabilities": [
+                    "Développer puis maintenir l'application mobile en React Native (Expo).",
+                    "Assurer l'intégration avec le backend via le serveur GraphQL pour une synchronisation des données.",
+                    "Collaborer avec deux développeurs backend travaillant sur PHP, en assurant une intégration fluide entre l'application et le backend."
+                ],
+                "other_info": {
+                    "team": "2 développeurs backend et 1-2 développeurs frontend (dont moi) et le CTO",
+                    "type": "frontend mobile",
+                    "link_web": "",
+                    "link_appstore": "https://apps.apple.com/fr/app/bebeboutik-ventes-priv%C3%A9es/id1287943233",
+                    "link_playstore": "https://play.google.com/store/apps/details?id=com.bebeboutik&hl=fr"
+                },
+                "technologies": [
+                    "Typescript",
+                    "Expo",
+                    "React Native",
+                    "GraphQL",
+                    "NodeJS",
+                    "ExpressJS"
+                ]
+            },
+            {
+                "id": "sprstr-ecomode",
+                "title": "Sopra Steria | Ecomode",
+                "company": "Sopra Steria",
+                "name": "Ecomode",
+                "description": "Ce projet comprenait le développement de deux applications distinctes : une application mobile destinée au grand public et une interface web pour les administrateurs. En parallèle, j'ai contribué au développement du backend, basé sur une architecture en microservices avec NodeJS.",
+                "image": "/images/mockup_ecomode.webp",
+                "image_alt": "Mockup de l'application mobile Ecomode",
+                "responsabilities": [
+                    "Participer au développement de l'application mobile en React Native.",
+                    "Contribuer à la création de l'interface web administrative en ReactJS.",
+                    "Travailler sur le backend en NodeJS dans une architecture microservices.",
+                    "Collaborer au sein d'une équipe de 4 à 8 développeurs dans un environnement agile."
+                ],
+                "other_info": {
+                    "team": "1 chef de projet, 1 srum master, 1 architecte, 3 business analyst et le 3-6 développeurs fullstack (dont moi)",
+                    "type": "fullstack",
+                    "link_web": "https://www.ecomode.fr/",
+                    "link_appstore": "shutdown",
+                    "link_playstore": "shutdown"
+                },
+                "technologies": [
+                    "Typescript",
+                    "ReactJS",
+                    "Expo",
+                    "React Native",
+                    "PostgreSQL",
+                    "TypeORM",
+                    "Kafka",
+                    "NodeJS",
+                    "ExpressJS"
+                ]
+            },
+            {
+                "id": "perso-planidays",
+                "title": "Personel | Planidays",
+                "company": "Personel",
+                "name": "Planidays",
+                "description": "Planidays est une application web de planification de voyages assistée par IA, développée sur mon temps libre avec un ami. Ce projet touche à la fois au frontend, au backend et à l'intelligence artificielle.",
+                "image": "/images/mockup_planidays.webp",
+                "image_alt": "Mockup de l'application web Planidays",
+                "responsabilities": [
+                    "Concevoir et développer l'application web en NextJS.",
+                    "Implémenter la partie IA en intégrant l'API d'OpenAI avec le AI SDK de Vercel pour l'assistance à la planification de voyages.",
+                    "Construire et maintenir le backend en NextJS, DrizzleORM et PostgreSQL, assurant une communication fluide entre les différentes composantes du système.",
+                    "Collaborer étroitement avec un autre développeur pour partager les responsabilités sur toutes les parties du projet.",
+                    "Établir une vision claire pour l'évolution du projet puis organiser et prioriser les tâches."
+                ],
+                "other_info": {
+                    "team": "2 développeurs fullstack (dont moi)",
+                    "type": "fullstack",
+                    "link_web": "https://www.planidays.com/",
+                    "link_appstore": "",
+                    "link_playstore": ""
+                },
+                "technologies": [
+                    "Typescript",
+                    "NextJS",
+                    "ReactJS",
+                    "TailwindCSS",
+                    "OpenAI",
+                    "PostgreSQL",
+                    "DrizzleORM"
+                ]
+            }
+        ]
+    },
+    "my_stack": {
+        "section_title": "Expertise",
+        "title": "Technologies au cœur de mes projets",
+        "subtitle": "Les outils que j’utilise au quotidien pour développer des solutions modernes et performantes",
+        "technologies": [
+            "Typescript",
+            "Javascript",
+            "NextJS",
+            "ReactJS",
+            "TailwindCSS",
+            "NodeJS",
+            "DrizzleORM",
+            "PostgreSQL"
+        ]
+    },
+    "contact": {
+        "section_title": "Contact",
+        "title": "Un projet en tête ?",
+        "subtitle": "Discutons ensemble et transformons votre idée en solution concrète",
+        "marquee_text": "Discutons ensemble",
+        "contact_me_linkedin": "Me contacter sur LinkedIn",
+        "contact_me_email": "Me contacter par email"
+    },
+    "footer": {
+        "rights": "William Fargues. Tous droits réservés.",
+        "code": "Code source disponible sur mon",
+        "github": "GitHub"
     }
 }

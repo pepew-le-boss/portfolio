@@ -1,40 +1,49 @@
 "use client"
 
+import { Laptop, Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/client/common/DropDownMenu"
-import { Icon } from "@/components/server/common/Icon"
 
-export default function ThemeSwitcher() {
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/client/common/DropDownMenu"
+import type { Translations } from "@/utils/common/get-translations.utils"
+import { cn } from "@/utils/lib/tailwind/cn.utils"
+
+interface ThemeSwitcherProps {
+  headerTranslations: Translations["header"]
+  className?: string
+}
+
+export default function ThemeSwitcher({ headerTranslations, className }: ThemeSwitcherProps) {
   const { setTheme } = useTheme()
 
   return (
     <DropdownMenu modal={false}>
-      <DropdownMenuTrigger className="grid h-8 w-8 place-items-center rounded-full bg-primary transition-all hover:opacity-80 focus:ring-2 focus:ring-ring focus:ring-offset-2">
-        <Icon name="sun" className="block h-auto w-6 text-primary-foreground dark:hidden" />
-        <Icon name="moon" className="hidden h-auto w-6 text-primary-foreground dark:block" />
+      <DropdownMenuTrigger
+        aria-label={headerTranslations.alt_theme}
+        className={cn(
+          "group grid h-8 w-8 place-items-center rounded-full bg-foreground transition-all hover:ring-2 hover:ring-ring hover:ring-offset-2 hover:ring-offset-background focus:ring-2 focus:ring-ring focus:ring-offset-2 data-[state=open]:rounded-b-none data-[state=open]:ring-0 data-[state=open]:ring-offset-0",
+          className
+        )}
+      >
+        <Sun className="block h-auto w-5 text-background dark:hidden" />
+        <Moon className="hidden h-auto w-5 text-background dark:block" />
       </DropdownMenuTrigger>
       <DropdownMenuContent
-        className="flex flex-col gap-1"
+        className="flex flex-col rounded-b-full bg-foreground py-2"
+        sideOffset={0}
         onCloseAutoFocus={(event) => event.preventDefault()}
         onFocusOutside={(event) => event.preventDefault()}
       >
         <DropdownMenuItem
-          className="hidden h-8 w-8 place-items-center rounded-full bg-primary transition-all data-[highlighted]:opacity-80 dark:grid"
+          className="hidden h-8 w-8 place-items-center bg-foreground transition-all focus:scale-125 dark:grid"
           onClick={() => setTheme("light")}
         >
-          <Icon name="sun" className="h-auto w-6 text-primary-foreground" />
+          <Sun className="h-auto w-5 text-background" />
         </DropdownMenuItem>
-        <DropdownMenuItem
-          className="grid h-8 w-8 place-items-center rounded-full bg-primary transition-all data-[highlighted]:opacity-80 dark:hidden"
-          onClick={() => setTheme("dark")}
-        >
-          <Icon name="moon" className="h-auto w-6 text-primary-foreground" />
+        <DropdownMenuItem className="grid h-8 w-8 place-items-center bg-foreground transition-all focus:scale-125 dark:hidden" onClick={() => setTheme("dark")}>
+          <Moon className="h-auto w-5 text-background" />
         </DropdownMenuItem>
-        <DropdownMenuItem
-          className="grid h-8 w-8 place-items-center rounded-full bg-primary transition-all data-[highlighted]:opacity-80"
-          onClick={() => setTheme("system")}
-        >
-          <Icon name="system" className="h-auto w-5 text-primary-foreground" />
+        <DropdownMenuItem className="grid h-8 w-8 place-items-center bg-foreground transition-all focus:scale-125" onClick={() => setTheme("system")}>
+          <Laptop className="h-auto w-5 text-background" />
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

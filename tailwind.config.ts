@@ -1,16 +1,19 @@
 import type { Config } from "tailwindcss"
+import tailwindcssanimate from "tailwindcss-animate"
+
+import { animationBase, animationDelay } from "./src/utils/lib/tailwind/plugin.utils"
 
 const config: Config = {
   content: ["./src/pages/**/*.{js,ts,jsx,tsx,mdx}", "./src/components/**/*.{js,ts,jsx,tsx,mdx}", "./src/app/**/*.{js,ts,jsx,tsx,mdx}"],
   darkMode: "class",
   theme: {
     extend: {
+      screens: {
+        xs: "480px"
+      },
       fontFamily: {
         gabarito: ["var(--font-gabarito)"],
-        sfmono: ["var(--font-sfmono)"]
-      },
-      backgroundImage: {
-        "topography-pattern": "url('/icons/topography_pattern.svg')"
+        geist: ["var(--font-geist)"]
       },
       colors: {
         border: "hsl(var(--border))",
@@ -46,9 +49,54 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))"
         }
+      },
+      keyframes: {
+        "appearance-top": {
+          "0%": { opacity: "0", transform: "translateY(-100px)" },
+          "100%": { opacity: "1", transform: "translateY(0px)" }
+        },
+        "appearance-bottom": {
+          "0%": { opacity: "0", transform: "translateY(100px)" },
+          "100%": { opacity: "1", transform: "translateY(0px)" }
+        },
+        "appearance-left": {
+          "0%": { opacity: "0", transform: "translateX(-100px)" },
+          "100%": { opacity: "1", transform: "translateX(0px)" }
+        },
+        "appearance-right": {
+          "0%": { opacity: "0", transform: "translateX(100px)" },
+          "100%": { opacity: "1", transform: "translateX(0px)" }
+        },
+        "appearance-static": {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" }
+        },
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% - var(--gap)))" }
+        }
+      },
+      animation: {
+        "appearance-top": "appearance-top 1s",
+        "appearance-bottom": "appearance-bottom 1s",
+        "appearance-left": "appearance-left 1s",
+        "appearance-right": "appearance-right 1s",
+        "appearance-static": "appearance-static 1s",
+        marquee: "marquee var(--duration) linear infinite"
       }
     }
   },
-  plugins: [require("tailwindcss-animate")]
+  plugins: [tailwindcssanimate, animationDelay, animationBase],
+  safelist: [
+    "animation-delay-[0.1s]",
+    "animation-delay-[0.2s]",
+    "animation-delay-[0.3s]",
+    "animation-delay-[0.4s]",
+    "animation-delay-[0.5s]",
+    "animation-delay-[0.6s]",
+    "animation-delay-[0.7s]",
+    "animation-delay-[0.8s]",
+    "animation-delay-[0.9s]"
+  ]
 }
 export default config
