@@ -1,5 +1,6 @@
 import "../globals.css"
 
+import { Analytics } from "@vercel/analytics/next"
 import type { Metadata } from "next"
 import { ReactNode } from "react"
 
@@ -48,10 +49,11 @@ export default async function RootLayout(props: { children: ReactNode; params: P
   return (
     <html lang={params.lang} suppressHydrationWarning className="scroll-pt-24 scroll-smooth">
       <body className={`${gabarito.variable} ${geist.variable} bg-foreground/5 font-gabarito`}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <div className="relative">
             <Topography />
             {children}
+            <Analytics />
           </div>
         </ThemeProvider>
       </body>
