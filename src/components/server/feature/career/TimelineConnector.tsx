@@ -20,7 +20,7 @@ export function TimelineConnector({ index, isFirst, isLast }: TimelineConnectorP
             "h-0": isFirst
           })}
         />
-        <div className="font-geist grid h-10 w-10 place-items-center rounded-full border border-foreground bg-background text-foreground">{`0${index}`}</div>
+        <div className="grid h-10 w-10 place-items-center rounded-full border border-foreground bg-background font-geist text-foreground">{`0${index}`}</div>
         <div
           className={cn("h-5 w-[1px] bg-muted-foreground lg:h-auto lg:flex-1", {
             "lg:bg-transparent": isLast

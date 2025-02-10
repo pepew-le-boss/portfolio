@@ -14,7 +14,7 @@ interface CoverPageProps {
 export function CoverPage({ coverPageTranslations }: CoverPageProps) {
   return (
     <section className="relative mt-5 grid h-[calc(100vh_-_10rem)] content-center justify-center gap-5">
-      <span className="font-geist animate-appearance-bottom text-[clamp(1rem,5vw,1.25rem)] font-medium tracking-tight text-muted-foreground animation-delay-[0.1s] animation-appearance-base">
+      <span className="animate-appearance-bottom font-geist text-[clamp(1rem,5vw,1.25rem)] font-medium tracking-tight text-muted-foreground animation-delay-[0.1s] animation-appearance-base">
         {coverPageTranslations.hello}
       </span>
       <h1 className="flex flex-col gap-2">

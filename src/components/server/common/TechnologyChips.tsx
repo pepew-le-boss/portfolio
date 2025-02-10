@@ -9,7 +9,7 @@ export function TechnologyChips({ technology }: TechnologyChipsProps) {
     throw new Error(`Technology "${technology}" is not found in the list of technologies, maybe add it ?`)
   }
   return (
-    <div key={technology} className="font-geist whitespace-nowrap rounded-full bg-foreground px-2 pb-0.5 pt-[0.1875rem] text-xs text-background">
+    <div key={technology} className="whitespace-nowrap rounded-full bg-foreground px-2 pb-0.5 pt-[0.1875rem] font-geist text-xs text-background">
       {technology}
     </div>
   )

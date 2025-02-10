@@ -16,7 +16,7 @@ export function Section({ number, sectionName, title, subtitle, children, classN
     <section className={cn("flex max-w-7xl flex-col items-center gap-10", className)} {...props}>
       <div className="flex flex-col items-center gap-5">
         <Reveal className="animate-appearance-bottom animation-delay-[0.1s] animation-appearance-base">
-          <h3 className="font-geist inline-flex items-center justify-start gap-2 rounded-full border border-foreground bg-background px-3.5 py-1 text-sm">
+          <h3 className="inline-flex items-center justify-start gap-2 rounded-full border border-foreground bg-background px-3.5 py-1 font-geist text-sm">
             <span className="font-medium text-muted-foreground">{number}</span>
             <span className="font-medium text-muted-foreground">{`//`}</span>
             <span className="">{sectionName}</span>

@@ -42,7 +42,7 @@ export function TechnologyStack({ technology, index }: TechnologyStackProps) {
             className="group flex flex-col items-center gap-4 rounded-lg border-2 border-muted-foreground bg-background p-6 transition-all hover:border-[--technology-color] hover:bg-[--technology-color] hover:shadow-lg"
           >
             <IconTechnology className="h-10 w-10 text-foreground transition-all group-hover:text-[--text-color-hover]" />
-            <span className="font-geist cursor-default text-base font-semibold tracking-tight group-hover:text-[--text-color-hover]">{technology}</span>
+            <span className="cursor-default font-geist text-base font-semibold tracking-tight group-hover:text-[--text-color-hover]">{technology}</span>
           </div>
         </Tilt>
       </div>
