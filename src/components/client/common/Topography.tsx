@@ -48,7 +48,13 @@ export function Topography() {
   return (
     <div className="absolute inset-0">
       <div className="fixed inset-0">
-        <div ref={boxRef} className="relative hidden lg:block" style={{ ...circlePosition, width: circleSize.width, height: circleSize.height }}>
+        <div
+          ref={boxRef}
+          className={cn("relative hidden lg:block", {
+            "opacity-0": position.x === 0 && position.y === 0
+          })}
+          style={{ ...circlePosition, width: circleSize.width, height: circleSize.height }}
+        >
           <div className="absolute left-0 top-0 h-full w-full rounded-full bg-foreground/50"></div>
           <div
             className={cn("absolute h-full w-full scale-50 rounded-full bg-background transition-transform duration-300", {
