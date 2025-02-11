@@ -22,6 +22,7 @@
         "developer": "Ingénieur et développeur web",
         "description": "Avec rigueur, écoute et méthodologie, je conçois des solutions modernes, fiables, sur-mesure et pensées pour durer. Enthousiaste à l'idée de travailler avec vous.",
         "available": "Disponible",
+        "available_tooltip": "Actuellement en poste mais je reste à l'écoute d'opportunités",
         "job": "Bebeboutik",
         "home": "Colomiers",
         "cta": "Échanger avec moi"
@@ -48,7 +49,7 @@
         "projects": "Les projets",
         "experiences": [
             {
-                "title": "Ingénieur développeur sénior frontend web",
+                "title": "Ingénieur développeur senior frontend web",
                 "range": "2022 - présent",
                 "company": "Bebeboutik",
                 "company_description": "Bebeboutik est une plateforme de ventes privées dédiée à la petite enfance. Cette plateforme se décline sous plusieurs formes: un site web et une application mobile de ventes privées ainsi qu'un site web type \"marketplace\".",
@@ -253,7 +254,7 @@
                 "title": "Bebeboutik | Application mobile",
                 "company": "Bebeboutik",
                 "name": "Application mobile",
-                "description": "Ce projet concernait le développement de la version mobile du site de ventes privées. Bien qu'elle ne partage pas son code avec le site web, l'application utilise la même API GraphQL. Réalisée exclusivement en React Native (Expo), elle est devenue la principale source de revenus avec plusieurs millions de téléchargements sur l'AppStore et le PlayStore.",
+                "description": "Ce projet concerne le développement de la version mobile du site de ventes privées. Bien qu'elle ne partage pas son code avec le site web, l'application utilise la même API GraphQL. Réalisée exclusivement en React Native (Expo), elle est la principale source de revenus avec plusieurs millions de téléchargements sur l'AppStore et le PlayStore.",
                 "image": "/images/mockup_bebeboutik_mobile.webp",
                 "image_alt": "Mockup de l'application mobile Bebeboutik",
                 "responsabilities": [
@@ -365,7 +366,9 @@
         "subtitle": "Discutons ensemble et transformons votre idée en solution concrète",
         "marquee_text": "Discutons ensemble",
         "contact_me_linkedin": "Me contacter sur LinkedIn",
-        "contact_me_email": "Me contacter par email"
+        "linkedin_link": "https://www.linkedin.com/in/william-fargues-74a9b515a/",
+        "contact_me_email": "Me contacter par email",
+        "email": "fargues.wlm@gmail.com"
     },
     "footer": {
         "rights": "William Fargues. Tous droits réservés.",

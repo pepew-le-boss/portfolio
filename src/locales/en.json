@@ -22,6 +22,7 @@
         "developer": "Engineer and web developer",
         "description": "With rigor, attentiveness, and methodology, I design modern, reliable, custom-made solutions built to last. I'm excited at the prospect of working with you.",
         "available": "Available",
+        "available_tooltip": "Currently working but still open to opportunities",
         "job": "Bebeboutik",
         "home": "Colomiers",
         "cta": "Get in touch"
@@ -253,7 +254,7 @@
                 "title": "Bebeboutik | Mobile Application",
                 "company": "Bebeboutik",
                 "name": "Mobile Application",
-                "description": "This project involved developing the mobile version of the private sales website. Although it does not share its code with the website, the app uses the same GraphQL API. Built entirely in React Native (Expo), it has become the main revenue source with several million downloads on the App Store and Play Store.",
+                "description": "This project involves developing the mobile version of the private sales website. Although it does not share its code with the website, the app uses the same GraphQL API. Built entirely in React Native (Expo), it is the main revenue source with several million downloads on the App Store and Play Store.",
                 "image": "/images/mockup_bebeboutik_mobile.webp",
                 "image_alt": "Mockup of the Bebeboutik mobile application",
                 "responsabilities": [
@@ -365,7 +366,9 @@
         "subtitle": "Let's talk and turn your idea into a concrete solution",
         "marquee_text": "Let's talk",
         "contact_me_linkedin": "Contact me on LinkedIn",
-        "contact_me_email": "Contact me via email"
+        "linkedin_link": "https://www.linkedin.com/in/william-fargues-74a9b515a/",
+        "contact_me_email": "Contact me via email",
+        "email": "fargues.wlm@gmail.com"
     },
     "footer": {
         "rights": "William Fargues. All rights reserved.",

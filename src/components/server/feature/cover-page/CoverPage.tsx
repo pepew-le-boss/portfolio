@@ -1,6 +1,7 @@
-import { BriefcaseBusiness, CalendarCheck, MapPinHouse, MessageCircle } from "lucide-react"
+import { BriefcaseBusiness, MapPinHouse, MessageCircle } from "lucide-react"
 import Link from "next/link"
 
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/client/common/Tooltip"
 import { Icon } from "@/components/server/common/Icon"
 import { LinkButton } from "@/components/server/common/LinkButton"
 import { OverLignedText } from "@/components/server/common/OverLignedText"
@@ -29,10 +30,15 @@ export function CoverPage({ coverPageTranslations }: CoverPageProps) {
         {coverPageTranslations.description}
       </h2>
       <div className="my-2 flex flex-col gap-2 xs:my-5 xs:flex-row xs:items-center xs:gap-4">
-        <div className="flex animate-appearance-bottom items-center gap-2 animation-delay-[0.5s] animation-appearance-base">
-          <CalendarCheck className="h-4 w-4" />
-          <span className="font-geist text-sm font-medium">{coverPageTranslations.available}</span>
-        </div>
+        <TooltipProvider delayDuration={0}>
+          <Tooltip>
+            <TooltipTrigger className="flex w-fit animate-appearance-bottom cursor-default items-center gap-2 rounded-full border border-foreground px-2 py-0.5 animation-delay-[0.5s] animation-appearance-base">
+              <span className="h-3 w-3 rounded-full bg-yellow-500" />
+              <span className="font-geist text-sm font-medium">{coverPageTranslations.available}</span>
+            </TooltipTrigger>
+            <TooltipContent>{coverPageTranslations.available_tooltip}</TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
         <span className="h-full animate-appearance-bottom rounded-full border-x border-muted-foreground animation-delay-[0.6s] animation-appearance-base" />
         <Link
           href="https://www.linkedin.com/company/bébé-boutik/"

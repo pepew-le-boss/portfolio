@@ -1,6 +1,7 @@
 import { ExternalLink } from "lucide-react"
 
 import { Reveal } from "@/components/client/common/Reveal"
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/client/common/Tooltip"
 import { LinkButton } from "@/components/server/common/LinkButton"
 import { Marquee } from "@/components/server/common/Marquee"
 import { Section } from "@/components/server/common/Section"
@@ -30,20 +31,27 @@ export function Contact({ translationsContact }: ContactProps) {
         <div className="flex flex-wrap justify-center gap-5 px-10">
           <Reveal className="animate-appearance-bottom animation-delay-[0.1s] animation-appearance-base">
             <LinkButton
-              href="https://www.linkedin.com/in/william-fargues-74a9b515a/"
+              href={translationsContact.linkedin_link}
               icon={<ExternalLink className="h-5 w-5 text-background transition-all ease-out group-hover:-translate-y-0.5 group-hover:translate-x-1" />}
               text={translationsContact.contact_me_linkedin}
               isExternal
             />
           </Reveal>
-          <Reveal className="animate-appearance-bottom animation-delay-[0.2s] animation-appearance-base">
-            <LinkButton
-              href="mailto:fargues.wlm@gmail.com"
-              icon={<ExternalLink className="h-5 w-5 text-background transition-all ease-out group-hover:-translate-y-0.5 group-hover:translate-x-1" />}
-              text={translationsContact.contact_me_email}
-              isExternal
-            />
-          </Reveal>
+          <TooltipProvider delayDuration={0}>
+            <Tooltip>
+              <Reveal className="animate-appearance-bottom animation-delay-[0.2s] animation-appearance-base">
+                <TooltipTrigger>
+                  <LinkButton
+                    href={`mailto:${translationsContact.email}`}
+                    icon={<ExternalLink className="h-5 w-5 text-background transition-all ease-out group-hover:-translate-y-0.5 group-hover:translate-x-1" />}
+                    text={translationsContact.contact_me_email}
+                    isExternal
+                  />
+                </TooltipTrigger>
+              </Reveal>
+              <TooltipContent>{translationsContact.email}</TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
         </div>
       </Section>
     </div>
