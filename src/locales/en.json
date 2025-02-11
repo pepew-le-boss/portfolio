@@ -254,7 +254,7 @@
                 "title": "Bebeboutik | Mobile Application",
                 "company": "Bebeboutik",
                 "name": "Mobile Application",
-                "description": "This project involved developing the mobile version of the private sales website. Although it does not share its code with the website, the app uses the same GraphQL API. Built entirely in React Native (Expo), it has become the main revenue source with several million downloads on the App Store and Play Store.",
+                "description": "This project involves developing the mobile version of the private sales website. Although it does not share its code with the website, the app uses the same GraphQL API. Built entirely in React Native (Expo), it is the main revenue source with several million downloads on the App Store and Play Store.",
                 "image": "/images/mockup_bebeboutik_mobile.webp",
                 "image_alt": "Mockup of the Bebeboutik mobile application",
                 "responsabilities": [
