@@ -20,6 +20,7 @@ export function HeaderMenuDrawer({ headerTranslations, className }: HeaderMenuDr
   return (
     <Drawer open={openDrawer} onOpenChange={setOpenDrawer} noBodyStyles={true}>
       <DrawerTrigger
+        aria-label={headerTranslations.alt_menu}
         className={cn(
           "group grid h-8 w-8 place-items-center rounded-full border border-foreground bg-background transition-all hover:ring-2 hover:ring-ring hover:ring-offset-2 hover:ring-offset-background focus:ring-2 focus:ring-ring focus:ring-offset-2 lg:hidden",
           className

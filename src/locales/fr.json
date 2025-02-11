@@ -12,6 +12,7 @@
         "contact": "contact",
         "alt_lang": "Choisir la langue",
         "alt_theme": "Choisir le thème",
+        "alt_menu": "Ouvrir le menu de navigation",
         "drawer_title": "Explorer",
         "drawer_description": "Accéder rapidement à tous les sections du site"
     },
