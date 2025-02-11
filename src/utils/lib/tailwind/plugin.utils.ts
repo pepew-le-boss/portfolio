@@ -19,6 +19,6 @@ export const animationDelay: PluginCreator = ({ matchUtilities, theme }) =>
 export const animationBase: PluginCreator = ({ addUtilities }) =>
   addUtilities({
     ".animation-appearance-base": {
-      "@apply opacity-0 fill-mode-forwards": {}
+      "@apply opacity-[0.01] fill-mode-forwards": {}
     }
   })
