@@ -22,6 +22,7 @@
         "developer": "Engineer and web developer",
         "description": "With rigor, attentiveness, and methodology, I design modern, reliable, custom-made solutions built to last. I'm excited at the prospect of working with you.",
         "available": "Available",
+        "available_tooltip": "Currently working but still open to opportunities",
         "job": "Bebeboutik",
         "home": "Colomiers",
         "cta": "Get in touch"
@@ -365,7 +366,9 @@
         "subtitle": "Let's talk and turn your idea into a concrete solution",
         "marquee_text": "Let's talk",
         "contact_me_linkedin": "Contact me on LinkedIn",
-        "contact_me_email": "Contact me via email"
+        "linkedin_link": "https://www.linkedin.com/in/william-fargues-74a9b515a/",
+        "contact_me_email": "Contact me via email",
+        "email": "fargues.wlm@gmail.com"
     },
     "footer": {
         "rights": "William Fargues. All rights reserved.",
