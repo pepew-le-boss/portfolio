@@ -190,7 +190,7 @@
                 "company": "Bebeboutik",
                 "name": "Dashboard",
                 "description": "This project involves the creation of a dashboard designed for suppliers on the private sales website. The platform allows them to perform several actions, such as checking ongoing sales and viewing the site's performance figures. It was developed end-to-end in NextJS, encompassing both frontend and backend.",
-                "image": "/images/mockup_bebeboutik_web.webp",
+                "image": "/images/mockup_bebeboutik_dashboard.webp",
                 "image_alt": "Mockup of the Bebeboutik Dashboard web application",
                 "responsabilities": [
                     "Develop and maintain the dashboard using NextJS.",
