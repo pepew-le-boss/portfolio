@@ -17,7 +17,7 @@ const eslintConfig = [
   ...compat.plugins("simple-import-sort"),
   {
     rules: {
-      "prettier/prettier": "warn",
+      "prettier/prettier": ["warn", { endOfLine: "auto" }],
       "simple-import-sort/imports": "warn"
     }
   }
