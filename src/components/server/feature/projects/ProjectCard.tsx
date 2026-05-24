@@ -26,6 +26,8 @@ interface ProjectCardProps {
 // change size (size and position menu) to 115%
 // choose a custom frame of 1920x1260
 // export in x2
+// =============================================================================
+// or check "portfolio" figma file for mockups because https://shots.so/ is now paid
 
 // for mobile screenshot (same as desktop except):
 // choose "iphone 16 pro max"

@@ -1,4 +1,4 @@
-import { BriefcaseBusiness, MapPinHouse, MessageCircle } from "lucide-react"
+import { MapPinHouse, MessageCircle, MonitorSmartphone } from "lucide-react"
 import Link from "next/link"
 
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/client/common/Tooltip"
@@ -33,7 +33,7 @@ export function CoverPage({ coverPageTranslations }: CoverPageProps) {
         <TooltipProvider delayDuration={0}>
           <Tooltip>
             <TooltipTrigger className="flex w-fit animate-appearance-bottom cursor-default items-center gap-2 rounded-full border border-foreground px-2 py-0.5 animation-delay-[0.5s] animation-appearance-base">
-              <span className="h-3 w-3 rounded-full bg-yellow-500" />
+              <span className="h-3 w-3 rounded-full bg-lime-500" />
               <span className="font-geist text-sm font-medium">{coverPageTranslations.available}</span>
             </TooltipTrigger>
             <TooltipContent>{coverPageTranslations.available_tooltip}</TooltipContent>
@@ -41,13 +41,22 @@ export function CoverPage({ coverPageTranslations }: CoverPageProps) {
         </TooltipProvider>
         <span className="h-full animate-appearance-bottom rounded-full border-x border-muted-foreground animation-delay-[0.6s] animation-appearance-base" />
         <Link
-          href="https://www.linkedin.com/company/bébé-boutik/"
+          href="https://www.hivespent.com/"
           target="_blank"
           rel="noreferrer"
           className="group flex animate-appearance-bottom items-center gap-2 animation-delay-[0.6s] animation-appearance-base"
         >
-          <BriefcaseBusiness className="h-4 w-4" />
-          <OverLignedText className="font-geist text-sm font-medium">{coverPageTranslations.job}</OverLignedText>
+          <MonitorSmartphone className="h-4 w-4" />
+          <OverLignedText className="font-geist text-sm font-medium">{coverPageTranslations.job_1}</OverLignedText>
+        </Link>
+        <Link
+          href="https://www.papatte.app/"
+          target="_blank"
+          rel="noreferrer"
+          className="group flex animate-appearance-bottom items-center gap-2 animation-delay-[0.6s] animation-appearance-base"
+        >
+          <MonitorSmartphone className="h-4 w-4" />
+          <OverLignedText className="font-geist text-sm font-medium">{coverPageTranslations.job_2}</OverLignedText>
         </Link>
         <span className="h-full animate-appearance-bottom rounded-full border-x border-muted-foreground animation-delay-[0.7s] animation-appearance-base" />
         <Link

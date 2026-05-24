@@ -27,7 +27,9 @@ const technologies = [
   "CSS",
   "Bootstrap",
   "jQuery",
-  "PHP(ZendFramework)"
+  "PHP(ZendFramework)",
+  "Figma",
+  "PostHog"
 ] as const
 
 type TechnologyType = (typeof technologies)[number]
